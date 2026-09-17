@@ -1,0 +1,59 @@
+{
+  "_leeme": "Correcciones a mano sobre lo que saca extract.mjs, tras mirar las 39 capturas una por una. Cada una lleva el motivo.",
+
+  "melao-carballo-web": {
+    "color": "#E9573E",
+    "_color": "el barrido cogió --coral-deep; el coral de marca (y el de la v2) es este"
+  },
+  "caracola-carballo-web": {
+    "color": "#C9963E",
+    "_color": "el barrido gana con el azul noche del fondo (#1B2340), que como rótulo se apaga; el acento de la web es el latón"
+  },
+  "ranqui-carballo-web": {
+    "concepto": "Remolino de crema",
+    "_concepto": "así lo llama su propio README: anillos de gotas girando cada uno a su velocidad"
+  },
+  "jayce-cafe-bar-carballo-web": {
+    "color": "#A3402F",
+    "concepto": "Taza y vapor",
+    "_color": "theme-color es #4E1616, casi negro; el granate que se ve en el hero es --granate-suave",
+    "_concepto": "taza que se llena con el scroll + hero de vapor en canvas, según su README"
+  },
+  "louzao-dental-carballo-web": {
+    "tipo": "Clínica dental · primera versión",
+    "_color": "sin acento propio: es un sitio en React casi monocromo sobre blanco. Se queda en papel a propósito",
+    "_concepto": "se queda pendiente: esta v1 ya existía y no tiene un concepto mío que contar"
+  },
+  "louzao-dental-carballo-web-v2": {
+    "color": "#0F6E8C",
+    "_color": "#0A4A5E es el fondo hondo del agua; este es el teal de marca"
+  },
+  "aura-fisioterapia-carballo-web": {
+    "concepto": "Cuerpo en movimiento",
+    "_concepto": "es el concepto que declara su propio README"
+  },
+  "kinesaude-carballo-web": {
+    "color": "#6C8C7E",
+    "_color": "el barrido no ve nada (hero de canvas) y --ambar es secundario; el acento real es --senal"
+  },
+  "asesoria-cervantes-carballo-web": {
+    "color": "#93A86D",
+    "_color": "--arena es el tono del papel; el único acento cromático del hero es el verde oliva de los botones"
+  },
+  "juan-carlos-castro-pombo-abogado-carballo-web": {
+    "color": "#8E2A3C",
+    "_color": "--granate (#5B1F2A) es tan oscuro que al subirlo sale un malva lavado; este granate tiene el mismo tono con croma suficiente"
+  },
+  "calidade-systems-carballo-web": {
+    "color": "#22B5D8",
+    "_color": "el marino es el color del texto; el acento del logo y de los botones es --cian"
+  },
+
+  "plantilla-autoescuela-web":  { "tipo": "Plantilla de sector · negocio ficticio", "concepto": "Carril" },
+  "plantilla-gimnasio-web":     { "tipo": "Plantilla de sector · negocio ficticio", "concepto": "Barra" },
+  "plantilla-hotel-rural-web":  { "tipo": "Plantilla de sector · negocio ficticio", "concepto": "Orballo" },
+  "plantilla-optica-web":       { "tipo": "Plantilla de sector · negocio ficticio", "concepto": "Optotipos" },
+  "plantilla-panaderia-web":    { "tipo": "Plantilla de sector · negocio ficticio", "concepto": "Miga" },
+  "plantilla-taller-web":       { "tipo": "Plantilla de sector · negocio ficticio", "concepto": "Despiece" },
+  "plantilla-tatuajes-web":     { "tipo": "Plantilla de sector · negocio ficticio", "concepto": "Calco" }
+}

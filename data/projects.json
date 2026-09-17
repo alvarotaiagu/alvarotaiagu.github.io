@@ -1,0 +1,1540 @@
+{
+  "generado": "2026-09-17",
+  "nota": "Estado \"propuesta\" = rediseño hecho por iniciativa propia, no encargo. Solo se marca \"entregada\" donde Álvaro lo confirma.",
+  "base": {
+    "sitio": "https://alvarotaiagu.github.io",
+    "codigo": "https://github.com/alvarotaiagu"
+  },
+  "sectores": [
+    {
+      "id": "hosteleria",
+      "nombre": "Hostelería",
+      "rotulo": "HOSTELERÍA",
+      "total": 11
+    },
+    {
+      "id": "salud",
+      "nombre": "Salud",
+      "rotulo": "SALUD",
+      "total": 8
+    },
+    {
+      "id": "legal",
+      "nombre": "Asesorías y legal",
+      "rotulo": "ASESORÍAS Y LEGAL",
+      "total": 6
+    },
+    {
+      "id": "comercio",
+      "nombre": "Comercio, educación y servicios",
+      "rotulo": "COMERCIO, EDUCACIÓN Y SERVICIOS",
+      "total": 7
+    },
+    {
+      "id": "plantillas",
+      "nombre": "Plantillas por sector",
+      "rotulo": "PLANTILLAS POR SECTOR",
+      "total": 7
+    }
+  ],
+  "fuentes": {
+    "Newsreader|500|normal": {
+      "familia": "Newsreader",
+      "peso": 500,
+      "estilo": "normal",
+      "repos": [
+        "web-marabu-awwwards"
+      ],
+      "texto": " &.Mabr·ú",
+      "css": "https://fonts.googleapis.com/css2?family=Newsreader%3Aital%2Copsz%2Cwght%400%2C6..72%2C400%3B0%2C6..72%2C500%3B0%2C6..72%2C600%3B1%2C6..72%2C400%3B1%2C6..72%2C500%3B1%2C6..72%2C600&display=swap&text=+%26.Mabr%C2%B7%C3%BA"
+    },
+    "Fraunces|620|normal": {
+      "familia": "Fraunces",
+      "peso": 620,
+      "estilo": "normal",
+      "repos": [
+        "melao-carballo-web"
+      ],
+      "texto": " &.Maelo·",
+      "css": "https://fonts.googleapis.com/css2?family=Fraunces%3Aital%2Copsz%2Cwght%400%2C9..144%2C420%3B0%2C9..144%2C500%3B0%2C9..144%2C600%3B0%2C9..144%2C680%3B1%2C9..144%2C500%3B1%2C9..144%2C600&display=swap&text=+%26.Maelo%C2%B7"
+    },
+    "Fraunces|700|normal": {
+      "familia": "Fraunces",
+      "peso": 700,
+      "estilo": "normal",
+      "repos": [
+        "melao-carballo-web-v2"
+      ],
+      "texto": " &.2Maelov·",
+      "css": "https://fonts.googleapis.com/css2?family=Fraunces%3Aital%2Copsz%2Cwght%400%2C9..144%2C420%3B0%2C9..144%2C500%3B0%2C9..144%2C600%3B0%2C9..144%2C680%3B1%2C9..144%2C500%3B1%2C9..144%2C600&display=swap&text=+%26.2Maelov%C2%B7"
+    },
+    "Fraunces|600|normal": {
+      "familia": "Fraunces",
+      "peso": 600,
+      "estilo": "normal",
+      "repos": [
+        "o-logradouro-carballo-web",
+        "veterinaria-granvia-web"
+      ],
+      "texto": " &.GLOVadeginortu·í",
+      "css": "https://fonts.googleapis.com/css2?family=Fraunces%3Aital%2Copsz%2Cwght%400%2C9..144%2C500%3B0%2C9..144%2C600%3B0%2C9..144%2C700%3B1%2C9..144%2C500%3B1%2C9..144%2C600&display=swap&text=+%26.GLOVadeginortu%C2%B7%C3%AD"
+    },
+    "Spectral|600|normal": {
+      "familia": "Spectral",
+      "peso": 600,
+      "estilo": "normal",
+      "repos": [
+        "o-carballo-taperia-web"
+      ],
+      "texto": " &.COablor·",
+      "css": "https://fonts.googleapis.com/css2?family=Spectral%3Aital%2Cwght%400%2C400%3B0%2C500%3B0%2C600%3B0%2C700%3B1%2C400%3B1%2C500%3B1%2C600&display=swap&text=+%26.COablor%C2%B7"
+    },
+    "Bricolage Grotesque|800|normal": {
+      "familia": "Bricolage Grotesque",
+      "peso": 800,
+      "estilo": "normal",
+      "repos": [
+        "a-lareira-carballo-web",
+        "plantilla-panaderia-web"
+      ],
+      "texto": " &.ALPadeinr·í",
+      "css": "https://fonts.googleapis.com/css2?family=Bricolage+Grotesque%3Aopsz%2Cwght%4012..96%2C500%3B12..96%2C700%3B12..96%2C800&display=swap&text=+%26.ALPadeinr%C2%B7%C3%AD"
+    },
+    "Cormorant Garamond|600|normal": {
+      "familia": "Cormorant Garamond",
+      "peso": 600,
+      "estilo": "normal",
+      "repos": [
+        "caracola-carballo-web"
+      ],
+      "texto": " &.Caclor·",
+      "css": "https://fonts.googleapis.com/css2?family=Cormorant+Garamond%3Aital%2Cwght%400%2C500%3B0%2C600%3B1%2C500%3B1%2C600&display=swap&text=+%26.Caclor%C2%B7"
+    },
+    "Domine|600|normal": {
+      "familia": "Domine",
+      "peso": 600,
+      "estilo": "normal",
+      "repos": [
+        "ranqui-carballo-web"
+      ],
+      "texto": " &.Rainqu·",
+      "css": "https://fonts.googleapis.com/css2?family=Domine%3Awght%40500%3B600%3B700&display=swap&text=+%26.Rainqu%C2%B7"
+    },
+    "Lora|700|normal": {
+      "familia": "Lora",
+      "peso": 700,
+      "estilo": "normal",
+      "repos": [
+        "jayce-cafe-bar-carballo-web"
+      ],
+      "texto": " &.Jacey·",
+      "css": "https://fonts.googleapis.com/css2?family=Lora%3Aital%2Cwght%400%2C500%3B0%2C600%3B0%2C700%3B1%2C500&display=swap&text=+%26.Jacey%C2%B7"
+    },
+    "Fraunces|400|normal": {
+      "familia": "Fraunces",
+      "peso": 400,
+      "estilo": "normal",
+      "repos": [
+        "ceibo-cafe-carballo-web",
+        "nando-muino-fisioterapia-carballo-web",
+        "plantilla-hotel-rural-web"
+      ],
+      "texto": " &.CHMNabdeilnortu·ñ",
+      "css": "https://fonts.googleapis.com/css2?family=Fraunces%3Aital%2Copsz%2Cwght%2CSOFT%400%2C9..144%2C300..700%2C0..100%3B1%2C9..144%2C300..700%2C0..100&display=swap&text=+%26.CHMNabdeilnortu%C2%B7%C3%B1"
+    },
+    "Instrument Serif|400|normal": {
+      "familia": "Instrument Serif",
+      "peso": 400,
+      "estilo": "normal",
+      "repos": [
+        "xenlleiro-arteixo-web",
+        "aura-fisioterapia-carballo-web"
+      ],
+      "texto": " &.ARUXeilnor·",
+      "css": "https://fonts.googleapis.com/css2?family=Instrument+Serif%3Aital%400%3B1&display=swap&text=+%26.ARUXeilnor%C2%B7"
+    },
+    "Fraunces|300|normal": {
+      "familia": "Fraunces",
+      "peso": 300,
+      "estilo": "normal",
+      "repos": [
+        "louzao-dental-carballo-web-v2"
+      ],
+      "texto": " &.2DLaelnotuvz·",
+      "css": "https://fonts.googleapis.com/css2?family=Fraunces%3Aital%2Copsz%2Cwght%2CSOFT%400%2C9..144%2C300%2C50%3B0%2C9..144%2C400%2C50%3B1%2C9..144%2C300%2C50%3B1%2C9..144%2C400%2C50&display=swap&text=+%26.2DLaelnotuvz%C2%B7"
+    },
+    "Bricolage Grotesque|400|normal": {
+      "familia": "Bricolage Grotesque",
+      "peso": 400,
+      "estilo": "normal",
+      "repos": [
+        "javi-teijeiro-fisioterapia-carballo-web"
+      ],
+      "texto": " &.JTaeijorv·",
+      "css": "https://fonts.googleapis.com/css2?family=Bricolage+Grotesque%3Aopsz%2Cwdth%2Cwght%4012..96%2C100%2C300%3B12..96%2C100%2C400%3B12..96%2C100%2C800&display=swap&text=+%26.JTaeijorv%C2%B7"
+    },
+    "Outfit|300|normal": {
+      "familia": "Outfit",
+      "peso": 300,
+      "estilo": "normal",
+      "repos": [
+        "kinesaude-carballo-web"
+      ],
+      "texto": " &.KSadein·ú",
+      "css": "https://fonts.googleapis.com/css2?family=Outfit%3Awght%40300%3B400%3B500%3B600%3B700%3B800&display=swap&text=+%26.KSadein%C2%B7%C3%BA"
+    },
+    "Manrope|200|normal": {
+      "familia": "Manrope",
+      "peso": 200,
+      "estilo": "normal",
+      "repos": [
+        "postural-carballo-web"
+      ],
+      "texto": " &.Palorstu·",
+      "css": "https://fonts.googleapis.com/css2?family=Manrope%3Awght%40200..800&display=swap&text=+%26.Palorstu%C2%B7"
+    },
+    "Fraunces|560|normal": {
+      "familia": "Fraunces",
+      "peso": 560,
+      "estilo": "normal",
+      "repos": [
+        "dourado-fernandez-asesores-carballo-web"
+      ],
+      "texto": " &.DFadenoruz·á",
+      "css": "https://fonts.googleapis.com/css2?family=Fraunces%3Aital%2Copsz%2Cwght%400%2C9..144%2C300..700%3B1%2C9..144%2C300..600&display=swap&text=+%26.DFadenoruz%C2%B7%C3%A1"
+    },
+    "Space Grotesk|700|normal": {
+      "familia": "Space Grotesk",
+      "peso": 700,
+      "estilo": "normal",
+      "repos": [
+        "rivand-asesores-carballo-web"
+      ],
+      "texto": " &.ARadeinorsv·",
+      "css": "https://fonts.googleapis.com/css2?family=Space+Grotesk%3Awght%40400%3B500%3B600%3B700&display=swap&text=+%26.ARadeinorsv%C2%B7"
+    },
+    "Newsreader|400|italic": {
+      "familia": "Newsreader",
+      "peso": 400,
+      "estilo": "italic",
+      "repos": [
+        "asesoria-cervantes-carballo-web"
+      ],
+      "texto": " &.ACaenorstv·í",
+      "css": "https://fonts.googleapis.com/css2?family=Newsreader%3Aital%2Copsz%2Cwght%400%2C6..72%2C300..700%3B1%2C6..72%2C300..600&display=swap&text=+%26.ACaenorstv%C2%B7%C3%AD"
+    },
+    "Inter|500|normal": {
+      "familia": "Inter",
+      "peso": 500,
+      "estilo": "normal",
+      "repos": [
+        "maria-jose-ramos-castro-abogada-carballo-web"
+      ],
+      "texto": " &.CJMRamorstª·é",
+      "css": "https://fonts.googleapis.com/css2?family=Inter%3Awght%40400%3B500%3B600&display=swap&text=+%26.CJMRamorst%C2%AA%C2%B7%C3%A9"
+    },
+    "Anton|400|normal": {
+      "familia": "Anton",
+      "peso": 400,
+      "estilo": "normal",
+      "repos": [
+        "jose-manuel-blanco-regueiro-abogado-carballo-web",
+        "plantilla-gimnasio-web"
+      ],
+      "texto": " &.BGRacegilmnorsu·",
+      "css": "https://fonts.googleapis.com/css2?family=Anton&display=swap&text=+%26.BGRacegilmnorsu%C2%B7"
+    },
+    "Playfair Display|500|normal": {
+      "familia": "Playfair Display",
+      "peso": 500,
+      "estilo": "normal",
+      "repos": [
+        "juan-carlos-castro-pombo-abogado-carballo-web"
+      ],
+      "texto": " &.CPabmorst·",
+      "css": "https://fonts.googleapis.com/css2?family=Playfair+Display%3Aital%2Cwght%400%2C400..700%3B1%2C400..500&display=swap&text=+%26.CPabmorst%C2%B7"
+    },
+    "Sora|400|normal": {
+      "familia": "Sora",
+      "peso": 400,
+      "estilo": "normal",
+      "repos": [
+        "inmobiliaria-a-ponte-carballo-web"
+      ],
+      "texto": " &.APenot·",
+      "css": "https://fonts.googleapis.com/css2?family=Sora%3Awght%40300%3B400%3B500%3B600&display=swap&text=+%26.APenot%C2%B7"
+    },
+    "Space Grotesk|600|normal": {
+      "familia": "Space Grotesk",
+      "peso": 600,
+      "estilo": "normal",
+      "repos": [
+        "calidade-systems-carballo-web"
+      ],
+      "texto": " &.CSadeilmsty·",
+      "css": "https://fonts.googleapis.com/css2?family=Space+Grotesk%3Awght%40500%3B600%3B700&display=swap&text=+%26.CSadeilmsty%C2%B7"
+    },
+    "Archivo|800|normal": {
+      "familia": "Archivo",
+      "peso": 800,
+      "estilo": "normal",
+      "repos": [
+        "mas-que-tinta-carballo-web"
+      ],
+      "texto": " &.MTaeinqstu·á",
+      "css": "https://fonts.googleapis.com/css2?family=Archivo%3Awdth%2Cwght%40112%2C400%3B112%2C500%3B112%2C600%3B112%2C700%3B112%2C800&display=swap&text=+%26.MTaeinqstu%C2%B7%C3%A1"
+    },
+    "Rubik|900|normal": {
+      "familia": "Rubik",
+      "peso": 900,
+      "estilo": "normal",
+      "repos": [
+        "astrobots-carballo-web"
+      ],
+      "texto": " &.Aborst·",
+      "css": "https://fonts.googleapis.com/css2?family=Rubik%3Awght%40400%3B500%3B600%3B700%3B800%3B900&display=swap&text=+%26.Aborst%C2%B7"
+    },
+    "Fredoka|600|normal": {
+      "familia": "Fredoka",
+      "peso": 600,
+      "estilo": "normal",
+      "repos": [
+        "espazo-bilitroque-carballo-web"
+      ],
+      "texto": " &.BEaeilopqrstuz·",
+      "css": "https://fonts.googleapis.com/css2?family=Fredoka%3Awght%40400%3B500%3B600%3B700&display=swap&text=+%26.BEaeilopqrstuz%C2%B7"
+    },
+    "Manrope|700|normal": {
+      "familia": "Manrope",
+      "peso": 700,
+      "estilo": "normal",
+      "repos": [
+        "becool-carballo-web"
+      ],
+      "texto": " &.BCelo·",
+      "css": "https://fonts.googleapis.com/css2?family=Manrope%3Awght%40300%3B400%3B500%3B600&display=swap&text=+%26.BCelo%C2%B7"
+    },
+    "Inter|700|normal": {
+      "familia": "Inter",
+      "peso": 700,
+      "estilo": "normal",
+      "repos": [
+        "construyetuweb-carballo-web"
+      ],
+      "texto": " &.bcenorstuwy·",
+      "css": "https://fonts.googleapis.com/css2?family=Inter%3Awght%40400%3B500%3B600%3B700&display=swap&text=+%26.bcenorstuwy%C2%B7"
+    },
+    "Saira Condensed|600|normal": {
+      "familia": "Saira Condensed",
+      "peso": 600,
+      "estilo": "normal",
+      "repos": [
+        "plantilla-autoescuela-web"
+      ],
+      "texto": " &.Aacelostu·",
+      "css": "https://fonts.googleapis.com/css2?family=Saira+Condensed%3Awght%40500%3B600%3B700&display=swap&text=+%26.Aacelostu%C2%B7"
+    },
+    "Outfit|700|normal": {
+      "familia": "Outfit",
+      "peso": 700,
+      "estilo": "normal",
+      "repos": [
+        "plantilla-optica-web"
+      ],
+      "texto": " &.acipt·Ó",
+      "css": "https://fonts.googleapis.com/css2?family=Outfit%3Awght%40300%3B500%3B700%3B800&display=swap&text=+%26.acipt%C2%B7%C3%93"
+    },
+    "Oswald|500|normal": {
+      "familia": "Oswald",
+      "peso": 500,
+      "estilo": "normal",
+      "repos": [
+        "plantilla-taller-web"
+      ],
+      "texto": " &.Taelr·",
+      "css": "https://fonts.googleapis.com/css2?family=Oswald%3Awght%40400%3B500%3B600&display=swap&text=+%26.Taelr%C2%B7"
+    },
+    "Syne|800|normal": {
+      "familia": "Syne",
+      "peso": 800,
+      "estilo": "normal",
+      "repos": [
+        "plantilla-tatuajes-web"
+      ],
+      "texto": " &.Taejstu·",
+      "css": "https://fonts.googleapis.com/css2?family=Syne%3Awght%40600%3B700%3B800&display=swap&text=+%26.Taejstu%C2%B7"
+    }
+  },
+  "proyectos": [
+    {
+      "repo": "web-marabu-awwwards",
+      "nombre": "Marabú",
+      "sector": "hosteleria",
+      "tipo": "Bar-restaurante",
+      "concepto": "Día y noche",
+      "estado": "propuesta",
+      "anio": "2026",
+      "url": "https://alvarotaiagu.github.io/web-marabu-awwwards/",
+      "codigo": "https://github.com/alvarotaiagu/web-marabu-awwwards",
+      "titulo": "Marabú — Cafetería de día, coctelería de noite en Carballo",
+      "descripcion": "Marabú é a cafetería-coctelería da Rúa Perú, en Carballo. Café e almorzos de día; cócteles e música en vivo de noite.",
+      "idioma": "gl",
+      "color": "#0F6E5F",
+      "colorRotulo": "#0F6E5F",
+      "colorContraste": 3.16,
+      "colorOrigen": "var(--accent-day)",
+      "fuente": {
+        "familia": "Newsreader",
+        "stack": "Newsreader, Georgia, serif",
+        "generica": "serif",
+        "peso": 500,
+        "estilo": "normal",
+        "id": "Newsreader|500|normal"
+      },
+      "capturas": {
+        "desktop": "assets/shots/web-marabu-awwwards-desktop.webp",
+        "mobile": "assets/shots/web-marabu-awwwards-mobile.webp"
+      }
+    },
+    {
+      "repo": "melao-carballo-web",
+      "nombre": "Melao",
+      "sector": "hosteleria",
+      "tipo": "Cafetería",
+      "concepto": "Shader blob",
+      "estado": "propuesta",
+      "anio": "2026",
+      "url": "https://alvarotaiagu.github.io/melao-carballo-web/",
+      "codigo": "https://github.com/alvarotaiagu/melao-carballo-web",
+      "titulo": "Melao — Burgers, pinsas y brunch en Carballo",
+      "descripcion": "Melao es cocina sin pasaporte en el corazón de Carballo: desayunos y brunch de jueves a domingo, pinsas romanas al horno, smash burgers y un cariño muy venezolano. Pet friendly y accesible. Avenida Ponte da Pedra, 18.",
+      "idioma": "es",
+      "color": "#E9573E",
+      "colorRotulo": "#E9573E",
+      "colorContraste": 5.46,
+      "colorOrigen": "corregido a mano",
+      "fuente": {
+        "familia": "Fraunces",
+        "stack": "Fraunces, Georgia, serif",
+        "generica": "serif",
+        "peso": 620,
+        "estilo": "normal",
+        "id": "Fraunces|620|normal"
+      },
+      "capturas": {
+        "desktop": "assets/shots/melao-carballo-web-desktop.webp",
+        "mobile": "assets/shots/melao-carballo-web-mobile.webp"
+      }
+    },
+    {
+      "repo": "melao-carballo-web-v2",
+      "nombre": "Melao v2",
+      "sector": "hosteleria",
+      "tipo": "Cafetería",
+      "concepto": "Día y noche",
+      "estado": "propuesta",
+      "anio": "2026",
+      "url": "https://alvarotaiagu.github.io/melao-carballo-web-v2/",
+      "codigo": "https://github.com/alvarotaiagu/melao-carballo-web-v2",
+      "titulo": "Melao — De brunch de día a barra de noche en Carballo",
+      "descripcion": "Melao tiene dos caras: brunch y desayuno de jueves a domingo por la mañana, pinsas, smash burgers y cócteles de viernes a domingo por la noche. Un mismo local en Avenida Ponte da Pedra, 18, Carballo.",
+      "idioma": "es",
+      "color": "#E9573E",
+      "colorRotulo": "#E9573E",
+      "colorContraste": 5.46,
+      "colorOrigen": "barrido del hero",
+      "fuente": {
+        "familia": "Fraunces",
+        "stack": "Fraunces, Georgia, serif",
+        "generica": "serif",
+        "peso": 700,
+        "estilo": "normal",
+        "id": "Fraunces|700|normal"
+      },
+      "capturas": {
+        "desktop": "assets/shots/melao-carballo-web-v2-desktop.webp",
+        "mobile": "assets/shots/melao-carballo-web-v2-mobile.webp"
+      }
+    },
+    {
+      "repo": "o-logradouro-carballo-web",
+      "nombre": "O Logradouro",
+      "sector": "hosteleria",
+      "tipo": "Taberna",
+      "concepto": "Iconos gooey",
+      "estado": "propuesta",
+      "anio": "2026",
+      "url": "https://alvarotaiagu.github.io/o-logradouro-carballo-web/",
+      "codigo": "https://github.com/alvarotaiagu/o-logradouro-carballo-web",
+      "titulo": "O Logradouro — Bar-taberna en el centro de Carballo",
+      "descripcion": "O Logradouro: bar-taberna en el centro de Carballo, abierto de miércoles a domingo de 10:00 a 1:00. Langostinos y pulpo rebozados, tortillas, opciones veganas, terraza con nebulización y mascotas admitidas. R. Lugo, 2.",
+      "idioma": "es",
+      "color": "#7A1F2E",
+      "colorRotulo": "#AD2F44",
+      "colorContraste": 3.02,
+      "colorOrigen": "barrido del hero",
+      "fuente": {
+        "familia": "Fraunces",
+        "stack": "Fraunces, \"Iowan Old Style\", Georgia, serif",
+        "generica": "serif",
+        "peso": 600,
+        "estilo": "normal",
+        "id": "Fraunces|600|normal"
+      },
+      "capturas": {
+        "desktop": "assets/shots/o-logradouro-carballo-web-desktop.webp",
+        "mobile": "assets/shots/o-logradouro-carballo-web-mobile.webp"
+      }
+    },
+    {
+      "repo": "o-carballo-taperia-web",
+      "nombre": "O Carballo",
+      "sector": "hosteleria",
+      "tipo": "Tapería",
+      "concepto": "Camino Inglés",
+      "estado": "propuesta",
+      "anio": "2026",
+      "url": "https://alvarotaiagu.github.io/o-carballo-taperia-web/",
+      "codigo": "https://github.com/alvarotaiagu/o-carballo-taperia-web",
+      "titulo": "O Carballo Tapería — Sigüeiro, última etapa del Camino Inglés",
+      "descripcion": "O Carballo Tapería: cocina casera de mercado en Sigüeiro (Oroso), en la última etapa del Camino Inglés a Santiago. Ensaladas, croquetas de jamón ibérico, secreto ibérico y hamburguesa de la casa. Avenida da Grabanxa, 29.",
+      "idioma": "es",
+      "color": "#B7923A",
+      "colorRotulo": "#B7923A",
+      "colorContraste": 6.65,
+      "colorOrigen": "barrido del hero",
+      "fuente": {
+        "familia": "Spectral",
+        "stack": "Spectral, \"Iowan Old Style\", Georgia, serif",
+        "generica": "serif",
+        "peso": 600,
+        "estilo": "normal",
+        "id": "Spectral|600|normal"
+      },
+      "capturas": {
+        "desktop": "assets/shots/o-carballo-taperia-web-desktop.webp",
+        "mobile": "assets/shots/o-carballo-taperia-web-mobile.webp"
+      }
+    },
+    {
+      "repo": "a-lareira-carballo-web",
+      "nombre": "A Lareira",
+      "sector": "hosteleria",
+      "tipo": "Parrillada",
+      "concepto": "Brasas",
+      "estado": "propuesta",
+      "anio": "2026",
+      "url": "https://alvarotaiagu.github.io/a-lareira-carballo-web/",
+      "codigo": "https://github.com/alvarotaiagu/a-lareira-carballo-web",
+      "titulo": "A Lareira — Parrillada en Carballo | Churrasco y Chuletón a la Brasa",
+      "descripcion": "A Lareira, parrillada en Carretera de Razo, Carballo. Churrasco y chuletón a la brasa, bodega con 48 referencias de vino, terraza, chimenea y comedor privado. 4,3★ en Google (659 reseñas).",
+      "idioma": "es",
+      "color": "#E85D2B",
+      "colorRotulo": "#E85D2B",
+      "colorContraste": 5.58,
+      "colorOrigen": "barrido del hero",
+      "fuente": {
+        "familia": "Bricolage Grotesque",
+        "stack": "\"Bricolage Grotesque\", \"Segoe UI\", sans-serif",
+        "generica": "sans-serif",
+        "peso": 800,
+        "estilo": "normal",
+        "id": "Bricolage Grotesque|800|normal"
+      },
+      "capturas": {
+        "desktop": "assets/shots/a-lareira-carballo-web-desktop.webp",
+        "mobile": "assets/shots/a-lareira-carballo-web-mobile.webp"
+      }
+    },
+    {
+      "repo": "caracola-carballo-web",
+      "nombre": "Caracola",
+      "sector": "hosteleria",
+      "tipo": "Café-bar",
+      "concepto": "Espiral",
+      "estado": "propuesta",
+      "anio": "2026",
+      "url": "https://alvarotaiagu.github.io/caracola-carballo-web/",
+      "codigo": "https://github.com/alvarotaiagu/caracola-carballo-web",
+      "titulo": "Café-Bar Caracola — Carballo | Bar de tapas, cena baile los viernes",
+      "descripcion": "Café-Bar Caracola, en Av. de Bértoa 23, Carballo. Pinchos todo el día, menú completo y cena baile con música en directo los viernes. 4,3★ (504 reseñas en Google). Tel. 981 75 46 64.",
+      "idioma": "es",
+      "color": "#C9963E",
+      "colorRotulo": "#C9963E",
+      "colorContraste": 7.33,
+      "colorOrigen": "corregido a mano",
+      "fuente": {
+        "familia": "Cormorant Garamond",
+        "stack": "\"Cormorant Garamond\", \"Iowan Old Style\", Georgia, serif",
+        "generica": "serif",
+        "peso": 600,
+        "estilo": "normal",
+        "id": "Cormorant Garamond|600|normal"
+      },
+      "capturas": {
+        "desktop": "assets/shots/caracola-carballo-web-desktop.webp",
+        "mobile": "assets/shots/caracola-carballo-web-mobile.webp"
+      }
+    },
+    {
+      "repo": "ranqui-carballo-web",
+      "nombre": "Ranqui",
+      "sector": "hosteleria",
+      "tipo": "Café-bar",
+      "concepto": "Remolino de crema",
+      "estado": "propuesta",
+      "anio": "2026",
+      "url": "https://alvarotaiagu.github.io/ranqui-carballo-web/",
+      "codigo": "https://github.com/alvarotaiagu/ranqui-carballo-web",
+      "titulo": "Café Bar Ranqui — Carballo | Cafetería, de 7:30 a la 1:00",
+      "descripcion": "Café Bar Ranqui, en Rúa Carballo Calero 9, Carballo. Abierto de 7:30 a 23:45 (sábados hasta la 1:00). 4,6★ (146 reseñas en Google). Tel. 881 98 48 47.",
+      "idioma": "es",
+      "color": "#B8703A",
+      "colorRotulo": "#B8703A",
+      "colorContraste": 5.01,
+      "colorOrigen": "barrido del hero",
+      "fuente": {
+        "familia": "Domine",
+        "stack": "Domine, \"Iowan Old Style\", Georgia, serif",
+        "generica": "serif",
+        "peso": 600,
+        "estilo": "normal",
+        "id": "Domine|600|normal"
+      },
+      "capturas": {
+        "desktop": "assets/shots/ranqui-carballo-web-desktop.webp",
+        "mobile": "assets/shots/ranqui-carballo-web-mobile.webp"
+      }
+    },
+    {
+      "repo": "jayce-cafe-bar-carballo-web",
+      "nombre": "Jayce",
+      "sector": "hosteleria",
+      "tipo": "Café-bar",
+      "concepto": "Taza y vapor",
+      "estado": "propuesta",
+      "anio": "2026",
+      "url": "https://alvarotaiagu.github.io/jayce-cafe-bar-carballo-web/",
+      "codigo": "https://github.com/alvarotaiagu/jayce-cafe-bar-carballo-web",
+      "titulo": "Jayce Café-Bar — Cafetería en Carballo",
+      "descripcion": "Jayce Café-Bar en Carballo: café, tapeo y terraza en Rúa Río Miño, 18. Valorado con 4,4★ en Google (87 reseñas). Comida en el bar y pedidos a domicilio.",
+      "idioma": "es",
+      "color": "#A3402F",
+      "colorRotulo": "#A3402F",
+      "colorContraste": 3.08,
+      "colorOrigen": "corregido a mano",
+      "fuente": {
+        "familia": "Lora",
+        "stack": "Lora, Georgia, serif",
+        "generica": "serif",
+        "peso": 700,
+        "estilo": "normal",
+        "id": "Lora|700|normal"
+      },
+      "capturas": {
+        "desktop": "assets/shots/jayce-cafe-bar-carballo-web-desktop.webp",
+        "mobile": "assets/shots/jayce-cafe-bar-carballo-web-mobile.webp"
+      }
+    },
+    {
+      "repo": "ceibo-cafe-carballo-web",
+      "nombre": "Ceibo",
+      "sector": "hosteleria",
+      "tipo": "Café de especialidad",
+      "concepto": "Ceibo en flor",
+      "estado": "propuesta",
+      "anio": "2026",
+      "url": "https://alvarotaiagu.github.io/ceibo-cafe-carballo-web/",
+      "codigo": "https://github.com/alvarotaiagu/ceibo-cafe-carballo-web",
+      "titulo": "Ceibo · Café de especialidad en Carballo",
+      "descripcion": "Ceibo, café de especialidad en la Rúa Camiño Novo de Carballo (A Coruña). Carta con precios: espresso 1,50 €, flat white 2,20 €, matcha latte 2,80 €, focaccias 7,50 € y promos de desayuno desde 6 €. Opciones sin gluten y pet friendly.",
+      "idioma": "es",
+      "color": "#9B1B1B",
+      "colorRotulo": "#C00013",
+      "colorContraste": 3.01,
+      "colorOrigen": "var(--acento)",
+      "fuente": {
+        "familia": "Fraunces",
+        "stack": "Fraunces, \"Iowan Old Style\", \"Palatino Linotype\", Georgia, serif",
+        "generica": "serif",
+        "peso": 400,
+        "estilo": "normal",
+        "id": "Fraunces|400|normal"
+      },
+      "capturas": {
+        "desktop": "assets/shots/ceibo-cafe-carballo-web-desktop.webp",
+        "mobile": "assets/shots/ceibo-cafe-carballo-web-mobile.webp"
+      }
+    },
+    {
+      "repo": "xenlleiro-arteixo-web",
+      "nombre": "Xenlleiro",
+      "sector": "hosteleria",
+      "tipo": "Arroces · Arteixo",
+      "concepto": "Capa fina",
+      "estado": "propuesta",
+      "anio": "2026",
+      "url": "https://alvarotaiagu.github.io/xenlleiro-arteixo-web/",
+      "codigo": "https://github.com/alvarotaiagu/xenlleiro-arteixo-web",
+      "titulo": "Xenlleiro · Arroces al momento en Arteixo",
+      "descripcion": "Xenlleiro, restaurante en Arteixo (A Coruña): arroces elaborados al momento con fondo casero, cocina tradicional con toque moderno y opciones para celíacos y veganos. Desayunos y comidas toda la semana; cenas viernes y sábado.",
+      "idioma": "es",
+      "color": "#D99A2B",
+      "colorRotulo": "#D99A2B",
+      "colorContraste": 7.97,
+      "colorOrigen": "barrido del hero",
+      "fuente": {
+        "familia": "Instrument Serif",
+        "stack": "\"Instrument Serif\", \"Iowan Old Style\", \"Palatino Linotype\", Georgia, serif",
+        "generica": "serif",
+        "peso": 400,
+        "estilo": "normal",
+        "id": "Instrument Serif|400|normal"
+      },
+      "capturas": {
+        "desktop": "assets/shots/xenlleiro-arteixo-web-desktop.webp",
+        "mobile": "assets/shots/xenlleiro-arteixo-web-mobile.webp"
+      }
+    },
+    {
+      "repo": "louzao-dental-carballo-web",
+      "nombre": "Louzao Dental",
+      "sector": "salud",
+      "tipo": "Clínica dental · primera versión",
+      "concepto": "PENDIENTE",
+      "estado": "propuesta",
+      "anio": "2026",
+      "url": "https://alvarotaiagu.github.io/louzao-dental-carballo-web/",
+      "codigo": "https://github.com/alvarotaiagu/louzao-dental-carballo-web",
+      "titulo": "Clínica Dental Louzao - Carballo",
+      "descripcion": "Clínica Dental Louzao — clínica dental en Carballo, A Coruña. Valorada con 5,0★ en Google (10 reseñas). Pide tu cita en Rúa Vázquez de Parga, 5.",
+      "idioma": "es",
+      "color": "#F3EFE6",
+      "colorRotulo": "#F3EFE6",
+      "colorContraste": 16.94,
+      "colorOrigen": "sin color propio detectado",
+      "fuente": {
+        "familia": "Open Sauce One",
+        "stack": "\"Open Sauce One\", -apple-system, BlinkMacSystemFont, sans-serif",
+        "generica": "sans-serif",
+        "peso": 700,
+        "estilo": "normal",
+        "id": null
+      },
+      "capturas": {
+        "desktop": "assets/shots/louzao-dental-carballo-web-desktop.webp",
+        "mobile": "assets/shots/louzao-dental-carballo-web-mobile.webp"
+      }
+    },
+    {
+      "repo": "louzao-dental-carballo-web-v2",
+      "nombre": "Louzao Dental v2",
+      "sector": "salud",
+      "tipo": "Clínica dental",
+      "concepto": "Calma atlántica",
+      "estado": "propuesta",
+      "anio": "2026",
+      "url": "https://alvarotaiagu.github.io/louzao-dental-carballo-web-v2/",
+      "codigo": "https://github.com/alvarotaiagu/louzao-dental-carballo-web-v2",
+      "titulo": "Clínica Dental Louzao — Carballo | Odontología con calma",
+      "descripcion": "Clínica Dental Louzao, en Rúa Vázquez de Parga 5, 3ºC, Carballo (A Coruña). 5,0★ en Google (10 reseñas). Tel. 981 75 54 18. Lunes, miércoles y jueves de 10 a 14 y de 16 a 20; martes y viernes de 10 a 14.",
+      "idioma": "es",
+      "color": "#0F6E8C",
+      "colorRotulo": "#0F6E8C",
+      "colorContraste": 3.36,
+      "colorOrigen": "corregido a mano",
+      "fuente": {
+        "familia": "Fraunces",
+        "stack": "Fraunces, \"Iowan Old Style\", \"Times New Roman\", serif",
+        "generica": "serif",
+        "peso": 300,
+        "estilo": "normal",
+        "id": "Fraunces|300|normal"
+      },
+      "capturas": {
+        "desktop": "assets/shots/louzao-dental-carballo-web-v2-desktop.webp",
+        "mobile": "assets/shots/louzao-dental-carballo-web-v2-mobile.webp"
+      }
+    },
+    {
+      "repo": "aura-fisioterapia-carballo-web",
+      "nombre": "AURA",
+      "sector": "salud",
+      "tipo": "Fisioterapia",
+      "concepto": "Cuerpo en movimiento",
+      "estado": "propuesta",
+      "anio": "2026",
+      "url": "https://alvarotaiagu.github.io/aura-fisioterapia-carballo-web/",
+      "codigo": "https://github.com/alvarotaiagu/aura-fisioterapia-carballo-web",
+      "titulo": "AURA Carballo · Clínica de fisioterapia en Carballo",
+      "descripcion": "AURA Carballo, clínica de fisioterapia y osteopatía en Rúa Baixa, 52, Carballo: suelo pélvico, ATM, ecógrafo, Indiba y ondas de choque, pilates terapéutico, embarazo y posparto. Abierto de lunes a jueves de 9:00 a 22:00 y viernes de 9:00 a 15:00. 5,0 en Google con 76 reseñas. Llama al 981 75 73 69.",
+      "idioma": "es",
+      "color": "#A8402D",
+      "colorRotulo": "#A8402D",
+      "colorContraste": 3.18,
+      "colorOrigen": "barrido del hero",
+      "fuente": {
+        "familia": "Instrument Serif",
+        "stack": "\"Instrument Serif\", \"Iowan Old Style\", \"Palatino Linotype\", Georgia, serif",
+        "generica": "serif",
+        "peso": 400,
+        "estilo": "normal",
+        "id": "Instrument Serif|400|normal"
+      },
+      "capturas": {
+        "desktop": "assets/shots/aura-fisioterapia-carballo-web-desktop.webp",
+        "mobile": "assets/shots/aura-fisioterapia-carballo-web-mobile.webp"
+      }
+    },
+    {
+      "repo": "javi-teijeiro-fisioterapia-carballo-web",
+      "nombre": "Javi Teijeiro",
+      "sector": "salud",
+      "tipo": "Fisioterapia",
+      "concepto": "Trazo en movimiento",
+      "estado": "propuesta",
+      "anio": "2026",
+      "url": "https://alvarotaiagu.github.io/javi-teijeiro-fisioterapia-carballo-web/",
+      "codigo": "https://github.com/alvarotaiagu/javi-teijeiro-fisioterapia-carballo-web",
+      "titulo": "Fisioterapia Javi Teijeiro · Centro de fisioterapia en Carballo",
+      "descripcion": "Centro de Fisioterapia Javi Teijeiro en Rúa Andorra, 19, Carballo (A Coruña): fisioterapia, pilates, hipopresivos, fisioterapia en el embarazo, pediátrica y suelo pélvico. Podología con profesional visitante. 5,0 en Google con 25 reseñas. Cita previa: 981 75 47 88.",
+      "idioma": "es",
+      "color": "#1E24BD",
+      "colorRotulo": "#2F3DFF",
+      "colorContraste": 3,
+      "colorOrigen": "theme-color",
+      "fuente": {
+        "familia": "Bricolage Grotesque",
+        "stack": "\"Bricolage Grotesque\", \"Archivo Black\", \"Arial Black\", Impact, sans-serif",
+        "generica": "sans-serif",
+        "peso": 400,
+        "estilo": "normal",
+        "id": "Bricolage Grotesque|400|normal"
+      },
+      "capturas": {
+        "desktop": "assets/shots/javi-teijeiro-fisioterapia-carballo-web-desktop.webp",
+        "mobile": "assets/shots/javi-teijeiro-fisioterapia-carballo-web-mobile.webp"
+      }
+    },
+    {
+      "repo": "kinesaude-carballo-web",
+      "nombre": "KineSaúde",
+      "sector": "salud",
+      "tipo": "Fisioterapia",
+      "concepto": "Sintonía",
+      "estado": "propuesta",
+      "anio": "2026",
+      "url": "https://alvarotaiagu.github.io/kinesaude-carballo-web/",
+      "codigo": "https://github.com/alvarotaiagu/kinesaude-carballo-web",
+      "titulo": "KineSaúde · Clínica de Fisioterapia & Centro Diamagnético en Carballo",
+      "descripcion": "KineSaúde, clínica de fisioterapia y Centro Diamagnético en Carballo (A Coruña): fisioterapia manual, tratamiento deportivo, rehabilitación funcional, mecanoterapia, electroterapia combinada y Terapia Diamagnética con Bomba CTU Mega 20. 5,0★ en Google con 19 reseñas. Rúa Luis Calvo, 27.",
+      "idioma": "es",
+      "color": "#6C8C7E",
+      "colorRotulo": "#6C8C7E",
+      "colorContraste": 5.27,
+      "colorOrigen": "corregido a mano",
+      "fuente": {
+        "familia": "Outfit",
+        "stack": "Outfit, \"Segoe UI\", system-ui, -apple-system, sans-serif",
+        "generica": "sans-serif",
+        "peso": 300,
+        "estilo": "normal",
+        "id": "Outfit|300|normal"
+      },
+      "capturas": {
+        "desktop": "assets/shots/kinesaude-carballo-web-desktop.webp",
+        "mobile": "assets/shots/kinesaude-carballo-web-mobile.webp"
+      }
+    },
+    {
+      "repo": "nando-muino-fisioterapia-carballo-web",
+      "nombre": "Nando Muiño",
+      "sector": "salud",
+      "tipo": "Fisioterapia y osteopatía",
+      "concepto": "Manos y anatomía",
+      "estado": "propuesta",
+      "anio": "2026",
+      "url": "https://alvarotaiagu.github.io/nando-muino-fisioterapia-carballo-web/",
+      "codigo": "https://github.com/alvarotaiagu/nando-muino-fisioterapia-carballo-web",
+      "titulo": "Nando Muiño · Fisioterapia y Osteopatía en Carballo",
+      "descripcion": "Nando Muiño · Fisioterapia y Osteopatía, centro de fisioterapia y osteopatía en Carballo (A Coruña). Fisioterapia manual, osteopatía estructural, visceral y craneal, punción seca y vendaje neuromuscular. Rúa Vila de Ordes, 23. 5,0 en Google con 38 reseñas. De lunes a jueves de 8:00 a 22:00. Cita: 698 11 16 68.",
+      "idioma": "es",
+      "color": "#B5674A",
+      "colorRotulo": "#B5674A",
+      "colorContraste": 4.63,
+      "colorOrigen": "barrido del hero",
+      "fuente": {
+        "familia": "Fraunces",
+        "stack": "Fraunces, \"Iowan Old Style\", Georgia, serif",
+        "generica": "serif",
+        "peso": 400,
+        "estilo": "normal",
+        "id": "Fraunces|400|normal"
+      },
+      "capturas": {
+        "desktop": "assets/shots/nando-muino-fisioterapia-carballo-web-desktop.webp",
+        "mobile": "assets/shots/nando-muino-fisioterapia-carballo-web-mobile.webp"
+      }
+    },
+    {
+      "repo": "postural-carballo-web",
+      "nombre": "Postural",
+      "sector": "salud",
+      "tipo": "Podología",
+      "concepto": "Plomada",
+      "estado": "propuesta",
+      "anio": "2026",
+      "url": "https://alvarotaiagu.github.io/postural-carballo-web/",
+      "codigo": "https://github.com/alvarotaiagu/postural-carballo-web",
+      "titulo": "Postural · Centro de podología y fisioterapia en Carballo",
+      "descripcion": "Postural, centro de podología y fisioterapia en Carballo (A Coruña). Isabel Montero Suárez, podóloga colegiada nº 995 y fisioterapeuta colegiada nº 2196. Rúa Coruña, 12, 1º piso. 5,0 en Google con 99 reseñas. Cita: 613 00 77 67.",
+      "idioma": "es",
+      "color": "#B8683F",
+      "colorRotulo": "#B8683F",
+      "colorContraste": 4.71,
+      "colorOrigen": "barrido del hero",
+      "fuente": {
+        "familia": "Manrope",
+        "stack": "Manrope, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+        "generica": "sans-serif",
+        "peso": 200,
+        "estilo": "normal",
+        "id": "Manrope|200|normal"
+      },
+      "capturas": {
+        "desktop": "assets/shots/postural-carballo-web-desktop.webp",
+        "mobile": "assets/shots/postural-carballo-web-mobile.webp"
+      }
+    },
+    {
+      "repo": "veterinaria-granvia-web",
+      "nombre": "Veterinaria Gran Vía",
+      "sector": "salud",
+      "tipo": "Veterinaria",
+      "concepto": "Recortables",
+      "estado": "propuesta",
+      "anio": "2026",
+      "url": "https://alvarotaiagu.github.io/veterinaria-granvia-web/",
+      "codigo": "https://github.com/alvarotaiagu/veterinaria-granvia-web",
+      "titulo": "Clínica Veterinaria Gran Vía · Carballo · Desde 1995",
+      "descripcion": "Clínica Veterinaria Gran Vía, en Rúa Gran Vía 194, Carballo (A Coruña). Desde 1995: medicina preventiva, diagnóstico por imagen, laboratorio propio, cirugía, hospitalización, dermatología, rehabilitación y microchip. 4,8 ★ en Google con 649 reseñas. 981 75 69 79.",
+      "idioma": "es",
+      "color": "#E0A33B",
+      "colorRotulo": "#E0A33B",
+      "colorContraste": 8.77,
+      "colorOrigen": "barrido del hero",
+      "fuente": {
+        "familia": "Fraunces",
+        "stack": "Fraunces, Georgia, \"Times New Roman\", serif",
+        "generica": "serif",
+        "peso": 600,
+        "estilo": "normal",
+        "id": "Fraunces|600|normal"
+      },
+      "capturas": {
+        "desktop": "assets/shots/veterinaria-granvia-web-desktop.webp",
+        "mobile": "assets/shots/veterinaria-granvia-web-mobile.webp"
+      }
+    },
+    {
+      "repo": "dourado-fernandez-asesores-carballo-web",
+      "nombre": "Dourado & Fernández",
+      "sector": "legal",
+      "tipo": "Asesoría",
+      "concepto": "Balance",
+      "estado": "propuesta",
+      "anio": "2026",
+      "url": "https://alvarotaiagu.github.io/dourado-fernandez-asesores-carballo-web/",
+      "codigo": "https://github.com/alvarotaiagu/dourado-fernandez-asesores-carballo-web",
+      "titulo": "Dourado & Fernández Asesores · Asesoría fiscal, laboral y contable en Carballo",
+      "descripcion": "Dourado & Fernández Asesores SL, asesoría fiscal en Carballo (A Coruña). Fiscal, laboral, contable y societario en Rúa Fomento, 52. 4,2 en Google con 5 reseñas. Teléfono 981 70 27 60.",
+      "idioma": "es",
+      "color": "#B8944F",
+      "colorRotulo": "#B8944F",
+      "colorContraste": 6.84,
+      "colorOrigen": "barrido del hero",
+      "fuente": {
+        "familia": "Fraunces",
+        "stack": "Fraunces, \"Iowan Old Style\", Georgia, serif",
+        "generica": "serif",
+        "peso": 560,
+        "estilo": "normal",
+        "id": "Fraunces|560|normal"
+      },
+      "capturas": {
+        "desktop": "assets/shots/dourado-fernandez-asesores-carballo-web-desktop.webp",
+        "mobile": "assets/shots/dourado-fernandez-asesores-carballo-web-mobile.webp"
+      }
+    },
+    {
+      "repo": "rivand-asesores-carballo-web",
+      "nombre": "Rivand Asesores",
+      "sector": "legal",
+      "tipo": "Asesoría fiscal",
+      "concepto": "Cuenta atrás",
+      "estado": "propuesta",
+      "anio": "2026",
+      "url": "https://alvarotaiagu.github.io/rivand-asesores-carballo-web/",
+      "codigo": "https://github.com/alvarotaiagu/rivand-asesores-carballo-web",
+      "titulo": "Rivand Asesores · Asesoría fiscal en Carballo (A Coruña)",
+      "descripcion": "Rivand Asesores, asesor de impuestos en Carballo (A Coruña). IRPF, IVA trimestral, Sociedades, autónomos, Renta y requerimientos de Hacienda. Rúa Fomento, 21 · 981 32 95 64 · cita por WhatsApp.",
+      "idioma": "es",
+      "color": "#C08552",
+      "colorRotulo": "#C08552",
+      "colorContraste": 6.22,
+      "colorOrigen": "barrido del hero",
+      "fuente": {
+        "familia": "Space Grotesk",
+        "stack": "\"Space Grotesk\", \"Segoe UI\", system-ui, sans-serif",
+        "generica": "sans-serif",
+        "peso": 700,
+        "estilo": "normal",
+        "id": "Space Grotesk|700|normal"
+      },
+      "capturas": {
+        "desktop": "assets/shots/rivand-asesores-carballo-web-desktop.webp",
+        "mobile": "assets/shots/rivand-asesores-carballo-web-mobile.webp"
+      }
+    },
+    {
+      "repo": "asesoria-cervantes-carballo-web",
+      "nombre": "Asesoría Cervantes",
+      "sector": "legal",
+      "tipo": "Asesoría",
+      "concepto": "Pluma",
+      "estado": "propuesta",
+      "anio": "2026",
+      "url": "https://alvarotaiagu.github.io/asesoria-cervantes-carballo-web/",
+      "codigo": "https://github.com/alvarotaiagu/asesoria-cervantes-carballo-web",
+      "titulo": "Asesoría Cervantes · Fiscal, contable, laboral y mercantil en Carballo",
+      "descripcion": "Asesoría Cervantes SL, Carballo (A Coruña). Servicios fiscales, contables, laborales y mercantiles para empresas, autónomos, emprendedores y particulares. Desde 1986. 4,6 ★ con 39 reseñas.",
+      "idioma": "es",
+      "color": "#93A86D",
+      "colorRotulo": "#93A86D",
+      "colorContraste": 7.46,
+      "colorOrigen": "corregido a mano",
+      "fuente": {
+        "familia": "Newsreader",
+        "stack": "Newsreader, \"Iowan Old Style\", Georgia, \"Times New Roman\", serif",
+        "generica": "serif",
+        "peso": 400,
+        "estilo": "italic",
+        "id": "Newsreader|400|italic"
+      },
+      "capturas": {
+        "desktop": "assets/shots/asesoria-cervantes-carballo-web-desktop.webp",
+        "mobile": "assets/shots/asesoria-cervantes-carballo-web-mobile.webp"
+      }
+    },
+    {
+      "repo": "maria-jose-ramos-castro-abogada-carballo-web",
+      "nombre": "M.ª José Ramos Castro",
+      "sector": "legal",
+      "tipo": "Abogada",
+      "concepto": "Cláusula",
+      "estado": "propuesta",
+      "anio": "2026",
+      "url": "https://alvarotaiagu.github.io/maria-jose-ramos-castro-abogada-carballo-web/",
+      "codigo": "https://github.com/alvarotaiagu/maria-jose-ramos-castro-abogada-carballo-web",
+      "titulo": "María José Ramos Castro, Abogada · Carballo (A Coruña)",
+      "descripcion": "María José Ramos Castro, abogada en Carballo (A Coruña). Despacho en Rúa Fomento, 51, 1º E. Civil, familia, laboral, penal, herencias y arrendamientos. Cita previa en el 881 12 92 67.",
+      "idioma": "es",
+      "color": "#CB7F5E",
+      "colorRotulo": "#CB7F5E",
+      "colorContraste": 6.23,
+      "colorOrigen": "var(--marca)",
+      "fuente": {
+        "familia": "Inter",
+        "stack": "Inter, \"Public Sans\", system-ui, -apple-system, sans-serif",
+        "generica": "sans-serif",
+        "peso": 500,
+        "estilo": "normal",
+        "id": "Inter|500|normal"
+      },
+      "capturas": {
+        "desktop": "assets/shots/maria-jose-ramos-castro-abogada-carballo-web-desktop.webp",
+        "mobile": "assets/shots/maria-jose-ramos-castro-abogada-carballo-web-mobile.webp"
+      }
+    },
+    {
+      "repo": "jose-manuel-blanco-regueiro-abogado-carballo-web",
+      "nombre": "Blanco Regueiro",
+      "sector": "legal",
+      "tipo": "Abogado",
+      "concepto": "Titulares",
+      "estado": "propuesta",
+      "anio": "2026",
+      "url": "https://alvarotaiagu.github.io/jose-manuel-blanco-regueiro-abogado-carballo-web/",
+      "codigo": "https://github.com/alvarotaiagu/jose-manuel-blanco-regueiro-abogado-carballo-web",
+      "titulo": "José Manuel Blanco Regueiro, Abogado · Carballo (A Coruña)",
+      "descripcion": "José Manuel Blanco Regueiro, abogado en Carballo (A Coruña). Accidentes de tráfico, penal, violencia de género, alcoholemia, herencias, familia y administrativo. Calle Barcelona, 10, 4º Dcha. Teléfonos 981 75 75 91 y 600 239 151 (WhatsApp).",
+      "idioma": "es",
+      "color": "#C21807",
+      "colorRotulo": "#C21807",
+      "colorContraste": 3.17,
+      "colorOrigen": "barrido del hero",
+      "fuente": {
+        "familia": "Anton",
+        "stack": "Anton, \"Archivo Black\", Haettenschweiler, Impact, sans-serif",
+        "generica": "sans-serif",
+        "peso": 400,
+        "estilo": "normal",
+        "id": "Anton|400|normal"
+      },
+      "capturas": {
+        "desktop": "assets/shots/jose-manuel-blanco-regueiro-abogado-carballo-web-desktop.webp",
+        "mobile": "assets/shots/jose-manuel-blanco-regueiro-abogado-carballo-web-mobile.webp"
+      }
+    },
+    {
+      "repo": "juan-carlos-castro-pombo-abogado-carballo-web",
+      "nombre": "Castro Pombo",
+      "sector": "legal",
+      "tipo": "Abogado",
+      "concepto": "Escritura",
+      "estado": "propuesta",
+      "anio": "2026",
+      "url": "https://alvarotaiagu.github.io/juan-carlos-castro-pombo-abogado-carballo-web/",
+      "codigo": "https://github.com/alvarotaiagu/juan-carlos-castro-pombo-abogado-carballo-web",
+      "titulo": "Juan Carlos Castro Pombo, Abogado en Carballo · Civil, penal y administrativo",
+      "descripcion": "Juan Carlos Castro Pombo, abogado en Carballo (A Coruña). Derecho civil, penal y administrativo. Rúa Desiderio Varela, 8-10, 1º Izq. Cita previa en el 981 75 67 83.",
+      "idioma": "es",
+      "color": "#8E2A3C",
+      "colorRotulo": "#B32746",
+      "colorContraste": 3.05,
+      "colorOrigen": "corregido a mano",
+      "fuente": {
+        "familia": "Playfair Display",
+        "stack": "\"Playfair Display\", \"Iowan Old Style\", Georgia, serif",
+        "generica": "serif",
+        "peso": 500,
+        "estilo": "normal",
+        "id": "Playfair Display|500|normal"
+      },
+      "capturas": {
+        "desktop": "assets/shots/juan-carlos-castro-pombo-abogado-carballo-web-desktop.webp",
+        "mobile": "assets/shots/juan-carlos-castro-pombo-abogado-carballo-web-mobile.webp"
+      }
+    },
+    {
+      "repo": "inmobiliaria-a-ponte-carballo-web",
+      "nombre": "A Ponte",
+      "sector": "comercio",
+      "tipo": "Inmobiliaria",
+      "concepto": "Territorio",
+      "estado": "propuesta",
+      "anio": "2026",
+      "url": "https://alvarotaiagu.github.io/inmobiliaria-a-ponte-carballo-web/",
+      "codigo": "https://github.com/alvarotaiagu/inmobiliaria-a-ponte-carballo-web",
+      "titulo": "Inmobiliaria A Ponte · Carballo, Costa da Morte y Sanxenxo",
+      "descripcion": "Inmobiliaria A Ponte, en Carballo (A Coruña). Venta y alquiler de viviendas, locales y suelo en Malpica, A Laracha, Carballo, Coristanco, Ponteceso, Zas, Santa Comba y Sanxenxo. Y si no está en la lista, lo buscamos por usted.",
+      "idioma": "es",
+      "color": "#E8622C",
+      "colorRotulo": "#E8622C",
+      "colorContraste": 5.75,
+      "colorOrigen": "barrido del hero",
+      "fuente": {
+        "familia": "Sora",
+        "stack": "Sora, \"General Sans\", \"Work Sans\", system-ui, -apple-system, \"Segoe UI\", sans-serif",
+        "generica": "sans-serif",
+        "peso": 400,
+        "estilo": "normal",
+        "id": "Sora|400|normal"
+      },
+      "capturas": {
+        "desktop": "assets/shots/inmobiliaria-a-ponte-carballo-web-desktop.webp",
+        "mobile": "assets/shots/inmobiliaria-a-ponte-carballo-web-mobile.webp"
+      }
+    },
+    {
+      "repo": "calidade-systems-carballo-web",
+      "nombre": "Calidade Systems",
+      "sector": "comercio",
+      "tipo": "Informática e IT",
+      "concepto": "Traza",
+      "estado": "propuesta",
+      "anio": "2026",
+      "url": "https://alvarotaiagu.github.io/calidade-systems-carballo-web/",
+      "codigo": "https://github.com/alvarotaiagu/calidade-systems-carballo-web",
+      "titulo": "Calidade Systems · Ingeniería informática en Carballo (A Coruña)",
+      "descripcion": "Soporte informático para pymes en Carballo, A Coruña: monitorización 365×24, backups automatizados y verificados, consolidación de servidores y peritaje informático. Menos problemas, más rendimiento.",
+      "idioma": "es",
+      "color": "#22B5D8",
+      "colorRotulo": "#22B5D8",
+      "colorContraste": 8.02,
+      "colorOrigen": "corregido a mano",
+      "fuente": {
+        "familia": "Space Grotesk",
+        "stack": "\"Space Grotesk\", \"IBM Plex Sans\", system-ui, sans-serif",
+        "generica": "sans-serif",
+        "peso": 600,
+        "estilo": "normal",
+        "id": "Space Grotesk|600|normal"
+      },
+      "capturas": {
+        "desktop": "assets/shots/calidade-systems-carballo-web-desktop.webp",
+        "mobile": "assets/shots/calidade-systems-carballo-web-mobile.webp"
+      }
+    },
+    {
+      "repo": "mas-que-tinta-carballo-web",
+      "nombre": "Más que Tinta",
+      "sector": "comercio",
+      "tipo": "Informática e impresión",
+      "concepto": "Cartucho",
+      "estado": "propuesta",
+      "anio": "2026",
+      "url": "https://alvarotaiagu.github.io/mas-que-tinta-carballo-web/",
+      "codigo": "https://github.com/alvarotaiagu/mas-que-tinta-carballo-web",
+      "titulo": "Más que Tinta · Tienda de informática en Carballo",
+      "descripcion": "Más que Tinta, tienda de informática en Carballo (A Coruña): consumibles de impresión, equipos y periféricos, reparación y punto PuntoPack de recogida y envío de paquetes. Abrimos también los domingos por la mañana.",
+      "idioma": "es",
+      "color": "#00A9E0",
+      "colorRotulo": "#00A9E0",
+      "colorContraste": 7.17,
+      "colorOrigen": "barrido del hero",
+      "fuente": {
+        "familia": "Archivo",
+        "stack": "Archivo, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+        "generica": "sans-serif",
+        "peso": 800,
+        "estilo": "normal",
+        "id": "Archivo|800|normal"
+      },
+      "capturas": {
+        "desktop": "assets/shots/mas-que-tinta-carballo-web-desktop.webp",
+        "mobile": "assets/shots/mas-que-tinta-carballo-web-mobile.webp"
+      }
+    },
+    {
+      "repo": "astrobots-carballo-web",
+      "nombre": "Astrobots",
+      "sector": "comercio",
+      "tipo": "Robótica educativa",
+      "concepto": "Piezas",
+      "estado": "propuesta",
+      "anio": "2026",
+      "url": "https://alvarotaiagu.github.io/astrobots-carballo-web/",
+      "codigo": "https://github.com/alvarotaiagu/astrobots-carballo-web",
+      "titulo": "Astrobots · Robótica y Nuevas Tecnologías en Carballo",
+      "descripcion": "Academia de nuevas tecnologías en Carballo. Extraescolares de robótica por niveles, informática, Minecraft Education, impresión 3D, gaming y dibujo desde los 4 años. Curso 2026-2027 en marcha.",
+      "idioma": "es",
+      "color": "#8FD32E",
+      "colorRotulo": "#8FD32E",
+      "colorContraste": 10.67,
+      "colorOrigen": "barrido del hero",
+      "fuente": {
+        "familia": "Rubik",
+        "stack": "Rubik, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+        "generica": "sans-serif",
+        "peso": 900,
+        "estilo": "normal",
+        "id": "Rubik|900|normal"
+      },
+      "capturas": {
+        "desktop": "assets/shots/astrobots-carballo-web-desktop.webp",
+        "mobile": "assets/shots/astrobots-carballo-web-mobile.webp"
+      }
+    },
+    {
+      "repo": "espazo-bilitroque-carballo-web",
+      "nombre": "Espazo Bilitroque",
+      "sector": "comercio",
+      "tipo": "Academia",
+      "concepto": "Burbullas",
+      "estado": "propuesta",
+      "anio": "2026",
+      "url": "https://alvarotaiagu.github.io/espazo-bilitroque-carballo-web/",
+      "codigo": "https://github.com/alvarotaiagu/espazo-bilitroque-carballo-web",
+      "titulo": "Espazo Bilitroque · Espazo de formación tecnolóxica en Carballo",
+      "descripcion": "Espazo de formación en Carballo: informática, robótica, programación, impresión 3D, reforzo escolar e clases particulares para nenas e nenos de 4 a 15 anos, e informática para adultos. Rúa Perú, 14. 5,0 ★ en Google.",
+      "idioma": "gl",
+      "color": "#F28C28",
+      "colorRotulo": "#F28C28",
+      "colorContraste": 7.92,
+      "colorOrigen": "barrido del hero",
+      "fuente": {
+        "familia": "Fredoka",
+        "stack": "Fredoka, Nunito, system-ui, sans-serif",
+        "generica": "sans-serif",
+        "peso": 600,
+        "estilo": "normal",
+        "id": "Fredoka|600|normal"
+      },
+      "capturas": {
+        "desktop": "assets/shots/espazo-bilitroque-carballo-web-desktop.webp",
+        "mobile": "assets/shots/espazo-bilitroque-carballo-web-mobile.webp"
+      }
+    },
+    {
+      "repo": "becool-carballo-web",
+      "nombre": "BeCool",
+      "sector": "comercio",
+      "tipo": "Moda",
+      "concepto": "Escaparate",
+      "estado": "propuesta",
+      "anio": "2026",
+      "url": "https://alvarotaiagu.github.io/becool-carballo-web/",
+      "codigo": "https://github.com/alvarotaiagu/becool-carballo-web",
+      "titulo": "BeCool · Ropa, calzado y complementos en Carballo",
+      "descripcion": "BeCool · Clothing, shoes & more. Tienda de ropa de mujer en Rúa Hórreo, 14, Carballo (A Coruña). Ropa, calzado y complementos. 4,6 ★ con 10 reseñas. Abrimos también los domingos por la mañana.",
+      "idioma": "es",
+      "color": "#C46A4A",
+      "colorRotulo": "#C46A4A",
+      "colorContraste": 5.1,
+      "colorOrigen": "var(--acento)",
+      "fuente": {
+        "familia": "Manrope",
+        "stack": "Manrope, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+        "generica": "sans-serif",
+        "peso": 700,
+        "estilo": "normal",
+        "id": "Manrope|700|normal"
+      },
+      "capturas": {
+        "desktop": "assets/shots/becool-carballo-web-desktop.webp",
+        "mobile": "assets/shots/becool-carballo-web-mobile.webp"
+      }
+    },
+    {
+      "repo": "construyetuweb-carballo-web",
+      "nombre": "construyetuweb",
+      "sector": "comercio",
+      "tipo": "Diseño web",
+      "concepto": "Wireframe",
+      "estado": "propuesta",
+      "anio": "2026",
+      "url": "https://alvarotaiagu.github.io/construyetuweb-carballo-web/",
+      "codigo": "https://github.com/alvarotaiagu/construyetuweb-carballo-web",
+      "titulo": "construyetuweb.es — Diseño web y tiendas online en Carballo",
+      "descripcion": "Diseñador web en Carballo (A Coruña). Páginas web y tiendas online con dominio, alojamiento y correo propio incluidos. Diseño gráfico y soporte informático remoto.",
+      "idioma": "es",
+      "color": "#1F3A93",
+      "colorRotulo": "#2F54CF",
+      "colorContraste": 3.03,
+      "colorOrigen": "theme-color",
+      "fuente": {
+        "familia": "Inter",
+        "stack": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "generica": "sans-serif",
+        "peso": 700,
+        "estilo": "normal",
+        "id": "Inter|700|normal"
+      },
+      "capturas": {
+        "desktop": "assets/shots/construyetuweb-carballo-web-desktop.webp",
+        "mobile": "assets/shots/construyetuweb-carballo-web-mobile.webp"
+      }
+    },
+    {
+      "repo": "plantilla-autoescuela-web",
+      "nombre": "Autoescuela",
+      "sector": "plantillas",
+      "tipo": "Plantilla de sector · negocio ficticio",
+      "concepto": "Carril",
+      "estado": "propuesta",
+      "anio": "2026",
+      "url": "https://alvarotaiagu.github.io/plantilla-autoescuela-web/",
+      "codigo": "https://github.com/alvarotaiagu/plantilla-autoescuela-web",
+      "titulo": "CARRIL DEZ · Autoescuela en Arteixo (demo)",
+      "descripcion": "Plantilla de demostración de una autoescuela ficticia: la ruta hasta el carné, permisos, test de muestra y precios inventados.",
+      "idioma": "es",
+      "color": "#23E5FF",
+      "colorRotulo": "#23E5FF",
+      "colorContraste": 12.7,
+      "colorOrigen": "barrido del hero",
+      "fuente": {
+        "familia": "Saira Condensed",
+        "stack": "\"Saira Condensed\", \"Arial Narrow\", sans-serif",
+        "generica": "sans-serif",
+        "peso": 600,
+        "estilo": "normal",
+        "id": "Saira Condensed|600|normal"
+      },
+      "capturas": {
+        "desktop": "assets/shots/plantilla-autoescuela-web-desktop.webp",
+        "mobile": "assets/shots/plantilla-autoescuela-web-mobile.webp"
+      }
+    },
+    {
+      "repo": "plantilla-gimnasio-web",
+      "nombre": "Gimnasio",
+      "sector": "plantillas",
+      "tipo": "Plantilla de sector · negocio ficticio",
+      "concepto": "Barra",
+      "estado": "propuesta",
+      "anio": "2026",
+      "url": "https://alvarotaiagu.github.io/plantilla-gimnasio-web/",
+      "codigo": "https://github.com/alvarotaiagu/plantilla-gimnasio-web",
+      "titulo": "VINTE QUILOS · Box de entrenamiento en A Coruña (demo)",
+      "descripcion": "Plantilla de demostración de un box de entrenamiento ficticio: cuadro semanal, disciplinas, equipo y cuotas. Todos los datos son de muestra.",
+      "idioma": "es",
+      "color": "#C6FF3D",
+      "colorRotulo": "#C6FF3D",
+      "colorContraste": 16.45,
+      "colorOrigen": "barrido del hero",
+      "fuente": {
+        "familia": "Anton",
+        "stack": "Anton, \"Barlow Condensed\", Impact, sans-serif",
+        "generica": "sans-serif",
+        "peso": 400,
+        "estilo": "normal",
+        "id": "Anton|400|normal"
+      },
+      "capturas": {
+        "desktop": "assets/shots/plantilla-gimnasio-web-desktop.webp",
+        "mobile": "assets/shots/plantilla-gimnasio-web-mobile.webp"
+      }
+    },
+    {
+      "repo": "plantilla-hotel-rural-web",
+      "nombre": "Hotel rural",
+      "sector": "plantillas",
+      "tipo": "Plantilla de sector · negocio ficticio",
+      "concepto": "Orballo",
+      "estado": "propuesta",
+      "anio": "2026",
+      "url": "https://alvarotaiagu.github.io/plantilla-hotel-rural-web/",
+      "codigo": "https://github.com/alvarotaiagu/plantilla-hotel-rural-web",
+      "titulo": "Casa Bricaña · Casa de turismo rural en Boimorto (A Coruña)",
+      "descripcion": "Casa de piedra de 1873 con cinco habitaciones en el interior de A Coruña. Desayuno de la huerta, sauna de leña y rutas a pie. Sitio de demostración: negocio ficticio.",
+      "idioma": "es",
+      "color": "#A44F28",
+      "colorRotulo": "#A44F28",
+      "colorContraste": 3.45,
+      "colorOrigen": "barrido del hero",
+      "fuente": {
+        "familia": "Fraunces",
+        "stack": "Fraunces, \"Iowan Old Style\", Georgia, serif",
+        "generica": "serif",
+        "peso": 400,
+        "estilo": "normal",
+        "id": "Fraunces|400|normal"
+      },
+      "capturas": {
+        "desktop": "assets/shots/plantilla-hotel-rural-web-desktop.webp",
+        "mobile": "assets/shots/plantilla-hotel-rural-web-mobile.webp"
+      }
+    },
+    {
+      "repo": "plantilla-optica-web",
+      "nombre": "Óptica",
+      "sector": "plantillas",
+      "tipo": "Plantilla de sector · negocio ficticio",
+      "concepto": "Optotipos",
+      "estado": "propuesta",
+      "anio": "2026",
+      "url": "https://alvarotaiagu.github.io/plantilla-optica-web/",
+      "codigo": "https://github.com/alvarotaiagu/plantilla-optica-web",
+      "titulo": "Óptica Sextante · gafas y revisión visual (demostración)",
+      "descripcion": "Plantilla de demostración para óptica. Óptica Sextante es un negocio ficticio: catálogo de monturas, revisión visual con cita y precios claros.",
+      "idioma": "es",
+      "color": "#0057FF",
+      "colorRotulo": "#0057FF",
+      "colorContraste": 3.52,
+      "colorOrigen": "barrido del hero",
+      "fuente": {
+        "familia": "Outfit",
+        "stack": "Outfit, system-ui, sans-serif",
+        "generica": "sans-serif",
+        "peso": 700,
+        "estilo": "normal",
+        "id": "Outfit|700|normal"
+      },
+      "capturas": {
+        "desktop": "assets/shots/plantilla-optica-web-desktop.webp",
+        "mobile": "assets/shots/plantilla-optica-web-mobile.webp"
+      }
+    },
+    {
+      "repo": "plantilla-panaderia-web",
+      "nombre": "Panadería",
+      "sector": "plantillas",
+      "tipo": "Plantilla de sector · negocio ficticio",
+      "concepto": "Miga",
+      "estado": "propuesta",
+      "anio": "2026",
+      "url": "https://alvarotaiagu.github.io/plantilla-panaderia-web/",
+      "codigo": "https://github.com/alvarotaiagu/plantilla-panaderia-web",
+      "titulo": "Milmigas · obrador de pan de masa madre (demostración)",
+      "descripcion": "Plantilla de demostración para panadería y obrador. Milmigas es un negocio ficticio: masa madre, tres hornadas al día y pan de fermentación larga.",
+      "idioma": "es",
+      "color": "#DA3618",
+      "colorRotulo": "#DA3618",
+      "colorContraste": 4.18,
+      "colorOrigen": "barrido del hero",
+      "fuente": {
+        "familia": "Bricolage Grotesque",
+        "stack": "\"Bricolage Grotesque\", \"Trebuchet MS\", sans-serif",
+        "generica": "sans-serif",
+        "peso": 800,
+        "estilo": "normal",
+        "id": "Bricolage Grotesque|800|normal"
+      },
+      "capturas": {
+        "desktop": "assets/shots/plantilla-panaderia-web-desktop.webp",
+        "mobile": "assets/shots/plantilla-panaderia-web-mobile.webp"
+      }
+    },
+    {
+      "repo": "plantilla-taller-web",
+      "nombre": "Taller",
+      "sector": "plantillas",
+      "tipo": "Plantilla de sector · negocio ficticio",
+      "concepto": "Despiece",
+      "estado": "propuesta",
+      "anio": "2026",
+      "url": "https://alvarotaiagu.github.io/plantilla-taller-web/",
+      "codigo": "https://github.com/alvarotaiagu/plantilla-taller-web",
+      "titulo": "RODADURA · Taller mecánico en Culleredo (demo)",
+      "descripcion": "Plantilla de demostración de un taller mecánico ficticio: despiece de servicios, presupuesto previo, pre-ITV y tarifas. Todos los datos son de muestra.",
+      "idioma": "es",
+      "color": "#FF7A1A",
+      "colorRotulo": "#FF7A1A",
+      "colorContraste": 7.45,
+      "colorOrigen": "barrido del hero",
+      "fuente": {
+        "familia": "Oswald",
+        "stack": "Oswald, \"Arial Narrow\", sans-serif",
+        "generica": "sans-serif",
+        "peso": 500,
+        "estilo": "normal",
+        "id": "Oswald|500|normal"
+      },
+      "capturas": {
+        "desktop": "assets/shots/plantilla-taller-web-desktop.webp",
+        "mobile": "assets/shots/plantilla-taller-web-mobile.webp"
+      }
+    },
+    {
+      "repo": "plantilla-tatuajes-web",
+      "nombre": "Tatuajes",
+      "sector": "plantillas",
+      "tipo": "Plantilla de sector · negocio ficticio",
+      "concepto": "Calco",
+      "estado": "propuesta",
+      "anio": "2026",
+      "url": "https://alvarotaiagu.github.io/plantilla-tatuajes-web/",
+      "codigo": "https://github.com/alvarotaiagu/plantilla-tatuajes-web",
+      "titulo": "Papel Vegetal · estudio de tatuaje (demostración)",
+      "descripcion": "Plantilla de demostración para estudio de tatuaje. Papel Vegetal es un negocio ficticio: hoja de flash dibujada a mano, tarifas claras y cita previa.",
+      "idioma": "es",
+      "color": "#6C3BF4",
+      "colorRotulo": "#6C3BF4",
+      "colorContraste": 3.3,
+      "colorOrigen": "barrido del hero",
+      "fuente": {
+        "familia": "Syne",
+        "stack": "Syne, \"Trebuchet MS\", sans-serif",
+        "generica": "sans-serif",
+        "peso": 800,
+        "estilo": "normal",
+        "id": "Syne|800|normal"
+      },
+      "capturas": {
+        "desktop": "assets/shots/plantilla-tatuajes-web-desktop.webp",
+        "mobile": "assets/shots/plantilla-tatuajes-web-mobile.webp"
+      }
+    }
+  ]
+}

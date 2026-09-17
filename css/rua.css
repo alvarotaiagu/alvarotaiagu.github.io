@@ -1,0 +1,929 @@
+/* ═══════════════════════════════════════════════════════════════════════════
+   Rúa — portfolio de Álvaro
+   Un pueblo, 39 webs. La calle es el marco: neutra en todo salvo en el color
+   que pone cada escaparate. Aquí no hay acento propio; --f es el color del
+   proyecto y lo inyecta el JS en cada fachada.
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+:root {
+  /* noche */
+  --noche: #0B0D12;
+  --asfalto: #171A21;
+  --asfalto-hondo: #101318;
+  --papel: #F3EFE6;
+  --farola: #F2C879;
+
+  --papel-80: rgba(243, 239, 230, .80);
+  --papel-58: rgba(243, 239, 230, .58);
+  --papel-38: rgba(243, 239, 230, .38);
+  --papel-22: rgba(243, 239, 230, .22);
+  --papel-12: rgba(243, 239, 230, .12);
+  --papel-06: rgba(243, 239, 230, .06);
+  --linea: var(--papel-12);
+
+  /* El serif es SOLO rotulación: mi nombre, los títulos y la regla. Todo lo
+     demás (incluido el texto corrido) va en mono. Así la voz del portfolio no
+     se parece a la de ninguna de las 39 webs, que llevan el cuerpo en serif o
+     en sans cálida. Bodoni Moda no la usa ninguna de ellas. */
+  --serif: "Bodoni Moda", "Bodoni MT", Didot, "Playfair Display", Georgia, serif;
+  --mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+
+  /* color por defecto de una fachada hasta que el JS pone el suyo */
+  --f: #F3EFE6;
+  --f-rotulo: #F3EFE6;
+
+  --ancho: min(100% - 2.5rem, 78rem);
+  --radio: 3px;
+
+  --entrada: cubic-bezier(.16, 1, .3, 1);
+  --salida: cubic-bezier(.4, 0, .2, 1);
+}
+
+/* ── reset ─────────────────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; }
+* { margin: 0; }
+
+html {
+  -webkit-text-size-adjust: 100%;
+  scrollbar-color: var(--papel-22) var(--noche);
+}
+html:not(.lenis) { scroll-behavior: smooth; }
+
+body {
+  background: var(--noche);
+  color: var(--papel-80);
+  font-family: var(--mono);
+  font-size: clamp(.9375rem, .9rem + .2vw, 1.0625rem);
+  line-height: 1.75;
+  overflow-x: clip;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+img, svg, iframe { display: block; max-width: 100%; }
+img { height: auto; }
+button, input, select, textarea { font: inherit; color: inherit; }
+a { color: inherit; }
+ul, ol { list-style: none; padding: 0; }
+
+:focus-visible {
+  outline: 2px solid var(--farola);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+::selection { background: rgba(242, 200, 121, .28); color: var(--papel); }
+
+/* ── utilidades ────────────────────────────────────────────────────────── */
+.envoltorio { width: var(--ancho); margin-inline: auto; }
+
+.etq {
+  font-family: var(--mono);
+  font-size: clamp(.6875rem, .64rem + .18vw, .78rem);
+  letter-spacing: .09em;
+  text-transform: uppercase;
+  color: var(--papel-38);
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.cursiva { font-style: italic; }
+
+.visualmente-oculto {
+  position: absolute; width: 1px; height: 1px;
+  padding: 0; overflow: hidden; clip-path: inset(50%);
+  white-space: nowrap; border: 0;
+}
+
+.saltar {
+  position: fixed; inset-block-start: .5rem; inset-inline-start: .5rem;
+  z-index: 200; padding: .7rem 1.1rem;
+  background: var(--papel); color: var(--noche);
+  font-family: var(--mono); font-size: .8rem; text-decoration: none;
+  transform: translateY(-160%);
+  transition: transform .25s var(--entrada);
+}
+.saltar:focus-visible { transform: none; }
+
+/* marca de dato que falta: siempre igual, en toda la web */
+.pendiente {
+  font-family: var(--mono);
+  font-size: .78em;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+  color: var(--farola);
+  background: rgba(242, 200, 121, .08);
+  border: 1px dashed rgba(242, 200, 121, .35);
+  border-radius: 2px;
+  padding: .18em .55em .24em;
+  white-space: nowrap;
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+.ya-relleno .pendiente { display: none; }
+
+.enlace {
+  color: var(--papel-80);
+  text-decoration-color: var(--papel-22);
+  text-underline-offset: .22em;
+  transition: color .3s, text-decoration-color .3s;
+  display: inline-flex; align-items: center; gap: .35em;
+}
+.enlace:hover { color: var(--papel); text-decoration-color: var(--farola); }
+.enlace svg { width: .72em; height: .72em; }
+
+/* ── botones ───────────────────────────────────────────────────────────── */
+.btn {
+  --btn-x: 0px; --btn-y: 0px;
+  display: inline-flex; align-items: center; gap: .6em;
+  padding: .95em 1.7em;
+  font-family: var(--mono);
+  font-size: clamp(.78rem, .74rem + .16vw, .875rem);
+  letter-spacing: .05em;
+  text-decoration: none;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  cursor: pointer;
+  background: none;
+  translate: var(--btn-x) var(--btn-y);
+  transition: background-color .35s, color .35s, border-color .35s, translate .45s var(--salida);
+  will-change: translate;
+}
+.btn svg { width: 1em; height: 1em; }
+.btn--linea { border-color: var(--papel); color: var(--papel); }
+.btn--linea:hover { background: var(--papel-06); }
+.btn--solido { background: var(--papel); color: var(--noche); font-weight: 500; }
+.btn--solido:hover { background: #fff; }
+.btn--pequeno { padding: .65em 1.2em; font-size: .78rem; }
+
+/* ── barra superior ────────────────────────────────────────────────────── */
+.barra {
+  position: fixed; inset-block-start: 0; inset-inline: 0; z-index: 90;
+  display: flex; align-items: center; gap: 1.5rem;
+  padding: .85rem max(1.25rem, calc((100vw - 78rem) / 2));
+  background: color-mix(in srgb, var(--noche) 82%, transparent);
+  backdrop-filter: blur(14px);
+  border-block-end: 1px solid transparent;
+  translate: 0 -105%;
+  transition: translate .5s var(--entrada), border-color .5s;
+}
+.barra.es-visible { translate: 0; border-block-end-color: var(--linea); }
+
+.barra__marca {
+  font-family: var(--serif); font-weight: 500; font-size: 1.35rem; text-decoration: none;
+  color: var(--papel); display: inline-flex; align-items: center; gap: .55rem;
+  margin-inline-end: auto;
+}
+.barra__punto {
+  width: 7px; height: 7px; border-radius: 50%;
+  background: var(--farola);
+  box-shadow: 0 0 12px 2px rgba(242, 200, 121, .5);
+}
+.barra__nav { display: flex; gap: 1.6rem; }
+.barra__nav a {
+  font-family: var(--mono); font-size: .78rem; letter-spacing: .06em;
+  text-transform: uppercase; text-decoration: none; color: var(--papel-38);
+  transition: color .3s;
+}
+.barra__nav a:hover, .barra__nav a.es-actual { color: var(--papel); }
+.barra__cta {
+  font-family: var(--mono); font-size: .78rem; letter-spacing: .05em;
+  text-decoration: none; color: var(--noche); background: var(--papel);
+  padding: .6em 1.1em; border-radius: 999px; white-space: nowrap;
+}
+
+/* ═══════════════════════════ HERO ═══════════════════════════ */
+.hero {
+  position: relative;
+  min-height: 100svh;
+  display: grid;
+  /* minmax(0,1fr) a propósito: la pista de la marquesina es width:max-content
+     (unos 21.000 px) y con una columna `auto` la columna crece hasta ahí. No
+     se nota, porque el body recorta el desbordamiento, pero la marquesina pasa
+     a medir 21.000 px y su IntersectionObserver da por visibles los 39 rótulos
+     a la vez: adiós presupuesto de tipografías. */
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: 1fr auto .72fr;
+  gap: clamp(1.5rem, 3.5vh, 3rem);
+  padding: clamp(4.5rem, 9vh, 7rem) 0 clamp(1.75rem, 4vh, 3rem);
+  overflow: clip;
+}
+
+/* dos farolas fuera de cuadro: sólo degradados estáticos, nada por fotograma */
+.hero__farolas {
+  position: absolute; inset: 0; z-index: 0; pointer-events: none;
+  background:
+    radial-gradient(48rem 34rem at 12% -6%, rgba(242, 200, 121, .15), transparent 62%),
+    radial-gradient(40rem 30rem at 92% 108%, rgba(242, 200, 121, .10), transparent 60%),
+    linear-gradient(180deg, transparent 55%, rgba(11, 13, 18, .9) 100%);
+}
+
+.hero > *:not(.hero__farolas) { position: relative; z-index: 1; }
+
+.hero__cabeza {
+  width: var(--ancho); margin-inline: auto;
+  align-self: end;
+  display: grid; gap: clamp(.6rem, 1.2vw, 1rem);
+}
+.hero__etq { color: var(--papel-38); }
+
+.hero__nombre {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(4rem, 15.5vw, 13rem);
+  line-height: .86;
+  letter-spacing: -.035em;
+  color: var(--papel);
+  margin: 0;
+  /* la tilde de la Á sale por encima de la caja de línea y se comía el
+     antetítulo: este hueco es para ella */
+  padding-block-start: .22em;
+  display: flex; flex-wrap: wrap; align-items: baseline;
+  gap: clamp(.6rem, 2vw, 1.8rem);
+}
+.hero__apellidos { font-size: clamp(.7rem, .3rem + .7vw, .95rem); }
+
+.hero__lema {
+  font-size: clamp(.82rem, .76rem + .3vw, 1.05rem);
+  color: var(--papel-58);
+  letter-spacing: .04em;
+  text-transform: none;
+  max-width: 40rem;
+}
+
+.hero__pie {
+  width: var(--ancho); margin-inline: auto;
+  align-self: end;
+  display: flex; flex-wrap: wrap; align-items: end;
+  justify-content: space-between; gap: 1.5rem 2rem;
+}
+.hero__ctas { display: flex; flex-wrap: wrap; gap: .75rem; }
+.hero__datos { color: var(--papel-38); text-align: end; }
+.hero__datos span { color: var(--papel-80); font-variant-numeric: tabular-nums; }
+
+/* ── marquesina de rótulos ─────────────────────────────────────────────── */
+.marquesina {
+  position: relative;
+  align-self: center;
+  min-width: 0; max-width: 100%;
+}
+.marquesina__banda {
+  padding-block: clamp(1.1rem, 2.6vh, 2.2rem);
+  border-block: 1px solid var(--papel-06);
+  background: linear-gradient(90deg, transparent, rgba(23, 26, 33, .55) 15%, rgba(23, 26, 33, .55) 85%, transparent);
+  overflow: clip;
+  mask-image: linear-gradient(90deg, transparent, #000 9%, #000 91%, transparent);
+}
+
+.marquesina__pista {
+  display: flex;
+  width: max-content;
+  animation: desfile 150s linear infinite;
+}
+.marquesina:hover .marquesina__pista,
+.marquesina:focus-within .marquesina__pista,
+.marquesina.esta-pausada .marquesina__pista { animation-play-state: paused; }
+
+@keyframes desfile {
+  from { transform: translate3d(0, 0, 0); }
+  to { transform: translate3d(-50%, 0, 0); }
+}
+
+.marquesina__grupo {
+  display: flex; align-items: center;
+  gap: clamp(1.75rem, 4vw, 3.5rem);
+  padding-inline-end: clamp(1.75rem, 4vw, 3.5rem);
+  margin: 0;
+}
+
+.rotulo {
+  --f: var(--papel);
+  --f-rotulo: var(--papel);
+  display: inline-flex; align-items: baseline; gap: .5rem;
+  font-family: var(--serif);
+  font-size: clamp(1.4rem, 1rem + 1.6vw, 2.4rem);
+  line-height: 1.1;
+  white-space: nowrap;
+  text-decoration: none;
+  /* Los rótulos de la marquesina se leen siempre: lo que enciende al pasar
+     el ratón es el halo, no el color. Bajarlos con color-mix quedaba bonito
+     y dejaba texto a 1,6:1. */
+  color: var(--f-rotulo);
+  opacity: .74;
+  border: 0; background: none; padding: 0; cursor: pointer;
+  transition: opacity .45s var(--salida), text-shadow .45s var(--salida);
+}
+/* cuando la fuente propia ya está cargada, el rótulo se pone su tipografía */
+.rotulo[data-fuente-lista] { font-family: var(--rotulo-fuente), var(--rotulo-generica, serif); }
+.rotulo:hover, .rotulo:focus-visible {
+  opacity: 1;
+  text-shadow: 0 0 26px color-mix(in oklab, var(--f) 55%, transparent);
+}
+.rotulo__punto {
+  width: 5px; height: 5px; border-radius: 50%; flex: none;
+  background: currentColor; opacity: .55;
+  transform: translateY(-.35em);
+}
+
+/* el botón vive fuera de la banda: dentro se le montaban los rótulos encima */
+.marquesina__pausa {
+  display: block;
+  width: var(--ancho); margin: .55rem auto 0;
+  text-align: end;
+  font-family: var(--mono); font-size: .66rem; letter-spacing: .08em;
+  text-transform: uppercase; color: var(--papel-22);
+  background: none; border: 0; cursor: pointer; padding: .3rem .4rem;
+  transition: color .3s;
+}
+.marquesina__pausa:hover { color: var(--papel-58); }
+
+/* miniatura que sale al pasar por un rótulo */
+.vista-previa {
+  position: absolute; z-index: 5;
+  inset-block-start: 50%; inset-inline-start: 0;
+  width: 15rem; margin: 0;
+  translate: -50% -50%;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity .3s var(--salida);
+  border: 1px solid var(--papel-22);
+  background: var(--asfalto-hondo);
+  box-shadow: 0 24px 60px -24px rgba(0, 0, 0, .9);
+}
+.vista-previa.es-visible { opacity: 1; }
+.vista-previa img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: top center; }
+.vista-previa figcaption { padding: .5rem .6rem; font-size: .66rem; }
+
+/* ═══════════════════════════ SECCIONES ═══════════════════════════ */
+section { padding-block: clamp(5rem, 11vw, 10rem); position: relative; }
+/* ojo: un section anidado heredaría este padding; aquí no hay ninguno */
+
+.seccion__cabeza { display: grid; gap: 1rem; max-width: 46rem; margin-block-end: clamp(2.5rem, 5vw, 4rem); }
+.seccion__num { color: var(--papel-38); }
+.seccion__titulo {
+  font-family: var(--serif); font-weight: 400;
+  font-size: clamp(2.6rem, 1.6rem + 4.2vw, 6rem);
+  line-height: .95; letter-spacing: -.025em;
+  color: var(--papel); margin: 0;
+}
+.seccion__entrada { color: var(--papel-58); max-width: 40rem; }
+
+/* aviso de honestidad: se lee, no es letra pequeña */
+.aviso {
+  border: 1px solid var(--papel-12);
+  border-inline-start: 2px solid var(--farola);
+  background: linear-gradient(90deg, rgba(242, 200, 121, .05), transparent 45%);
+  padding: clamp(1.25rem, 2.5vw, 1.9rem);
+  display: grid; gap: .8rem;
+  max-width: 58rem;
+  margin-block-end: clamp(2.5rem, 5vw, 3.5rem);
+}
+.aviso p { color: var(--papel-58); }
+.aviso strong { color: var(--papel); font-weight: 400; }
+.aviso__etq { color: var(--farola); }
+.aviso__pendiente { margin-block-start: .2rem; }
+
+/* ── filtros ───────────────────────────────────────────────────────────── */
+.filtros { display: grid; gap: 1rem; margin-block-end: 1rem; }
+.filtros__fila { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem 1rem; }
+.filtros__rotulo { flex: none; min-width: 4.5rem; color: var(--papel-22); }
+.filtros__chips { display: flex; flex-wrap: wrap; gap: .5rem; }
+
+.chip {
+  font-family: var(--mono); font-size: .75rem; letter-spacing: .05em;
+  padding: .5em 1em; border-radius: 999px;
+  border: 1px solid var(--papel-12);
+  background: transparent; color: var(--papel-58);
+  cursor: pointer; white-space: nowrap;
+  transition: color .3s, border-color .3s, background-color .3s;
+}
+.chip:hover { color: var(--papel); border-color: var(--papel-22); }
+.chip[aria-checked="true"] {
+  color: var(--noche); background: var(--papel); border-color: var(--papel);
+}
+.chip__n { opacity: .55; margin-inline-start: .4em; font-variant-numeric: tabular-nums; }
+
+.filtros__recuento { color: var(--papel-22); min-height: 1.5em; }
+
+/* ═══════════════════════════ LA VÍA ═══════════════════════════ */
+.via {
+  position: relative;
+  width: var(--ancho); margin-inline: auto;
+  padding-block-start: clamp(2rem, 5vw, 4rem);
+}
+
+/* el eje de la calle */
+.via::before {
+  content: ""; position: absolute; z-index: 0;
+  inset-block: 0; inset-inline-start: 50%;
+  width: 1px; translate: -.5px 0;
+  background: linear-gradient(180deg, transparent, var(--papel-06) 8%, var(--papel-06) 92%, transparent);
+}
+
+.via__cargando, .via__vacia { color: var(--papel-22); text-align: center; padding-block: 4rem; }
+
+/* cada sector es un tramo */
+.tramo { position: relative; z-index: 1; }
+
+.tramo__cartel {
+  display: flex; align-items: center; gap: 1.1rem;
+  padding-block: clamp(2rem, 5vw, 3.5rem) clamp(1.5rem, 3vw, 2.5rem);
+}
+.tramo__cartel::after {
+  content: ""; flex: 1 1 auto; height: 1px;
+  background: linear-gradient(90deg, var(--papel-12), transparent);
+}
+.tramo__nombre {
+  font-family: var(--mono); font-weight: 500;
+  font-size: clamp(.75rem, .7rem + .2vw, .875rem);
+  letter-spacing: .16em; text-transform: uppercase;
+  color: var(--papel-58);
+  border: 1px solid var(--papel-12);
+  padding: .55em 1em;
+}
+.tramo__n { color: var(--farola); font-variant-numeric: tabular-nums; }
+
+.tramo__fachadas {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: clamp(2.5rem, 7vw, 7rem);
+  row-gap: clamp(3rem, 6vw, 6rem);
+  align-items: start;
+}
+
+/* farola entre tramos */
+.farola {
+  position: relative; z-index: 1;
+  height: clamp(9rem, 17vw, 15rem);
+  pointer-events: none;
+}
+.farola::before {
+  content: ""; position: absolute;
+  inset-block: 18% 0; inset-inline-start: 50%;
+  width: 1px; translate: -.5px 0;
+  background: linear-gradient(180deg, rgba(242, 200, 121, .45), var(--papel-06) 45%, transparent);
+}
+.farola::after {
+  content: ""; position: absolute;
+  inset-block-start: 8%; inset-inline-start: 50%;
+  width: min(42rem, 90vw); aspect-ratio: 2 / 1;
+  translate: -50% 0;
+  background: radial-gradient(50% 55% at 50% 0%, rgba(242, 200, 121, .15), rgba(242, 200, 121, .05) 45%, transparent 72%);
+}
+
+/* ═══════════════════════════ LA FACHADA ═══════════════════════════ */
+.fachada {
+  position: relative;
+  grid-column: 1;
+  container-type: inline-size;
+  /* 39 escaparates son 39 layouts caros (rejilla + consultas de contenedor +
+     imagen). Con esto el navegador se salta los que no se ven: la tarea larga
+     de arranque baja de ~200 ms a la mitad. El tamaño estimado evita el salto
+     de scroll y `auto` hace que recuerde el real en cuanto se pinta una vez. */
+  content-visibility: auto;
+  contain-intrinsic-size: auto 700px; /* la altura media medida a 1440 */
+  /* content-visibility implica contención de pintado, que recorta lo que se
+     salga de la caja: por eso la luz de la acera va DENTRO, en este hueco,
+     en vez de colgando por debajo del borde. */
+  padding-block-end: 3.2rem;
+  margin-block-end: -3.2rem;
+}
+.fachada[data-lado="der"] {
+  grid-column: 2;
+  padding-block-start: clamp(3rem, 9vw, 9rem); /* escalonado: caminas por el medio */
+}
+
+.fachada__interior {
+  position: relative;
+  display: grid;
+  border: 1px solid var(--linea);
+  background: linear-gradient(180deg, #14171E, #0E1116);
+  transition:
+    box-shadow .6s var(--salida),
+    border-color .6s var(--salida),
+    background-color .6s var(--salida);
+  will-change: transform;
+}
+
+/* la luz se enciende al entrar en viewport */
+.fachada.esta-encendida .fachada__interior {
+  border-color: color-mix(in oklab, var(--f) 38%, var(--linea));
+  box-shadow:
+    0 0 0 1px color-mix(in oklab, var(--f) 16%, transparent),
+    0 22px 70px -34px color-mix(in oklab, var(--f) 50%, transparent),
+    0 0 150px -70px color-mix(in oklab, var(--f) 55%, transparent);
+}
+.fachada:hover .fachada__interior,
+.fachada:focus-within .fachada__interior {
+  border-color: color-mix(in oklab, var(--f) 62%, var(--linea));
+  box-shadow:
+    0 0 0 1px color-mix(in oklab, var(--f) 28%, transparent),
+    0 28px 90px -30px color-mix(in oklab, var(--f) 65%, transparent),
+    0 0 180px -62px color-mix(in oklab, var(--f) 60%, transparent);
+}
+
+/* luz derramada en la acera */
+.fachada__acera {
+  position: absolute; z-index: -1;
+  inset-inline: 6%; inset-block-end: 0;
+  height: 5.4rem;
+  background: radial-gradient(58% 100% at 50% 0%, color-mix(in oklab, var(--f) 30%, transparent), transparent 70%);
+  opacity: 0;
+  transition: opacity .6s .08s var(--salida);
+  pointer-events: none;
+}
+.fachada.esta-encendida .fachada__acera { opacity: .55; }
+.fachada:hover .fachada__acera, .fachada:focus-within .fachada__acera { opacity: 1; }
+
+/* ── el rótulo de la fachada ───────────────────────────────────────────── */
+.fachada__rotulo {
+  display: grid; gap: .3rem;
+  padding: clamp(1rem, 2.4cqw, 1.4rem) clamp(1rem, 2.4cqw, 1.4rem) clamp(.85rem, 2cqw, 1.1rem);
+  border-block-end: 1px solid var(--papel-06);
+}
+.fachada__nombre {
+  font-family: var(--serif);
+  font-weight: 400; font-style: normal;
+  font-size: clamp(1.5rem, 5.5cqw, 2.35rem);
+  line-height: 1.08; letter-spacing: -.01em;
+  /* Apagado solo hasta que entra en viewport (donde aún no se lee): a partir
+     de ahí, color entero. --f-rotulo ya viene medido a 3:1 sobre la noche;
+     rebajarlo con color-mix en el estado visible lo dejaría por debajo. */
+  color: color-mix(in oklab, var(--f-rotulo) 55%, var(--noche));
+  margin: 0;
+  transition: color .5s var(--salida), text-shadow .5s var(--salida);
+}
+/* cada rótulo con la tipografía de titulares de su propia web */
+.fachada__nombre[data-fuente-lista] {
+  font-family: var(--rotulo-fuente), var(--rotulo-generica, serif);
+  font-weight: var(--rotulo-peso, 400);
+  font-style: var(--rotulo-estilo, normal);
+}
+.fachada.esta-encendida .fachada__nombre { color: var(--f-rotulo); }
+.fachada:hover .fachada__nombre, .fachada:focus-within .fachada__nombre {
+  text-shadow: 0 0 30px color-mix(in oklab, var(--f) 45%, transparent);
+}
+.fachada__tipo { color: var(--papel-38); }
+
+/* ── el escaparate ─────────────────────────────────────────────────────── */
+.fachada__escaparate {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  overflow: clip;
+  background: var(--asfalto-hondo);
+  isolation: isolate;
+}
+.fachada__captura {
+  width: 100%; height: 100%;
+  object-fit: cover; object-position: top center;
+  filter: saturate(.72) brightness(.62);
+  transition: filter .6s var(--salida), opacity .45s var(--salida);
+}
+.fachada.esta-encendida .fachada__captura { filter: saturate(.92) brightness(.86); }
+.fachada:hover .fachada__captura, .fachada:focus-within .fachada__captura { filter: none; }
+.fachada.esta-viva .fachada__captura { opacity: 0; }
+
+/* el cristal: un reflejo fijo, sin filtros por fotograma */
+.fachada__escaparate::after {
+  content: ""; position: absolute; inset: 0; z-index: 3; pointer-events: none;
+  background: linear-gradient(118deg, rgba(243, 239, 230, .07) 0 22%, transparent 42%);
+  opacity: .8;
+  transition: opacity .5s;
+}
+.fachada:hover .fachada__escaparate::after { opacity: .3; }
+
+/* hueco donde entra el iframe de la web viva */
+.fachada__vivo {
+  position: absolute; inset: 0; z-index: 2;
+  opacity: 0;
+  transition: opacity .5s var(--salida);
+  pointer-events: none;
+}
+.fachada.esta-viva .fachada__vivo { opacity: 1; }
+.fachada__vivo iframe {
+  width: var(--iframe-ancho, 1440px); height: var(--iframe-alto, 900px);
+  border: 0;
+  transform-origin: 0 0;
+  transform: scale(var(--escala, .36));
+  pointer-events: none;
+  background: var(--asfalto-hondo);
+}
+
+/* el cristal: toda la superficie del escaparate abre la web.
+   Es un duplicado del enlace del pie, así que se esconde del lector: el
+   enlace de verdad, con su texto, sigue estando abajo. */
+.fachada__cristal {
+  position: absolute; inset: 0; z-index: 4;
+  display: block;
+}
+
+.fachada__senal {
+  position: absolute; z-index: 4; inset-block-start: .6rem; inset-inline-end: .6rem;
+  font-family: var(--mono); font-size: .6rem; letter-spacing: .1em; text-transform: uppercase;
+  padding: .3em .6em;
+  background: color-mix(in srgb, var(--noche) 78%, transparent);
+  border: 1px solid var(--papel-12);
+  color: var(--papel-38);
+  opacity: 0; transition: opacity .35s;
+}
+.fachada.esta-viva .fachada__senal,
+.fachada.esta-cargando .fachada__senal,
+.fachada.no-embebe .fachada__senal { opacity: 1; }
+
+/* botón "ver en vivo" — en táctil es la única forma de encender el escaparate */
+.fachada__vivir {
+  position: absolute; z-index: 5; inset-block-end: .6rem; inset-inline-start: .6rem;
+  font-family: var(--mono); font-size: .66rem; letter-spacing: .06em; text-transform: uppercase;
+  padding: .5em .9em;
+  background: color-mix(in srgb, var(--noche) 82%, transparent);
+  border: 1px solid var(--papel-22);
+  color: var(--papel-80);
+  cursor: pointer;
+  transition: background-color .3s, border-color .3s, color .3s;
+}
+.fachada__vivir:hover { background: var(--papel); color: var(--noche); border-color: var(--papel); }
+@media (hover: hover) and (pointer: fine) { .fachada__vivir { display: none; } }
+
+/* ── el pie de la fachada ──────────────────────────────────────────────── */
+.fachada__pie {
+  display: grid; gap: .75rem;
+  padding: clamp(.9rem, 2.2cqw, 1.25rem) clamp(1rem, 2.4cqw, 1.4rem) clamp(1rem, 2.4cqw, 1.3rem);
+}
+.fachada__dato { display: flex; gap: .55em; align-items: baseline; flex-wrap: wrap; }
+.fachada__dato .etq { color: var(--papel-22); flex: none; }
+.fachada__dato span:last-child { font-family: var(--mono); font-size: .8rem; color: var(--papel-58); letter-spacing: .02em; text-transform: none; }
+
+.fachada__meta { display: flex; align-items: center; gap: .6rem; flex-wrap: wrap; }
+.estado {
+  font-family: var(--mono); font-size: .66rem; letter-spacing: .1em; text-transform: uppercase;
+  padding: .32em .7em; border-radius: 2px; white-space: nowrap;
+}
+.estado[data-estado="propuesta"] {
+  color: var(--papel-58);
+  border: 1px solid var(--papel-12);
+  background: var(--papel-06);
+}
+.estado[data-estado="entregada"] {
+  color: var(--farola);
+  border: 1px solid rgba(242, 200, 121, .45);
+  background: rgba(242, 200, 121, .10);
+}
+.fachada__anio { font-family: var(--mono); font-size: .7rem; color: var(--papel-22); letter-spacing: .08em; }
+
+.fachada__acciones {
+  display: flex; align-items: center; gap: .5rem; flex-wrap: wrap;
+  margin-block-start: .15rem;
+}
+.fachada__abrir, .fachada__codigo {
+  font-family: var(--mono); font-size: .72rem; letter-spacing: .05em;
+  text-decoration: none; padding: .55em 1em;
+  border: 1px solid var(--papel-12); border-radius: 999px;
+  color: var(--papel-58);
+  display: inline-flex; align-items: center; gap: .45em;
+  transition: color .3s, border-color .3s, background-color .3s;
+}
+.fachada__abrir svg, .fachada__codigo svg { width: .85em; height: .85em; }
+.fachada__abrir:hover { color: var(--noche); background: var(--f-rotulo); border-color: var(--f-rotulo); }
+.fachada__codigo { position: relative; z-index: 2; }
+.fachada__codigo:hover { color: var(--papel); border-color: var(--papel-22); }
+
+/* mientras carga el iframe */
+.fachada.esta-cargando .fachada__captura { filter: saturate(.5) brightness(.5); }
+
+/* al llegar desde un rótulo de la marquesina, la fachada parpadea una vez */
+@keyframes destello {
+  0%, 100% { box-shadow: 0 0 0 1px color-mix(in oklab, var(--f) 16%, transparent), 0 22px 70px -30px color-mix(in oklab, var(--f) 55%, transparent); }
+  35% { box-shadow: 0 0 0 2px color-mix(in oklab, var(--f) 70%, transparent), 0 30px 110px -20px color-mix(in oklab, var(--f) 85%, transparent); }
+}
+.fachada.se-ilumina .fachada__interior { animation: destello 1.3s var(--salida); }
+
+/* ── tramo apagado: las plantillas ─────────────────────────────────────── */
+.via--apagada .fachada__interior { background: linear-gradient(180deg, #101319, #0C0F14); }
+.via--apagada .fachada:not(:hover):not(:focus-within) .fachada__captura { filter: saturate(0) brightness(.38); }
+.via--apagada .fachada:not(:hover):not(:focus-within) .fachada__interior { box-shadow: none; border-color: var(--papel-06); }
+.via--apagada .fachada:not(:hover):not(:focus-within) .fachada__nombre { color: var(--papel-58); }
+.via--apagada .fachada:not(:hover):not(:focus-within) .fachada__acera { opacity: 0; }
+.via--apagada .fachada__disponible {
+  font-family: var(--mono); font-size: .66rem; letter-spacing: .1em; text-transform: uppercase;
+  color: var(--farola); opacity: 0; transition: opacity .4s;
+}
+.via--apagada .fachada:hover .fachada__disponible,
+.via--apagada .fachada:focus-within .fachada__disponible { opacity: 1; }
+
+/* ═══════════════════════════ MÉTODO ═══════════════════════════ */
+.metodo { background: linear-gradient(180deg, transparent, rgba(23, 26, 33, .45) 30%, rgba(23, 26, 33, .45) 70%, transparent); }
+
+.pasos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: clamp(1.5rem, 3vw, 2.5rem);
+}
+.paso {
+  display: grid; gap: .7rem; align-content: start;
+  padding-block-start: 1.4rem;
+  border-block-start: 1px solid var(--linea);
+}
+.paso__num { color: var(--farola); }
+.paso__titulo {
+  font-family: var(--serif); font-weight: 500;
+  font-size: clamp(1.5rem, 1.25rem + .85vw, 2.1rem);
+  line-height: 1.15; color: var(--papel); margin: 0;
+}
+.paso p { color: var(--papel-58); }
+
+.regla {
+  margin: clamp(3.5rem, 8vw, 6rem) 0 0;
+  padding-block-start: clamp(2rem, 4vw, 3rem);
+  border-block-start: 1px solid var(--linea);
+  display: grid; gap: 1.1rem;
+  max-width: 52rem;
+}
+.regla__texto {
+  font-family: var(--serif); font-weight: 400;
+  font-size: clamp(1.9rem, 1.2rem + 3.2vw, 4rem);
+  line-height: 1.02; letter-spacing: -.02em; color: var(--papel);
+}
+.regla__pie { color: var(--papel-38); max-width: 38rem; text-transform: none; letter-spacing: .03em; }
+
+/* ═══════════════════════════ SOBRE MÍ ═══════════════════════════ */
+.sobre__rejilla {
+  display: grid;
+  grid-template-columns: minmax(0, 18rem) minmax(0, 1fr);
+  gap: clamp(2rem, 5vw, 4.5rem);
+  align-items: start;
+}
+.marco-vacio {
+  aspect-ratio: 4 / 5;
+  border: 1px solid var(--linea);
+  background:
+    repeating-linear-gradient(135deg, var(--papel-06) 0 1px, transparent 1px 11px),
+    var(--asfalto-hondo);
+  display: grid; place-items: center;
+}
+.sobre__texto { display: grid; gap: 1.1rem; }
+.sobre__bio { color: var(--papel-58); }
+
+.ficha { display: grid; gap: 0; margin-block-start: .8rem; }
+.ficha__par {
+  display: grid; grid-template-columns: minmax(6.5rem, 9rem) 1fr;
+  gap: 1rem; align-items: baseline;
+  padding-block: .85rem;
+  border-block-start: 1px solid var(--papel-06);
+}
+.ficha__par dd { color: var(--papel-80); margin: 0; }
+
+/* ═══════════════════════════ CONTACTO ═══════════════════════════ */
+.contacto { background: linear-gradient(180deg, transparent, rgba(242, 200, 121, .05) 60%, transparent); }
+.contacto__rejilla {
+  display: grid;
+  grid-template-columns: minmax(0, .85fr) minmax(0, 1fr);
+  gap: clamp(2.5rem, 6vw, 5rem);
+  align-items: start;
+}
+.contacto__texto { display: grid; gap: 1.1rem; }
+.contacto__vias { display: grid; gap: 0; margin-block-start: .8rem; }
+.contacto__vias li {
+  display: flex; flex-wrap: wrap; align-items: baseline; gap: .8rem;
+  padding-block: .8rem;
+  border-block-start: 1px solid var(--papel-06);
+}
+.contacto__vias .etq { min-width: 6rem; color: var(--papel-22); }
+
+.formulario {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.1rem;
+  border: 1px solid var(--linea);
+  padding: clamp(1.4rem, 3vw, 2.2rem);
+  background: rgba(23, 26, 33, .5);
+}
+.campo { display: grid; gap: .45rem; }
+.campo--ancho { grid-column: 1 / -1; }
+.campo--trampa { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+.campo__pista { text-transform: none; letter-spacing: .02em; opacity: .7; }
+
+.campo input, .campo select, .campo textarea {
+  font-family: var(--mono); font-size: .875rem;
+  background: var(--noche);
+  border: 1px solid var(--papel-12);
+  color: var(--papel);
+  padding: .8em .9em;
+  border-radius: 2px;
+  width: 100%;
+  transition: border-color .3s, background-color .3s;
+}
+.campo textarea { resize: vertical; min-height: 7rem; line-height: 1.6; }
+.campo input:hover, .campo select:hover, .campo textarea:hover { border-color: var(--papel-22); }
+.campo input:focus, .campo select:focus, .campo textarea:focus { border-color: var(--farola); outline: none; }
+.campo[data-error] input, .campo[data-error] select, .campo[data-error] textarea { border-color: #E06B5A; }
+.campo__error { font-family: var(--mono); font-size: .7rem; color: #E06B5A; letter-spacing: .04em; }
+
+.formulario__pie { grid-column: 1 / -1; display: flex; flex-wrap: wrap; align-items: center; gap: 1rem; }
+.formulario__estado { color: var(--papel-58); text-transform: none; letter-spacing: .03em; }
+.formulario__estado[data-tono="mal"] { color: #E06B5A; }
+.formulario__estado[data-tono="bien"] { color: var(--farola); }
+.formulario__nota { grid-column: 1 / -1; color: var(--papel-38); text-transform: none; letter-spacing: .03em; line-height: 1.7; }
+.formulario__nota code { font-size: .95em; color: var(--papel-58); }
+
+/* ═══════════════════════════ PIE ═══════════════════════════ */
+.pie {
+  border-block-start: 1px solid var(--linea);
+  padding-block: clamp(3rem, 6vw, 5rem);
+}
+.pie__rejilla { display: grid; gap: 1.2rem; max-width: 58rem; }
+.pie__firma { font-family: var(--serif); font-size: clamp(1.3rem, 1.1rem + .8vw, 1.9rem); color: var(--papel); }
+.pie__legal, .pie__meta { color: var(--papel-38); text-transform: none; letter-spacing: .03em; line-height: 1.8; }
+
+/* ═══════════════════════════ COOKIES ═══════════════════════════ */
+/* [hidden] tiene que ganar: nada de display:flex suelto en .aviso-cookies */
+.aviso-cookies {
+  position: fixed; z-index: 120;
+  inset-block-end: 1rem; inset-inline: 1rem;
+  max-width: 42rem; margin-inline: auto;
+  display: flex; flex-wrap: wrap; align-items: center; gap: 1rem;
+  padding: 1.1rem 1.3rem;
+  background: color-mix(in srgb, var(--asfalto) 96%, transparent);
+  border: 1px solid var(--papel-22);
+  box-shadow: 0 24px 60px -24px rgba(0, 0, 0, .9);
+}
+.aviso-cookies[hidden] { display: none; }
+.aviso-cookies__texto { font-size: .9rem; color: var(--papel-58); flex: 1 1 22rem; }
+.aviso-cookies__texto strong { color: var(--papel); font-weight: 400; }
+.aviso-cookies__botones { flex: none; }
+
+/* ═══════════════════════════ CHAR-REVEAL ═══════════════════════════ */
+.revelar { display: inline-block; }
+/* la palabra entera en inline-block y sin partirse: si no, sale "Álva / ro" */
+.revelar__palabra { display: inline-block; white-space: nowrap; }
+.revelar__letra { display: inline-block; will-change: transform, opacity; }
+.con-js .revelar:not([data-listo]) .revelar__letra { opacity: 0; }
+
+/* ═══════════════════════════ RESPONSIVE ═══════════════════════════ */
+@media (max-width: 62rem) {
+  .barra__nav { display: none; }
+  .sobre__rejilla { grid-template-columns: 1fr; }
+  .sobre__retrato { max-width: 16rem; }
+  .contacto__rejilla { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 52rem) {
+  :root { --ancho: min(100% - 2rem, 78rem); }
+  /* la calle se estrecha a una sola acera */
+  .tramo__fachadas { grid-template-columns: minmax(0, 1fr); row-gap: clamp(2.5rem, 8vw, 4rem); }
+  .fachada, .fachada[data-lado="der"] { grid-column: 1; padding-block-start: 0; }
+  .fachada { contain-intrinsic-size: auto 745px; } /* a una columna son más altas */
+  .via::before { inset-inline-start: 0; }
+  .via { padding-inline-start: 1.25rem; }
+  .farola::before, .farola::after { inset-inline-start: 0; }
+  .farola::after { translate: -50% 0; }
+  /* en el móvil el escaparate enseña la captura de móvil, en vertical:
+     es como se va a ver esa web en la mano de quien la mire */
+  .fachada__escaparate { aspect-ratio: 3 / 4; }
+  .marquesina__pista { animation-duration: 210s; } /* más lenta en pantalla pequeña */
+  .vista-previa { display: none; }
+  .formulario { grid-template-columns: 1fr; }
+  .hero { min-height: auto; padding-block-start: clamp(6rem, 18vh, 9rem); gap: clamp(2.5rem, 7vh, 4rem); }
+}
+
+@media (max-width: 30rem) {
+  :root { --ancho: min(100% - 1.75rem, 78rem); }
+  .hero__nombre { font-size: clamp(3.6rem, 22vw, 6rem); }
+  .hero__pie { flex-direction: column; align-items: start; }
+  .hero__datos { text-align: start; }
+  .hero__ctas .btn { flex: 1 1 100%; justify-content: center; }
+  .filtros__fila { flex-direction: column; align-items: start; gap: .5rem; }
+  .filtros__rotulo { min-width: 0; }
+  .marquesina__pista { animation-duration: 260s; }
+  .ficha__par { grid-template-columns: 1fr; gap: .25rem; }
+  .contacto__vias li { gap: .25rem; }
+  .aviso-cookies { inset-inline: .6rem; inset-block-end: .6rem; padding: 1rem; }
+  .fachada__acciones { gap: .4rem; }
+  .fachada__abrir, .fachada__codigo { font-size: .68rem; padding: .5em .85em; }
+}
+
+/* ═══════════════════════════ MOVIMIENTO REDUCIDO ═══════════════════════════ */
+/* Se apaga el movimiento, no el contenido: todo queda encendido y legible. */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: .001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .001ms !important;
+    scroll-behavior: auto !important;
+  }
+  .marquesina__pista {
+    animation: none;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    row-gap: .75rem;
+  }
+  .marquesina__banda { mask-image: none; overflow: visible; padding-block: 1.25rem; }
+  .marquesina__grupo[data-grupo="eco"] { display: none; }
+  .marquesina__grupo { flex-wrap: wrap; justify-content: center; row-gap: .5rem; }
+  .marquesina__pausa { display: none; }
+  .rotulo { opacity: 1; font-size: clamp(1rem, .9rem + .6vw, 1.35rem); }
+  .con-js .revelar .revelar__letra { opacity: 1 !important; transform: none !important; }
+  .fachada__captura { filter: saturate(.92) brightness(.86); }
+  .btn { translate: 0 !important; }
+}

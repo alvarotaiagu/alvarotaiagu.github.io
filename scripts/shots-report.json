@@ -1,0 +1,16 @@
+[
+  {
+    "repo": "construyetuweb-carballo-web",
+    "kind": "desktop",
+    "ok": true,
+    "kb": 64.2,
+    "quality": 78
+  },
+  {
+    "repo": "construyetuweb-carballo-web",
+    "kind": "mobile",
+    "ok": true,
+    "kb": 67.6,
+    "quality": 78
+  }
+]
