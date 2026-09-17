@@ -33,12 +33,29 @@
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..600;1,6..96,400..500&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..600;1,6..96,400..500&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <link rel="stylesheet" href="css/rua.css">
+<!-- Sin JavaScript no hay quien encienda la calle: mejor no ensenarla. -->
+<noscript><style>.cortina { display: none !important; }</style></noscript>
 
 <script>document.documentElement.classList.replace('sin-js','con-js');</script>
 </head>
 
 <body>
 <a class="saltar" href="#calle">Saltar a la calle</a>
+
+<!-- Cortina de entrada: la calle se enciende de izquierda a derecha. Se
+     retira SIEMPRE desde js/motion.js; el script de abajo es la red de
+     seguridad por si los modulos no llegan a cargarse. -->
+<div class="cortina" data-cortina aria-hidden="true">
+  <div class="cortina__panel">
+    <div class="cortina__centro">
+      <p class="cortina__nombre"><span>&Aacute;lvaro</span></p>
+      <span class="cortina__regla" aria-hidden="true"></span>
+      <p class="cortina__lema">webs con motion para negocios de Carballo</p>
+    </div>
+  </div>
+  <span class="cortina__farola" aria-hidden="true"></span>
+</div>
+<script>setTimeout(function(){var c=document.querySelector('[data-cortina]');if(c&&!c.hidden){c.hidden=true;document.documentElement.classList.remove('cortina-puesta');}},6000);</script>
 
 <header class="barra" data-barra>
   <a class="barra__marca" href="#hero">

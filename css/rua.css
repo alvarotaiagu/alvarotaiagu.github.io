@@ -157,6 +157,49 @@ ul, ol { list-style: none; padding: 0; }
 .btn--solido:hover { background: #fff; }
 .btn--pequeno { padding: .65em 1.2em; font-size: .78rem; }
 
+/* ── Cortina de entrada (preloader) ─────────────────────────────────────
+   La calle se enciende de izquierda a derecha: una farola recorre la
+   ventana y por donde pasa ya no hay noche. El panel se recorta con
+   clip-path desde la izquierda y la luz viaja pegada a ese corte, que es
+   lo que convierte un barrido en un gesto y no en una simple transicion.
+
+   El color va en .cortina__panel, no en .cortina: si lo llevara el
+   contenedor, al recortar el panel se veria el contenedor y no la calle.
+   Ojo: .cortina usa display:grid, asi que [hidden] necesita su regla.
+   ────────────────────────────────────────────────────────────────────── */
+.cortina { position: fixed; inset: 0; z-index: 400; display: grid; overflow: hidden; }
+.cortina[hidden] { display: none; }
+html.cortina-puesta { overflow: hidden; }
+
+.cortina__panel {
+  position: absolute; inset: 0;
+  display: grid; place-items: center;
+  background: radial-gradient(120% 90% at 50% 40%, var(--asfalto) 0%, var(--noche) 62%, #05070A 100%);
+}
+/* la farola: una linea calida con su halo, pegada al corte */
+.cortina__farola {
+  position: absolute; top: -2%; bottom: -2%; left: 0; width: 2px;
+  background: var(--farola);
+  box-shadow: 0 0 26px 6px rgba(242, 200, 121, .45);
+  opacity: 0;
+}
+
+.cortina__centro { display: grid; justify-items: center; gap: .9rem; padding: 0 1.5rem; text-align: center; }
+.cortina__nombre { overflow: hidden; padding-bottom: .12em; }
+.cortina__nombre span {
+  display: block; font-family: var(--serif); font-weight: 400;
+  font-size: clamp(2.8rem, 10vw, 5.4rem); line-height: 1; color: var(--papel);
+}
+.cortina__regla { display: block; width: min(34vw, 200px); height: 1px; background: var(--farola); transform-origin: 50% 50%; }
+.cortina__lema { font-family: var(--mono); font-size: .7rem; letter-spacing: .2em; color: var(--papel-58); }
+
+html.cortina-anima .cortina__nombre span { transform: translateY(112%); }
+html.cortina-anima .cortina__regla { transform: scaleX(0); }
+html.cortina-anima .cortina__lema { opacity: 0; }
+
+/* con movimiento reducido no debe verse ni un fotograma */
+@media (prefers-reduced-motion: reduce) { .cortina { display: none; } }
+
 /* ── barra superior ────────────────────────────────────────────────────── */
 .barra {
   position: fixed; inset-block-start: 0; inset-inline: 0; z-index: 90;

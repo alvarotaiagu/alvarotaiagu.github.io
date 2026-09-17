@@ -12,7 +12,7 @@ import { pintarCalle, montarFiltros } from './calle.js';
 import { montarMarquesina } from './marquesina.js';
 import { montarFormulario, usaTerceros } from './formulario.js';
 import {
-  montarScroll, animarRevelados, montarParallax,
+  montarCortina, montarScroll, animarRevelados, montarParallax,
   montarMagneticos, montarContadores, montarBarra,
 } from './motion.js';
 
@@ -75,6 +75,8 @@ function montarCookies() {
 
 /* ── arranque ──────────────────────────────────────────────────────────── */
 async function arrancar() {
+  // la cortina, lo primero: tiene que estar puesta antes de pintar nada
+  const cortina = montarCortina();
   aplicarPerfil();
   montarCookies();
 
@@ -127,7 +129,9 @@ async function arrancar() {
   // se anima sobre métricas que van a cambiar
   const rematar = () => {
     montarScroll();
-    animarRevelados();
+    /* el rótulo no se revela hasta que la luz empieza a recorrer la calle:
+       lo primero que se ve al encenderse ya está en movimiento */
+    cortina.alAbrirse(animarRevelados);
     montarMagneticos();
     montarContadores();
     montarBarra();

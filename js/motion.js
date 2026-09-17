@@ -109,6 +109,91 @@ export function animarRevelados() {
   }
 }
 
+/* ── cortina de entrada (preloader) ─────────────────────────────────────
+   La calle se enciende de izquierda a derecha: el panel se recorta con
+   clip-path desde la izquierda y una farola viaja pegada a ese corte. La
+   luz es lo que convierte un barrido en un gesto.
+
+   Dos momentos distintos, y son distintos a propósito:
+     · alAbrirse(fn) → cuando la luz EMPIEZA a recorrer, para que el rótulo
+       del hero ya se esté revelando cuando asoma la calle.
+     · retirar()     → al terminar: quita el nodo, devuelve el scroll y
+       refresca ScrollTrigger, que midió con overflow:hidden.
+   Se retira SIEMPRE: sin GSAP, con movimiento reducido, o por el timeout
+   de seguridad. Una cortina atascada tapa el sitio entero.
+
+   El gate del CSS lo pone ella misma (.cortina-anima): este sitio no tiene
+   la clase has-motion que usan los demás de la carpeta.
+   ────────────────────────────────────────────────────────────────────── */
+export function montarCortina() {
+  const el = document.querySelector('[data-cortina]');
+  const espera = [];
+  let abierta = false;
+  let fuera = false;
+
+  const abrir = () => {
+    if (abierta) return;
+    abierta = true;
+    for (const fn of espera.splice(0)) { try { fn(); } catch { /* sigue */ } }
+  };
+  const retirar = () => {
+    abrir();
+    if (fuera) return;
+    fuera = true;
+    if (el) el.hidden = true;
+    document.documentElement.classList.remove('cortina-puesta', 'cortina-anima');
+    globalThis.ScrollTrigger?.refresh();
+  };
+
+  const api = { alAbrirse: (fn) => (abierta ? fn() : espera.push(fn)) };
+  if (!el || reducido() || !gsap) { retirar(); return api; }
+
+  const raiz = document.documentElement;
+  raiz.classList.add('cortina-puesta', 'cortina-anima');
+
+  const panel = el.querySelector('.cortina__panel');
+  const centro = el.querySelector('.cortina__centro');
+  const farola = el.querySelector('.cortina__farola');
+  const nombre = el.querySelector('.cortina__nombre span');
+  const regla = el.querySelector('.cortina__regla');
+  const lema = el.querySelector('.cortina__lema');
+  const ENCIENDE = 1.3;
+
+  const tl = gsap.timeline({ onComplete: retirar });
+  /* el estado inicial es un translateY(112%) del CSS y GSAP lo lee de la
+     matriz como píxeles, no como yPercent: hay que poner las dos a cero o
+     el nombre no sale nunca de su máscara. */
+  if (nombre) tl.to(nombre, { y: 0, yPercent: 0, duration: 0.95, ease: 'expo.out' }, 0.15);
+  if (regla) tl.to(regla, { scaleX: 1, duration: 0.7, ease: 'power2.inOut' }, 0.55);
+  if (lema) tl.to(lema, { opacity: 1, duration: 0.7, ease: 'power2.out' }, 0.62);
+
+  tl.add(abrir, ENCIENDE);
+  /* el contenido se va con el corte, no con un fundido aparte: si el panel
+     se funde a la vez, la calle aparece entera antes de que pase la luz y
+     el barrido deja de significar nada. */
+  if (centro) tl.to(centro, { opacity: 0, duration: 0.3, ease: 'power2.in' }, ENCIENDE - 0.12);
+
+  /* el corte y la luz van en el MISMO tween: si fueran dos, cualquier
+     diferencia de easing dejaría la farola despegada del borde */
+  if (panel && farola) {
+    const avance = { p: 0 };
+    tl.to(avance, {
+      p: 100,
+      duration: 1.15,
+      ease: 'power2.inOut',
+      onStart: () => gsap.set(farola, { opacity: 1 }),
+      onUpdate: () => {
+        panel.style.clipPath = `inset(0 0 0 ${avance.p}%)`;
+        farola.style.transform = `translateX(${avance.p}vw)`;
+      },
+      onComplete: () => gsap.to(farola, { opacity: 0, duration: 0.25 }),
+    }, ENCIENDE);
+  }
+
+  setTimeout(retirar, 5200);
+  return api;
+}
+
 /* ── parallax de dos planos ────────────────────────────────────────────── */
 export function montarParallax() {
   if (reducido() || !gsap || !ScrollTrigger) return;
