@@ -1,16 +1,352 @@
 [
   {
-    "repo": "construyetuweb-carballo-web",
+    "repo": "taberna-do-rio-carballo-web",
     "kind": "desktop",
     "ok": true,
-    "kb": 64.2,
+    "kb": 11.5,
     "quality": 78
   },
   {
-    "repo": "construyetuweb-carballo-web",
+    "repo": "taberna-do-rio-carballo-web",
     "kind": "mobile",
     "ok": true,
-    "kb": 67.6,
+    "kb": 10,
+    "quality": 78
+  },
+  {
+    "repo": "a-saia-da-carolina-carballo-web",
+    "kind": "desktop",
+    "ok": true,
+    "kb": 27,
+    "quality": 78
+  },
+  {
+    "repo": "a-saia-da-carolina-carballo-web",
+    "kind": "mobile",
+    "ok": true,
+    "kb": 37.7,
+    "quality": 78
+  },
+  {
+    "repo": "plantilla-apicultura-web",
+    "kind": "desktop",
+    "ok": true,
+    "kb": 45.5,
+    "quality": 78
+  },
+  {
+    "repo": "plantilla-apicultura-web",
+    "kind": "mobile",
+    "ok": true,
+    "kb": 50.3,
+    "quality": 78
+  },
+  {
+    "repo": "plantilla-arquitectura-web",
+    "kind": "desktop",
+    "ok": true,
+    "kb": 39,
+    "quality": 78
+  },
+  {
+    "repo": "plantilla-arquitectura-web",
+    "kind": "mobile",
+    "ok": true,
+    "kb": 55,
+    "quality": 78
+  },
+  {
+    "repo": "plantilla-balneario-web",
+    "kind": "desktop",
+    "ok": true,
+    "kb": 32.5,
+    "quality": 78
+  },
+  {
+    "repo": "plantilla-balneario-web",
+    "kind": "mobile",
+    "ok": true,
+    "kb": 41.5,
+    "quality": 78
+  },
+  {
+    "repo": "plantilla-bicicletas-web",
+    "kind": "desktop",
+    "ok": true,
+    "kb": 40,
+    "quality": 78
+  },
+  {
+    "repo": "plantilla-bicicletas-web",
+    "kind": "mobile",
+    "ok": true,
+    "kb": 49.3,
+    "quality": 78
+  },
+  {
+    "repo": "plantilla-carpinteria-web",
+    "kind": "desktop",
+    "ok": true,
+    "kb": 34.4,
+    "quality": 78
+  },
+  {
+    "repo": "plantilla-carpinteria-web",
+    "kind": "mobile",
+    "ok": true,
+    "kb": 49.1,
+    "quality": 78
+  },
+  {
+    "repo": "plantilla-ceramica-web",
+    "kind": "desktop",
+    "ok": true,
+    "kb": 46.7,
+    "quality": 78
+  },
+  {
+    "repo": "plantilla-ceramica-web",
+    "kind": "mobile",
+    "ok": true,
+    "kb": 45.7,
+    "quality": 78
+  },
+  {
+    "repo": "plantilla-cerveceria-web",
+    "kind": "desktop",
+    "ok": true,
+    "kb": 41.8,
+    "quality": 78
+  },
+  {
+    "repo": "plantilla-cerveceria-web",
+    "kind": "mobile",
+    "ok": true,
+    "kb": 52.5,
+    "quality": 78
+  },
+  {
+    "repo": "plantilla-coworking-web",
+    "kind": "desktop",
+    "ok": true,
+    "kb": 50.2,
+    "quality": 78
+  },
+  {
+    "repo": "plantilla-coworking-web",
+    "kind": "mobile",
+    "ok": true,
+    "kb": 53.8,
+    "quality": 78
+  },
+  {
+    "repo": "plantilla-enoteca-web",
+    "kind": "desktop",
+    "ok": true,
+    "kb": 33.5,
+    "quality": 78
+  },
+  {
+    "repo": "plantilla-enoteca-web",
+    "kind": "mobile",
+    "ok": true,
+    "kb": 48.7,
+    "quality": 78
+  },
+  {
+    "repo": "plantilla-escuela-musica-web",
+    "kind": "desktop",
+    "ok": true,
+    "kb": 34.9,
+    "quality": 78
+  },
+  {
+    "repo": "plantilla-escuela-musica-web",
+    "kind": "mobile",
+    "ok": true,
+    "kb": 47,
+    "quality": 78
+  },
+  {
+    "repo": "plantilla-floristeria-web",
+    "kind": "desktop",
+    "ok": true,
+    "kb": 47.6,
+    "quality": 78
+  },
+  {
+    "repo": "plantilla-floristeria-web",
+    "kind": "mobile",
+    "ok": true,
+    "kb": 50.2,
+    "quality": 78
+  },
+  {
+    "repo": "plantilla-fotografia-web",
+    "kind": "desktop",
+    "ok": true,
+    "kb": 43.4,
+    "quality": 78
+  },
+  {
+    "repo": "plantilla-fotografia-web",
+    "kind": "mobile",
+    "ok": true,
+    "kb": 67.1,
+    "quality": 78
+  },
+  {
+    "repo": "plantilla-fotovoltaica-web",
+    "kind": "desktop",
+    "ok": true,
+    "kb": 47.7,
+    "quality": 78
+  },
+  {
+    "repo": "plantilla-fotovoltaica-web",
+    "kind": "mobile",
+    "ok": true,
+    "kb": 64.5,
+    "quality": 78
+  },
+  {
+    "repo": "plantilla-lavanderia-web",
+    "kind": "desktop",
+    "ok": true,
+    "kb": 34.8,
+    "quality": 78
+  },
+  {
+    "repo": "plantilla-lavanderia-web",
+    "kind": "mobile",
+    "ok": true,
+    "kb": 59.4,
+    "quality": 78
+  },
+  {
+    "repo": "plantilla-libreria-web",
+    "kind": "desktop",
+    "ok": true,
+    "kb": 59.2,
+    "quality": 78
+  },
+  {
+    "repo": "plantilla-libreria-web",
+    "kind": "mobile",
+    "ok": true,
+    "kb": 61.9,
+    "quality": 78
+  },
+  {
+    "repo": "plantilla-mudanzas-web",
+    "kind": "desktop",
+    "ok": true,
+    "kb": 41,
+    "quality": 78
+  },
+  {
+    "repo": "plantilla-mudanzas-web",
+    "kind": "mobile",
+    "ok": true,
+    "kb": 42.9,
+    "quality": 78
+  },
+  {
+    "repo": "plantilla-queseria-web",
+    "kind": "desktop",
+    "ok": true,
+    "kb": 41.5,
+    "quality": 78
+  },
+  {
+    "repo": "plantilla-queseria-web",
+    "kind": "mobile",
+    "ok": true,
+    "kb": 46.6,
+    "quality": 78
+  },
+  {
+    "repo": "plantilla-seguridad-alarmas-web",
+    "kind": "desktop",
+    "ok": true,
+    "kb": 51.6,
+    "quality": 78
+  },
+  {
+    "repo": "plantilla-seguridad-alarmas-web",
+    "kind": "mobile",
+    "ok": true,
+    "kb": 72,
+    "quality": 78
+  },
+  {
+    "repo": "plantilla-viajes-web",
+    "kind": "desktop",
+    "ok": true,
+    "kb": 53.7,
+    "quality": 78
+  },
+  {
+    "repo": "plantilla-viajes-web",
+    "kind": "mobile",
+    "ok": true,
+    "kb": 52.1,
+    "quality": 78
+  },
+  {
+    "repo": "plantilla-asesoria-sello-web",
+    "kind": "desktop",
+    "ok": true,
+    "kb": 11.5,
+    "quality": 78
+  },
+  {
+    "repo": "plantilla-asesoria-sello-web",
+    "kind": "mobile",
+    "ok": true,
+    "kb": 10,
+    "quality": 78
+  },
+  {
+    "repo": "plantilla-asesoria-casillas-web",
+    "kind": "desktop",
+    "ok": true,
+    "kb": 11.5,
+    "quality": 78
+  },
+  {
+    "repo": "plantilla-asesoria-casillas-web",
+    "kind": "mobile",
+    "ok": true,
+    "kb": 10,
+    "quality": 78
+  },
+  {
+    "repo": "plantilla-asesoria-cinta-sumadora-web",
+    "kind": "desktop",
+    "ok": true,
+    "kb": 11.5,
+    "quality": 78
+  },
+  {
+    "repo": "plantilla-asesoria-cinta-sumadora-web",
+    "kind": "mobile",
+    "ok": true,
+    "kb": 10,
+    "quality": 78
+  },
+  {
+    "repo": "plantilla-asesoria-expediente-web",
+    "kind": "desktop",
+    "ok": true,
+    "kb": 11.5,
+    "quality": 78
+  },
+  {
+    "repo": "plantilla-asesoria-expediente-web",
+    "kind": "mobile",
+    "ok": true,
+    "kb": 10,
     "quality": 78
   }
 ]

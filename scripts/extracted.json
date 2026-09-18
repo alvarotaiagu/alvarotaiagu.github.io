@@ -3052,5 +3052,1494 @@
     "faces": [],
     "h1Count": 1,
     "pageErrors": []
+  },
+  "taberna-do-rio-carballo-web": {
+    "repo": "taberna-do-rio-carballo-web",
+    "url": "https://alvarotaiagu.github.io/taberna-do-rio-carballo-web/",
+    "checkedAt": "2026-09-18T23:26:13.119Z",
+    "status": 404,
+    "headers": {
+      "x-frame-options": null,
+      "content-security-policy": "default-src 'none'; style-src 'unsafe-inline'; img-src data:; connect-src 'self'"
+    },
+    "title": "Site not found · GitHub Pages",
+    "description": "",
+    "lang": "",
+    "themeColor": "",
+    "ogImage": "",
+    "bodyBg": "rgb(241, 241, 241)",
+    "htmlBg": "rgba(0, 0, 0, 0)",
+    "heading": {
+      "tag": "h1",
+      "text": "404",
+      "family": "Helvetica Neue",
+      "stack": "\"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "weight": "100",
+      "style": "normal",
+      "size": 60,
+      "letterSpacing": "-1px",
+      "transform": "none",
+      "color": "rgb(0, 0, 0)"
+    },
+    "vars": [],
+    "scan": [
+      {
+        "value": "#4183C4",
+        "score": 0.0018
+      }
+    ],
+    "googleLinks": [],
+    "faces": [],
+    "h1Count": 1,
+    "pageErrors": []
+  },
+  "a-saia-da-carolina-carballo-web": {
+    "repo": "a-saia-da-carolina-carballo-web",
+    "url": "https://alvarotaiagu.github.io/a-saia-da-carolina-carballo-web/",
+    "checkedAt": "2026-09-18T23:26:17.778Z",
+    "status": 200,
+    "headers": {
+      "x-frame-options": null,
+      "content-security-policy": null
+    },
+    "title": "A Saia da Carolina · Tienda de ropa de mujer en Carballo",
+    "description": "A Saia da Carolina Store · Rúa Igrexa, 28, Carballo (A Coruña). Ropa de mujer, calzado y complementos. 5,0 ★ con 49 reseñas en Google. Abrimos domingos por la mañana.",
+    "lang": "es",
+    "themeColor": "#F4EFE6",
+    "ogImage": "https://alvarotaiagu.github.io/a-saia-da-carolina-carballo-web/assets/img/og-saia.jpg",
+    "bodyBg": "rgb(244, 239, 230)",
+    "htmlBg": "rgba(0, 0, 0, 0)",
+    "heading": {
+      "tag": "h1",
+      "text": "A Saia da Carolina",
+      "family": "Newsreader",
+      "stack": "Newsreader, Georgia, \"Times New Roman\", serif",
+      "weight": "200",
+      "style": "normal",
+      "size": 102,
+      "letterSpacing": "-1.2288px",
+      "transform": "none",
+      "color": "rgb(21, 21, 21)"
+    },
+    "vars": [
+      {
+        "prop": "--acento",
+        "value": "#9A7BB0",
+        "chroma": 0.244
+      },
+      {
+        "prop": "--gris-claro",
+        "value": "#E7E1D6",
+        "chroma": 0.194
+      }
+    ],
+    "scan": [
+      {
+        "value": "#9A7BB0",
+        "score": 0.0001
+      }
+    ],
+    "googleLinks": [
+      "https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200;0,6..72,300;0,6..72,400;1,6..72,300;1,6..72,400&family=Manrope:wght@300;400;500&display=swap"
+    ],
+    "faces": [],
+    "h1Count": 1,
+    "pageErrors": []
+  },
+  "plantilla-apicultura-web": {
+    "repo": "plantilla-apicultura-web",
+    "url": "https://alvarotaiagu.github.io/plantilla-apicultura-web/",
+    "checkedAt": "2026-09-18T23:26:22.643Z",
+    "status": 200,
+    "headers": {
+      "x-frame-options": null,
+      "content-security-policy": null
+    },
+    "title": "Mel do Cordal · Apicultura en Mazaricos",
+    "description": "Cuatro colmenares en Mazaricos y cuatro mieles distintas, según lo que florece en tres kilómetros a la redonda. Sitio de demostración: negocio ficticio.",
+    "lang": "es",
+    "themeColor": "#f2eee3",
+    "ogImage": "assets/og.png",
+    "bodyBg": "rgb(242, 238, 227)",
+    "htmlBg": "rgba(0, 0, 0, 0)",
+    "heading": {
+      "tag": "h1",
+      "text": "La miel no la hacemos nosotros",
+      "family": "Vollkorn",
+      "stack": "Vollkorn, Georgia, \"Times New Roman\", serif",
+      "weight": "500",
+      "style": "normal",
+      "size": 72,
+      "letterSpacing": "-1.08px",
+      "transform": "none",
+      "color": "rgb(34, 40, 31)"
+    },
+    "vars": [
+      {
+        "prop": "--ambar",
+        "value": "#B8761B",
+        "chroma": 0.663
+      },
+      {
+        "prop": "--ambar-claro",
+        "value": "#D59A3A",
+        "chroma": 0.639
+      },
+      {
+        "prop": "--ambar-texto",
+        "value": "#7D5210",
+        "chroma": 0.604
+      },
+      {
+        "prop": "--fondo",
+        "value": "#F2EEE3",
+        "chroma": 0.258
+      },
+      {
+        "prop": "--panel",
+        "value": "#E5DFD0",
+        "chroma": 0.217
+      },
+      {
+        "prop": "--monte",
+        "value": "#2F5140",
+        "chroma": 0.202
+      }
+    ],
+    "scan": [
+      {
+        "value": "#2F5140",
+        "score": 0.0182
+      },
+      {
+        "value": "#7D5210",
+        "score": 0.002
+      },
+      {
+        "value": "#B8761B",
+        "score": 0.0004
+      }
+    ],
+    "googleLinks": [
+      "https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400..800;1,400..700&family=Karla:ital,wght@0,300..700;1,300..600&display=swap"
+    ],
+    "faces": [],
+    "h1Count": 1,
+    "pageErrors": []
+  },
+  "plantilla-arquitectura-web": {
+    "repo": "plantilla-arquitectura-web",
+    "url": "https://alvarotaiagu.github.io/plantilla-arquitectura-web/",
+    "checkedAt": "2026-09-18T23:26:27.324Z",
+    "status": 200,
+    "headers": {
+      "x-frame-options": null,
+      "content-security-policy": null
+    },
+    "title": "Perpiaño · Arquitectura y reformas en Lugo",
+    "description": "Estudio de arquitectura y dirección de obra en Lugo: rehabilitación de casas de piedra, reformas integrales y obra nueva, con precios y plazos por escrito. Sitio de demostración: estudio ficticio.",
+    "lang": "es",
+    "themeColor": "#f6f2e9",
+    "ogImage": "assets/og.png",
+    "bodyBg": "rgb(246, 242, 233)",
+    "htmlBg": "rgba(0, 0, 0, 0)",
+    "heading": {
+      "tag": "h1",
+      "text": "Todo empieza en una planta: la que hay y la que va a haber",
+      "family": "Newsreader",
+      "stack": "Newsreader, Georgia, serif",
+      "weight": "400",
+      "style": "normal",
+      "size": 74,
+      "letterSpacing": "-0.8832px",
+      "transform": "none",
+      "color": "rgb(43, 39, 36)"
+    },
+    "vars": [
+      {
+        "prop": "--almagre-claro",
+        "value": "#C05A45",
+        "chroma": 0.479
+      },
+      {
+        "prop": "--almagre",
+        "value": "#9C3B2E",
+        "chroma": 0.477
+      },
+      {
+        "prop": "--papel-hondo",
+        "value": "#EFE9DC",
+        "chroma": 0.268
+      },
+      {
+        "prop": "--arena",
+        "value": "#E4DBC8",
+        "chroma": 0.262
+      },
+      {
+        "prop": "--arena-honda",
+        "value": "#D5C9B0",
+        "chroma": 0.254
+      }
+    ],
+    "scan": [
+      {
+        "value": "#E4DBC8",
+        "score": 0.0099
+      },
+      {
+        "value": "#9C3B2E",
+        "score": 0.0094
+      }
+    ],
+    "googleLinks": [
+      "https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400..700;1,400..600&family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..600&display=swap"
+    ],
+    "faces": [],
+    "h1Count": 1,
+    "pageErrors": []
+  },
+  "plantilla-balneario-web": {
+    "repo": "plantilla-balneario-web",
+    "url": "https://alvarotaiagu.github.io/plantilla-balneario-web/",
+    "checkedAt": "2026-09-18T23:26:31.952Z",
+    "status": 200,
+    "headers": {
+      "x-frame-options": null,
+      "content-security-policy": null
+    },
+    "title": "As Caldeiras · Casa de baños termales en Allariz",
+    "description": "Casa de baños de agua termal en Allariz: un circuito de siete estaciones y noventa minutos, de doce a cuarenta y cinco grados. Sitio de demostración: negocio ficticio.",
+    "lang": "es",
+    "themeColor": "#f1ece3",
+    "ogImage": "assets/og.png",
+    "bodyBg": "rgb(241, 236, 227)",
+    "htmlBg": "rgba(0, 0, 0, 0)",
+    "heading": {
+      "tag": "h1",
+      "text": "Noventa minutos medidos en grados",
+      "family": "Cormorant Garamond",
+      "stack": "\"Cormorant Garamond\", Georgia, serif",
+      "weight": "400",
+      "style": "normal",
+      "size": 86,
+      "letterSpacing": "-0.432px",
+      "transform": "none",
+      "color": "rgb(51, 48, 44)"
+    },
+    "vars": [
+      {
+        "prop": "--cobre-claro",
+        "value": "#D88646",
+        "chroma": 0.646
+      },
+      {
+        "prop": "--cobre",
+        "value": "#B4703A",
+        "chroma": 0.478
+      },
+      {
+        "prop": "--acento",
+        "value": "#B4703A",
+        "chroma": 0.478
+      },
+      {
+        "prop": "--cobre-hondo",
+        "value": "#8F5528",
+        "chroma": 0.477
+      },
+      {
+        "prop": "--cobre-boton",
+        "value": "#8F5528",
+        "chroma": 0.477
+      },
+      {
+        "prop": "--acento-texto",
+        "value": "#8F5528",
+        "chroma": 0.477
+      },
+      {
+        "prop": "--calido",
+        "value": "#C2663C",
+        "chroma": 0.506
+      },
+      {
+        "prop": "--fondo-calido",
+        "value": "#F8E6D7",
+        "chroma": 0.501
+      }
+    ],
+    "scan": [
+      {
+        "value": "#8F5528",
+        "score": 0.011
+      },
+      {
+        "value": "#9F5431",
+        "score": 0.0015
+      }
+    ],
+    "googleLinks": [
+      "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..600&family=Jost:ital,wght@0,300..600;1,300..500&display=swap"
+    ],
+    "faces": [],
+    "h1Count": 1,
+    "pageErrors": []
+  },
+  "plantilla-bicicletas-web": {
+    "repo": "plantilla-bicicletas-web",
+    "url": "https://alvarotaiagu.github.io/plantilla-bicicletas-web/",
+    "checkedAt": "2026-09-18T23:26:36.970Z",
+    "status": 200,
+    "headers": {
+      "x-frame-options": null,
+      "content-security-policy": null
+    },
+    "title": "Sete Curvas · bicicletas y taller (demostración)",
+    "description": "Plantilla de demostración para tienda y taller de bicicletas. Sete Curvas es un negocio ficticio: taller con cita, seis modelos, alquiler y salidas de club.",
+    "lang": "es",
+    "themeColor": "#EFEDE7",
+    "ogImage": "assets/og.png",
+    "bodyBg": "rgb(239, 237, 231)",
+    "htmlBg": "rgba(0, 0, 0, 0)",
+    "heading": {
+      "tag": "h1",
+      "text": "Una tienda que se recorre como una etapa",
+      "family": "Anybody",
+      "stack": "Anybody, \"Arial Narrow\", sans-serif",
+      "weight": "800",
+      "style": "normal",
+      "size": 80,
+      "letterSpacing": "-1.5936px",
+      "transform": "uppercase",
+      "color": "rgb(26, 28, 26)"
+    },
+    "vars": [
+      {
+        "prop": "--naranja",
+        "value": "#FF4A17",
+        "chroma": 0.996
+      },
+      {
+        "prop": "--naranja-texto",
+        "value": "#BE3510",
+        "chroma": 0.746
+      },
+      {
+        "prop": "--pino",
+        "value": "#1F5D4C",
+        "chroma": 0.377
+      }
+    ],
+    "scan": [
+      {
+        "value": "#FF4A17",
+        "score": 0.0758
+      },
+      {
+        "value": "#BE3510",
+        "score": 0.004
+      }
+    ],
+    "googleLinks": [
+      "https://fonts.googleapis.com/css2?family=Anybody:wdth,wght@100..150,600;100..150,800&family=Chivo:wght@400;500;700&family=Azeret+Mono:wght@400;500&display=swap"
+    ],
+    "faces": [],
+    "h1Count": 1,
+    "pageErrors": []
+  },
+  "plantilla-carpinteria-web": {
+    "repo": "plantilla-carpinteria-web",
+    "url": "https://alvarotaiagu.github.io/plantilla-carpinteria-web/",
+    "checkedAt": "2026-09-18T23:26:41.834Z",
+    "status": 200,
+    "headers": {
+      "x-frame-options": null,
+      "content-security-policy": null
+    },
+    "title": "Espiga · carpintería a medida (demostración)",
+    "description": "Plantilla de demostración para carpintería a medida. Espiga es un negocio ficticio: seis muebles con sus medidas, plazos claros y presupuesto sin compromiso.",
+    "lang": "es",
+    "themeColor": "#F2EAE0",
+    "ogImage": "assets/og.png",
+    "bodyBg": "rgb(242, 234, 224)",
+    "htmlBg": "rgba(0, 0, 0, 0)",
+    "heading": {
+      "tag": "h1",
+      "text": "Lo que encaja no necesita tornillos",
+      "family": "Archivo",
+      "stack": "Archivo, \"Trebuchet MS\", sans-serif",
+      "weight": "800",
+      "style": "normal",
+      "size": 70,
+      "letterSpacing": "-1.76px",
+      "transform": "none",
+      "color": "rgb(35, 29, 24)"
+    },
+    "vars": [
+      {
+        "prop": "--madera",
+        "value": "#B07F41",
+        "chroma": 0.432
+      },
+      {
+        "prop": "--madera-oscura",
+        "value": "#6E452C",
+        "chroma": 0.344
+      },
+      {
+        "prop": "--papel",
+        "value": "#F2EAE0",
+        "chroma": 0.29
+      },
+      {
+        "prop": "--verde",
+        "value": "#4A6B3E",
+        "chroma": 0.22
+      }
+    ],
+    "scan": [
+      {
+        "value": "#8A5C3E",
+        "score": 0.0115
+      },
+      {
+        "value": "#B07F41",
+        "score": 0.0114
+      },
+      {
+        "value": "#8A5F2B",
+        "score": 0.011
+      },
+      {
+        "value": "#6E452C",
+        "score": 0.0102
+      },
+      {
+        "value": "#4E2F1C",
+        "score": 0.0085
+      },
+      {
+        "value": "#F2EAE0",
+        "score": 0.0064
+      }
+    ],
+    "googleLinks": [
+      "https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;800&family=Sora:wght@400;500;600&family=Overpass+Mono:wght@400;500&display=swap"
+    ],
+    "faces": [],
+    "h1Count": 1,
+    "pageErrors": []
+  },
+  "plantilla-ceramica-web": {
+    "repo": "plantilla-ceramica-web",
+    "url": "https://alvarotaiagu.github.io/plantilla-ceramica-web/",
+    "checkedAt": "2026-09-18T23:26:46.658Z",
+    "status": 200,
+    "headers": {
+      "x-frame-options": null,
+      "content-security-policy": null
+    },
+    "title": "Olería Rañal · Taller de cerámica en Ponteceso",
+    "description": "Taller de cerámica de gres en Ponteceso: vajilla para casa y para restaurante, esmaltes propios y cursos. Sitio de demostración: negocio ficticio.",
+    "lang": "es",
+    "themeColor": "#ede6dc",
+    "ogImage": "assets/og.png",
+    "bodyBg": "rgb(237, 230, 220)",
+    "htmlBg": "rgba(0, 0, 0, 0)",
+    "heading": {
+      "tag": "h1",
+      "text": "Todo lo que sale del horno es más pequeño de lo que hiciste",
+      "family": "Lora",
+      "stack": "Lora, Georgia, \"Times New Roman\", serif",
+      "weight": "500",
+      "style": "normal",
+      "size": 69,
+      "letterSpacing": "-1.032px",
+      "transform": "none",
+      "color": "rgb(51, 43, 36)"
+    },
+    "vars": [
+      {
+        "prop": "--hierro-claro",
+        "value": "#D98A5A",
+        "chroma": 0.6
+      },
+      {
+        "prop": "--hierro",
+        "value": "#8A4B2A",
+        "chroma": 0.449
+      },
+      {
+        "prop": "--fondo",
+        "value": "#EDE6DC",
+        "chroma": 0.232
+      },
+      {
+        "prop": "--panel",
+        "value": "#DFD5C7",
+        "chroma": 0.212
+      }
+    ],
+    "scan": [
+      {
+        "value": "#DFD5C7",
+        "score": 0.0079
+      },
+      {
+        "value": "#8A4B2A",
+        "score": 0.0075
+      }
+    ],
+    "googleLinks": [
+      "https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..600&family=Public+Sans:ital,wght@0,300..700;1,300..600&display=swap"
+    ],
+    "faces": [],
+    "h1Count": 1,
+    "pageErrors": []
+  },
+  "plantilla-cerveceria-web": {
+    "repo": "plantilla-cerveceria-web",
+    "url": "https://alvarotaiagu.github.io/plantilla-cerveceria-web/",
+    "checkedAt": "2026-09-18T23:26:51.335Z",
+    "status": 200,
+    "headers": {
+      "x-frame-options": null,
+      "content-security-policy": null
+    },
+    "title": "TRASFEGA · Obrador de cerveza en Betanzos (demo)",
+    "description": "Plantilla de demostración de un obrador de cerveza artesanal ficticio: la trasfega paso a paso, los lotes, las visitas y los pedidos. Todos los datos son de muestra.",
+    "lang": "es",
+    "themeColor": "#0C0D0F",
+    "ogImage": "assets/og.png",
+    "bodyBg": "rgb(12, 13, 15)",
+    "htmlBg": "rgba(0, 0, 0, 0)",
+    "heading": {
+      "tag": "h1",
+      "text": "Mil doscientos litros por colada y ninguna prisa",
+      "family": "Antonio",
+      "stack": "Antonio, \"Arial Narrow\", sans-serif",
+      "weight": "600",
+      "style": "normal",
+      "size": 115,
+      "letterSpacing": "0.576px",
+      "transform": "uppercase",
+      "color": "rgb(237, 239, 242)"
+    },
+    "vars": [
+      {
+        "prop": "--magenta",
+        "value": "#FF2E8A",
+        "chroma": 0.968
+      },
+      {
+        "prop": "--magenta-osc",
+        "value": "#D4136C",
+        "chroma": 0.771
+      }
+    ],
+    "scan": [
+      {
+        "value": "#FF2E8A",
+        "score": 0.0732
+      }
+    ],
+    "googleLinks": [
+      "https://fonts.googleapis.com/css2?family=Antonio:wght@400;600;700&family=Chivo+Mono:wght@400;500&family=Chivo:wght@400;500;700&display=swap"
+    ],
+    "faces": [],
+    "h1Count": 1,
+    "pageErrors": []
+  },
+  "plantilla-coworking-web": {
+    "repo": "plantilla-coworking-web",
+    "url": "https://alvarotaiagu.github.io/plantilla-coworking-web/",
+    "checkedAt": "2026-09-18T23:26:55.851Z",
+    "status": 200,
+    "headers": {
+      "x-frame-options": null,
+      "content-security-policy": null
+    },
+    "title": "O FAIADO · Coworking en A Coruña (demo)",
+    "description": "Plantilla de demostración de un coworking ficticio: la planta a cada hora, ocupación por franjas, espacios y tarifas de muestra.",
+    "lang": "es",
+    "themeColor": "#0C0C10",
+    "ogImage": "assets/og.png",
+    "bodyBg": "rgb(12, 12, 16)",
+    "htmlBg": "rgba(0, 0, 0, 0)",
+    "heading": {
+      "tag": "h1",
+      "text": "Te decimos a qué hora hay sitio",
+      "family": "Big Shoulders Display",
+      "stack": "\"Big Shoulders Display\", \"Arial Narrow\", sans-serif",
+      "weight": "800",
+      "style": "normal",
+      "size": 112,
+      "letterSpacing": "1.12px",
+      "transform": "uppercase",
+      "color": "rgb(237, 238, 242)"
+    },
+    "vars": [
+      {
+        "prop": "--violeta",
+        "value": "#9B6BFF",
+        "chroma": 0.872
+      },
+      {
+        "prop": "--violeta-osc",
+        "value": "#7A46E8",
+        "chroma": 0.753
+      }
+    ],
+    "scan": [
+      {
+        "value": "#9B6BFF",
+        "score": 0.0852
+      }
+    ],
+    "googleLinks": [
+      "https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;600;800&family=Manrope:wght@400;500;700&display=swap"
+    ],
+    "faces": [],
+    "h1Count": 1,
+    "pageErrors": []
+  },
+  "plantilla-enoteca-web": {
+    "repo": "plantilla-enoteca-web",
+    "url": "https://alvarotaiagu.github.io/plantilla-enoteca-web/",
+    "checkedAt": "2026-09-18T23:27:00.389Z",
+    "status": 200,
+    "headers": {
+      "x-frame-options": null,
+      "content-security-policy": null
+    },
+    "title": "Trasfega · enoteca (demostración)",
+    "description": "Plantilla de demostración para enoteca. Trasfega es un negocio ficticio: ocho vinos inventados, catas de los jueves y caja mensual.",
+    "lang": "es",
+    "themeColor": "#F0E6D6",
+    "ogImage": "assets/og.png",
+    "bodyBg": "rgb(240, 230, 214)",
+    "htmlBg": "rgba(0, 0, 0, 0)",
+    "heading": {
+      "tag": "h1",
+      "text": "Primero lo que hay dentro",
+      "family": "Gabarito",
+      "stack": "Gabarito, \"Trebuchet MS\", sans-serif",
+      "weight": "800",
+      "style": "normal",
+      "size": 77,
+      "letterSpacing": "-1.92px",
+      "transform": "none",
+      "color": "rgb(36, 26, 28)"
+    },
+    "vars": [
+      {
+        "prop": "--oro",
+        "value": "#C9A227",
+        "chroma": 0.632
+      },
+      {
+        "prop": "--granate",
+        "value": "#6E1330",
+        "chroma": 0.538
+      },
+      {
+        "prop": "--granate-claro",
+        "value": "#8E2444",
+        "chroma": 0.5
+      },
+      {
+        "prop": "--papel",
+        "value": "#F0E6D6",
+        "chroma": 0.338
+      },
+      {
+        "prop": "--verde",
+        "value": "#2B4A3F",
+        "chroma": 0.197
+      }
+    ],
+    "scan": [
+      {
+        "value": "#6E1330",
+        "score": 0.0144
+      },
+      {
+        "value": "#F0E6D6",
+        "score": 0.0091
+      }
+    ],
+    "googleLinks": [
+      "https://fonts.googleapis.com/css2?family=Gabarito:wght@400;600;800&family=Public+Sans:wght@400;500;600&family=Overpass+Mono:wght@400;500&display=swap"
+    ],
+    "faces": [],
+    "h1Count": 1,
+    "pageErrors": []
+  },
+  "plantilla-escuela-musica-web": {
+    "repo": "plantilla-escuela-musica-web",
+    "url": "https://alvarotaiagu.github.io/plantilla-escuela-musica-web/",
+    "checkedAt": "2026-09-18T23:27:05.088Z",
+    "status": 200,
+    "headers": {
+      "x-frame-options": null,
+      "content-security-policy": null
+    },
+    "title": "Semitón · escuela de música (demostración)",
+    "description": "Plantilla de demostración para escuela de música. Semitón es un negocio ficticio: cinco instrumentos, clases individuales y en grupo, dos audiciones al año.",
+    "lang": "es",
+    "themeColor": "#F4EFE6",
+    "ogImage": "assets/og.png",
+    "bodyBg": "rgb(244, 239, 230)",
+    "htmlBg": "rgba(0, 0, 0, 0)",
+    "heading": {
+      "tag": "h1",
+      "text": "Nadie empieza afinado",
+      "family": "Unbounded",
+      "stack": "Unbounded, \"Trebuchet MS\", sans-serif",
+      "weight": "800",
+      "style": "normal",
+      "size": 72,
+      "letterSpacing": "-2.1696px",
+      "transform": "none",
+      "color": "rgb(20, 17, 15)"
+    },
+    "vars": [
+      {
+        "prop": "--rojo",
+        "value": "#B8232F",
+        "chroma": 0.615
+      },
+      {
+        "prop": "--laton",
+        "value": "#C79A3C",
+        "chroma": 0.535
+      },
+      {
+        "prop": "--verde",
+        "value": "#2F7A55",
+        "chroma": 0.366
+      }
+    ],
+    "scan": [
+      {
+        "value": "#B8232F",
+        "score": 0.0161
+      },
+      {
+        "value": "#2F7A55",
+        "score": 0.0005
+      }
+    ],
+    "googleLinks": [
+      "https://fonts.googleapis.com/css2?family=Unbounded:wght@400;700;800&family=Manrope:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap"
+    ],
+    "faces": [],
+    "h1Count": 1,
+    "pageErrors": []
+  },
+  "plantilla-floristeria-web": {
+    "repo": "plantilla-floristeria-web",
+    "url": "https://alvarotaiagu.github.io/plantilla-floristeria-web/",
+    "checkedAt": "2026-09-18T23:27:09.786Z",
+    "status": 200,
+    "headers": {
+      "x-frame-options": null,
+      "content-security-policy": null
+    },
+    "title": "Ramalleira · Floristería en Betanzos (A Coruña)",
+    "description": "Floristería de barrio en Betanzos: ramos hechos a mano tallo a tallo, plantas de interior, encargos por WhatsApp y talleres. Sitio de demostración: negocio ficticio.",
+    "lang": "es",
+    "themeColor": "#fbf5ec",
+    "ogImage": "assets/og.png",
+    "bodyBg": "rgb(251, 245, 236)",
+    "htmlBg": "rgba(0, 0, 0, 0)",
+    "heading": {
+      "tag": "h1",
+      "text": "El ramo se monta delante de ti, tallo a tallo",
+      "family": "Gloock",
+      "stack": "Gloock, \"Times New Roman\", serif",
+      "weight": "400",
+      "style": "normal",
+      "size": 80,
+      "letterSpacing": "-0.8px",
+      "transform": "none",
+      "color": "rgb(59, 36, 52)"
+    },
+    "vars": [
+      {
+        "prop": "--azafran",
+        "value": "#D98A28",
+        "chroma": 0.674
+      },
+      {
+        "prop": "--azafran-hondo",
+        "value": "#B56F19",
+        "chroma": 0.669
+      },
+      {
+        "prop": "--rosa",
+        "value": "#C15A6A",
+        "chroma": 0.452
+      },
+      {
+        "prop": "--kraft",
+        "value": "#E7D3B4",
+        "chroma": 0.41
+      },
+      {
+        "prop": "--kraft-hondo",
+        "value": "#D8BF98",
+        "chroma": 0.389
+      },
+      {
+        "prop": "--papel",
+        "value": "#EFE2CE",
+        "chroma": 0.377
+      },
+      {
+        "prop": "--ciruela",
+        "value": "#3B2434",
+        "chroma": 0.172
+      }
+    ],
+    "scan": [
+      {
+        "value": "#D98A28",
+        "score": 0.0169
+      },
+      {
+        "value": "#C9AB80",
+        "score": 0.0132
+      },
+      {
+        "value": "#E7D3B4",
+        "score": 0.0097
+      },
+      {
+        "value": "#3B2434",
+        "score": 0.0072
+      },
+      {
+        "value": "#8A5B3E",
+        "score": 0.0004
+      }
+    ],
+    "googleLinks": [
+      "https://fonts.googleapis.com/css2?family=Gloock&family=Hanken+Grotesk:ital,wght@0,300..800;1,300..600&display=swap"
+    ],
+    "faces": [],
+    "h1Count": 1,
+    "pageErrors": []
+  },
+  "plantilla-fotografia-web": {
+    "repo": "plantilla-fotografia-web",
+    "url": "https://alvarotaiagu.github.io/plantilla-fotografia-web/",
+    "checkedAt": "2026-09-18T23:27:14.406Z",
+    "status": 200,
+    "headers": {
+      "x-frame-options": null,
+      "content-security-policy": null
+    },
+    "title": "CHINAGRAPH · Estudio de fotografía en Vigo (demo)",
+    "description": "Plantilla de demostración de un estudio de fotografía ficticio, montada como una hoja de contactos con los fotogramas vacíos. Todos los datos son de muestra.",
+    "lang": "es",
+    "themeColor": "#0C0A0A",
+    "ogImage": "assets/og.png",
+    "bodyBg": "rgb(12, 10, 10)",
+    "htmlBg": "rgba(0, 0, 0, 0)",
+    "heading": {
+      "tag": "h1",
+      "text": "En esta web no hay ni una sola fotografía",
+      "family": "Archivo Narrow",
+      "stack": "\"Archivo Narrow\", \"Arial Narrow\", sans-serif",
+      "weight": "700",
+      "style": "normal",
+      "size": 99,
+      "letterSpacing": "-0.496px",
+      "transform": "uppercase",
+      "color": "rgb(242, 238, 236)"
+    },
+    "vars": [
+      {
+        "prop": "--rojo",
+        "value": "#FF2D2D",
+        "chroma": 0.969
+      },
+      {
+        "prop": "--rojo-osc",
+        "value": "#D31414",
+        "chroma": 0.763
+      }
+    ],
+    "scan": [
+      {
+        "value": "#FF2D2D",
+        "score": 0.0617
+      }
+    ],
+    "googleLinks": [
+      "https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;600;700&family=Azeret+Mono:wght@400;500&family=Public+Sans:wght@400;500;700&display=swap"
+    ],
+    "faces": [],
+    "h1Count": 1,
+    "pageErrors": []
+  },
+  "plantilla-fotovoltaica-web": {
+    "repo": "plantilla-fotovoltaica-web",
+    "url": "https://alvarotaiagu.github.io/plantilla-fotovoltaica-web/",
+    "checkedAt": "2026-09-18T23:27:18.972Z",
+    "status": 200,
+    "headers": {
+      "x-frame-options": null,
+      "content-security-policy": null
+    },
+    "title": "GNOMON · Instaladores fotovoltaicos en Lalín (demo)",
+    "description": "Plantilla de demostración de una empresa de instalación fotovoltaica ficticia: estudio de sombras, equipos, papeles y casos de ejemplo. Todos los datos son de muestra.",
+    "lang": "es",
+    "themeColor": "#0A0D0C",
+    "ogImage": "assets/og.png",
+    "bodyBg": "rgb(10, 13, 12)",
+    "htmlBg": "rgba(0, 0, 0, 0)",
+    "heading": {
+      "tag": "h1",
+      "text": "Lo que decide tu instalación no es el sol: es la sombra",
+      "family": "Archivo",
+      "stack": "Archivo, system-ui, sans-serif",
+      "weight": "800",
+      "style": "normal",
+      "size": 90,
+      "letterSpacing": "-1.792px",
+      "transform": "none",
+      "color": "rgb(237, 242, 240)"
+    },
+    "vars": [
+      {
+        "prop": "--verde",
+        "value": "#17E08A",
+        "chroma": 0.771
+      },
+      {
+        "prop": "--verde-osc",
+        "value": "#0C9C60",
+        "chroma": 0.706
+      }
+    ],
+    "scan": [
+      {
+        "value": "#17E08A",
+        "score": 0.0653
+      }
+    ],
+    "googleLinks": [
+      "https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;800&family=JetBrains+Mono:wght@400;500&display=swap"
+    ],
+    "faces": [],
+    "h1Count": 1,
+    "pageErrors": []
+  },
+  "plantilla-lavanderia-web": {
+    "repo": "plantilla-lavanderia-web",
+    "url": "https://alvarotaiagu.github.io/plantilla-lavanderia-web/",
+    "checkedAt": "2026-09-18T23:27:23.499Z",
+    "status": 200,
+    "headers": {
+      "x-frame-options": null,
+      "content-security-policy": null
+    },
+    "title": "Escuma · lavandería (demostración)",
+    "description": "Plantilla de demostración para lavandería. Escuma es un negocio ficticio: autoservicio de 7 a 23, lavar y doblar en 24 horas y un descifrador de etiquetas.",
+    "lang": "es",
+    "themeColor": "#F2F5F1",
+    "ogImage": "assets/og.png",
+    "bodyBg": "rgb(242, 245, 241)",
+    "htmlBg": "rgba(0, 0, 0, 0)",
+    "heading": {
+      "tag": "h1",
+      "text": "Tu ropa ya te dice cómo lavarla",
+      "family": "Schibsted Grotesk",
+      "stack": "\"Schibsted Grotesk\", \"Trebuchet MS\", sans-serif",
+      "weight": "800",
+      "style": "normal",
+      "size": 70,
+      "letterSpacing": "-1.76px",
+      "transform": "none",
+      "color": "rgb(20, 38, 31)"
+    },
+    "vars": [
+      {
+        "prop": "--amarillo",
+        "value": "#E8B21F",
+        "chroma": 0.791
+      },
+      {
+        "prop": "--rojo",
+        "value": "#C8402F",
+        "chroma": 0.587
+      },
+      {
+        "prop": "--verde-oscuro",
+        "value": "#1F6B51",
+        "chroma": 0.428
+      },
+      {
+        "prop": "--verde",
+        "value": "#2E8B6B",
+        "chroma": 0.427
+      }
+    ],
+    "scan": [
+      {
+        "value": "#1F6B51",
+        "score": 0.0114
+      }
+    ],
+    "googleLinks": [
+      "https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;600;800&family=Figtree:wght@400;500;600&family=Fira+Mono:wght@400;500&display=swap"
+    ],
+    "faces": [],
+    "h1Count": 1,
+    "pageErrors": []
+  },
+  "plantilla-libreria-web": {
+    "repo": "plantilla-libreria-web",
+    "url": "https://alvarotaiagu.github.io/plantilla-libreria-web/",
+    "checkedAt": "2026-09-18T23:27:28.241Z",
+    "status": 200,
+    "headers": {
+      "x-frame-options": null,
+      "content-security-policy": null
+    },
+    "title": "Librería Cuadratín · librería de barrio (demostración)",
+    "description": "Plantilla de demostración para librería. Cuadratín es un negocio ficticio: mesa de novedades, club de lectura, encargos en 48 horas y plano de la casa.",
+    "lang": "es",
+    "themeColor": "#23261F",
+    "ogImage": "assets/og.png",
+    "bodyBg": "rgb(35, 38, 31)",
+    "htmlBg": "rgba(0, 0, 0, 0)",
+    "heading": {
+      "tag": "h1",
+      "text": "Un libro se elige por el lomo",
+      "family": "Familjen Grotesk",
+      "stack": "\"Familjen Grotesk\", \"Trebuchet MS\", sans-serif",
+      "weight": "700",
+      "style": "normal",
+      "size": 77,
+      "letterSpacing": "-1.536px",
+      "transform": "none",
+      "color": "rgb(242, 237, 225)"
+    },
+    "vars": [
+      {
+        "prop": "--mostaza",
+        "value": "#E0A21B",
+        "chroma": 0.749
+      },
+      {
+        "prop": "--rojo",
+        "value": "#D6402F",
+        "chroma": 0.65
+      },
+      {
+        "prop": "--azul",
+        "value": "#2E5FA3",
+        "chroma": 0.497
+      },
+      {
+        "prop": "--crema",
+        "value": "#F2EDE1",
+        "chroma": 0.28
+      },
+      {
+        "prop": "--crema-70",
+        "value": "#F2EDE1",
+        "chroma": 0.28
+      },
+      {
+        "prop": "--crema-45",
+        "value": "#F2EDE1",
+        "chroma": 0.28
+      }
+    ],
+    "scan": [
+      {
+        "value": "#F2EDE1",
+        "score": 0.0662
+      },
+      {
+        "value": "#E0A21B",
+        "score": 0.0232
+      },
+      {
+        "value": "#E5806A",
+        "score": 0.0179
+      },
+      {
+        "value": "#C0392B",
+        "score": 0.0153
+      },
+      {
+        "value": "#A8352C",
+        "score": 0.0124
+      },
+      {
+        "value": "#E4CBA0",
+        "score": 0.0096
+      },
+      {
+        "value": "#B9A46A",
+        "score": 0.0087
+      },
+      {
+        "value": "#356B43",
+        "score": 0.008
+      }
+    ],
+    "googleLinks": [
+      "https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;600;700&family=Karla:wght@400;500;600&family=Courier+Prime:wght@400;700&display=swap"
+    ],
+    "faces": [],
+    "h1Count": 1,
+    "pageErrors": []
+  },
+  "plantilla-mudanzas-web": {
+    "repo": "plantilla-mudanzas-web",
+    "url": "https://alvarotaiagu.github.io/plantilla-mudanzas-web/",
+    "checkedAt": "2026-09-18T23:27:33.194Z",
+    "status": 200,
+    "headers": {
+      "x-frame-options": null,
+      "content-security-policy": null
+    },
+    "title": "CARREXO · Mudanzas y guardamuebles en Ordes (demo)",
+    "description": "Plantilla de demostración de una empresa de mudanzas ficticia: inventario del servicio, calculadora de volumen, guardamuebles y tarifas de muestra.",
+    "lang": "es",
+    "themeColor": "#0B0B0C",
+    "ogImage": "assets/og.png",
+    "bodyBg": "rgb(11, 11, 12)",
+    "htmlBg": "rgba(0, 0, 0, 0)",
+    "heading": {
+      "tag": "h1",
+      "text": "Todo lo que tienes, numerado y en su caja",
+      "family": "Bebas Neue",
+      "stack": "\"Bebas Neue\", \"Arial Narrow\", sans-serif",
+      "weight": "400",
+      "style": "normal",
+      "size": 118,
+      "letterSpacing": "1.4208px",
+      "transform": "none",
+      "color": "rgb(239, 241, 243)"
+    },
+    "vars": [
+      {
+        "prop": "--amarillo",
+        "value": "#FFD11A",
+        "chroma": 0.999
+      },
+      {
+        "prop": "--amarillo-osc",
+        "value": "#D9AE00",
+        "chroma": 0.9
+      }
+    ],
+    "scan": [
+      {
+        "value": "#FFD11A",
+        "score": 0.0695
+      }
+    ],
+    "googleLinks": [
+      "https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Mono:wght@400;500&family=Work+Sans:wght@400;500;600&display=swap"
+    ],
+    "faces": [],
+    "h1Count": 1,
+    "pageErrors": []
+  },
+  "plantilla-queseria-web": {
+    "repo": "plantilla-queseria-web",
+    "url": "https://alvarotaiagu.github.io/plantilla-queseria-web/",
+    "checkedAt": "2026-09-18T23:27:37.818Z",
+    "status": 200,
+    "headers": {
+      "x-frame-options": null,
+      "content-security-policy": null
+    },
+    "title": "Queixería Bardanca · Obrador de queso de leche cruda en Palas de Rei",
+    "description": "Obrador pequeño de queso de leche cruda en la Ulloa: cuatro quesos, una cava de maduración y venta en el obrador y en mercados. Sitio de demostración: negocio ficticio.",
+    "lang": "es",
+    "themeColor": "#f2e9d6",
+    "ogImage": "assets/og.png",
+    "bodyBg": "rgb(242, 233, 214)",
+    "htmlBg": "rgba(0, 0, 0, 0)",
+    "heading": {
+      "tag": "h1",
+      "text": "La corteza es el diario del queso",
+      "family": "Petrona",
+      "stack": "Petrona, Georgia, serif",
+      "weight": "500",
+      "style": "normal",
+      "size": 77,
+      "letterSpacing": "-0.9216px",
+      "transform": "none",
+      "color": "rgb(51, 39, 27)"
+    },
+    "vars": [
+      {
+        "prop": "--paja",
+        "value": "#D9A41F",
+        "chroma": 0.712
+      },
+      {
+        "prop": "--paja-honda",
+        "value": "#A87A12",
+        "chroma": 0.687
+      },
+      {
+        "prop": "--cera",
+        "value": "#8E2B24",
+        "chroma": 0.5
+      },
+      {
+        "prop": "--corteza",
+        "value": "#EADFC0",
+        "chroma": 0.386
+      },
+      {
+        "prop": "--fondo",
+        "value": "#F2E9D6",
+        "chroma": 0.376
+      },
+      {
+        "prop": "--panel-hondo",
+        "value": "#DCCCA9",
+        "chroma": 0.35
+      },
+      {
+        "prop": "--panel",
+        "value": "#E7DAC0",
+        "chroma": 0.348
+      },
+      {
+        "prop": "--tinta",
+        "value": "#33271B",
+        "chroma": 0.21
+      }
+    ],
+    "scan": [
+      {
+        "value": "#33271B",
+        "score": 0.023
+      },
+      {
+        "value": "#C2A674",
+        "score": 0.0209
+      },
+      {
+        "value": "#F6E7C2",
+        "score": 0.0189
+      },
+      {
+        "value": "#D9A41F",
+        "score": 0.0156
+      },
+      {
+        "value": "#6B5942",
+        "score": 0.0087
+      },
+      {
+        "value": "#EDDCB0",
+        "score": 0.0046
+      },
+      {
+        "value": "#695942",
+        "score": 0.0032
+      },
+      {
+        "value": "#A87A12",
+        "score": 0.0002
+      }
+    ],
+    "googleLinks": [
+      "https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..800;1,300..600&family=Petrona:ital,wght@0,300..700;1,300..600&display=swap"
+    ],
+    "faces": [],
+    "h1Count": 1,
+    "pageErrors": []
+  },
+  "plantilla-seguridad-alarmas-web": {
+    "repo": "plantilla-seguridad-alarmas-web",
+    "url": "https://alvarotaiagu.github.io/plantilla-seguridad-alarmas-web/",
+    "checkedAt": "2026-09-18T23:27:42.656Z",
+    "status": 200,
+    "headers": {
+      "x-frame-options": null,
+      "content-security-policy": null
+    },
+    "title": "ALDRABA · Alarmas y seguridad en Ferrol (demo)",
+    "description": "Plantilla de demostración de una empresa de alarmas ficticia: la secuencia de un salto de alarma paso a paso, falsas alarmas, límites legales y privacidad de las cámaras. Todos los datos son de muestra.",
+    "lang": "es",
+    "themeColor": "#07080C",
+    "ogImage": "assets/og.png",
+    "bodyBg": "rgb(7, 8, 12)",
+    "htmlBg": "rgba(0, 0, 0, 0)",
+    "heading": {
+      "tag": "h1",
+      "text": "Lo que contratas no es una sirena: es lo que pasa en los dos minutos siguientes",
+      "family": "Khand",
+      "stack": "Khand, Impact, sans-serif",
+      "weight": "700",
+      "style": "normal",
+      "size": 86,
+      "letterSpacing": "-0.432px",
+      "transform": "none",
+      "color": "rgb(234, 238, 247)"
+    },
+    "vars": [
+      {
+        "prop": "--azul",
+        "value": "#3D5AFE",
+        "chroma": 0.936
+      },
+      {
+        "prop": "--rojo",
+        "value": "#FF5C5C",
+        "chroma": 0.896
+      },
+      {
+        "prop": "--azul-claro",
+        "value": "#6E82FF",
+        "chroma": 0.867
+      },
+      {
+        "prop": "--azul-hondo",
+        "value": "#1B2A8A",
+        "chroma": 0.551
+      },
+      {
+        "prop": "--acero",
+        "value": "#39425A",
+        "chroma": 0.177
+      },
+      {
+        "prop": "--linea",
+        "value": "#1F2534",
+        "chroma": 0.175
+      }
+    ],
+    "scan": [
+      {
+        "value": "#3D5AFE",
+        "score": 0.0711
+      },
+      {
+        "value": "#1F2534",
+        "score": 0.0152
+      },
+      {
+        "value": "#6E82FF",
+        "score": 0.0106
+      },
+      {
+        "value": "#39425A",
+        "score": 0.0059
+      }
+    ],
+    "googleLinks": [
+      "https://fonts.googleapis.com/css2?family=Khand:wght@500;600;700&family=Sora:wght@400;600&family=Space+Mono:wght@400;700&display=swap"
+    ],
+    "faces": [],
+    "h1Count": 1,
+    "pageErrors": []
+  },
+  "plantilla-viajes-web": {
+    "repo": "plantilla-viajes-web",
+    "url": "https://alvarotaiagu.github.io/plantilla-viajes-web/",
+    "checkedAt": "2026-09-18T23:27:47.231Z",
+    "status": 200,
+    "headers": {
+      "x-frame-options": null,
+      "content-security-policy": null
+    },
+    "title": "Viajes Arroaz · Agencia de viajes en Viveiro",
+    "description": "Agencia de viajes pequeña en Viveiro: seis viajes propios al año y itinerarios a medida, con precio cerrado y teléfono 24 horas. Sitio de demostración: negocio ficticio.",
+    "lang": "es",
+    "themeColor": "#f4efe4",
+    "ogImage": "assets/og.png",
+    "bodyBg": "rgb(244, 239, 228)",
+    "htmlBg": "rgba(0, 0, 0, 0)",
+    "heading": {
+      "tag": "h1",
+      "text": "Seis viajes al año, y el resto a medida",
+      "family": "Spectral",
+      "stack": "Spectral, Georgia, serif",
+      "weight": "500",
+      "style": "normal",
+      "size": 77,
+      "letterSpacing": "-0.768px",
+      "transform": "none",
+      "color": "rgb(36, 31, 28)"
+    },
+    "vars": [
+      {
+        "prop": "--mostaza-clara",
+        "value": "#D9A93A",
+        "chroma": 0.671
+      },
+      {
+        "prop": "--mostaza",
+        "value": "#C89A2B",
+        "chroma": 0.608
+      },
+      {
+        "prop": "--mostaza-tinta",
+        "value": "#80631C",
+        "chroma": 0.516
+      },
+      {
+        "prop": "--rojo",
+        "value": "#A63D2F",
+        "chroma": 0.5
+      },
+      {
+        "prop": "--verde",
+        "value": "#1F4E4A",
+        "chroma": 0.315
+      },
+      {
+        "prop": "--verde-claro",
+        "value": "#2F6B64",
+        "chroma": 0.312
+      },
+      {
+        "prop": "--papel-hondo",
+        "value": "#E9E0CD",
+        "chroma": 0.293
+      },
+      {
+        "prop": "--panel",
+        "value": "#ECE4D4",
+        "chroma": 0.285
+      }
+    ],
+    "scan": [
+      {
+        "value": "#80631C",
+        "score": 0.0282
+      },
+      {
+        "value": "#1F4E4A",
+        "score": 0.0218
+      },
+      {
+        "value": "#A63D2F",
+        "score": 0.0185
+      }
+    ],
+    "googleLinks": [
+      "https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,300..700;1,300..600&family=Spectral:ital,wght@0,300..700;1,300..600&display=swap"
+    ],
+    "faces": [],
+    "h1Count": 1,
+    "pageErrors": []
   }
 }

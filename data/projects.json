@@ -1,5 +1,5 @@
 {
-  "generado": "2026-09-17",
+  "generado": "2026-09-18",
   "nota": "Estado \"propuesta\" = rediseño hecho por iniciativa propia, no encargo. Solo se marca \"entregada\" donde Álvaro lo confirma.",
   "base": {
     "sitio": "https://alvarotaiagu.github.io",
@@ -28,13 +28,13 @@
       "id": "comercio",
       "nombre": "Comercio, educación y servicios",
       "rotulo": "COMERCIO, EDUCACIÓN Y SERVICIOS",
-      "total": 7
+      "total": 8
     },
     {
       "id": "plantillas",
       "nombre": "Plantillas por sector",
       "rotulo": "PLANTILLAS POR SECTOR",
-      "total": 7
+      "total": 26
     }
   ],
   "fuentes": {
@@ -279,10 +279,12 @@
       "peso": 800,
       "estilo": "normal",
       "repos": [
-        "mas-que-tinta-carballo-web"
+        "mas-que-tinta-carballo-web",
+        "plantilla-carpinteria-web",
+        "plantilla-fotovoltaica-web"
       ],
-      "texto": " &.MTaeinqstu·á",
-      "css": "https://fonts.googleapis.com/css2?family=Archivo%3Awdth%2Cwght%40112%2C400%3B112%2C500%3B112%2C600%3B112%2C700%3B112%2C800&display=swap&text=+%26.MTaeinqstu%C2%B7%C3%A1"
+      "texto": " &.CFMTaceilnopqrstuv·áí",
+      "css": "https://fonts.googleapis.com/css2?family=Archivo%3Awdth%2Cwght%40112%2C400%3B112%2C500%3B112%2C600%3B112%2C700%3B112%2C800&display=swap&text=+%26.CFMTaceilnopqrstuv%C2%B7%C3%A1%C3%AD"
     },
     "Rubik|900|normal": {
       "familia": "Rubik",
@@ -363,6 +365,186 @@
       ],
       "texto": " &.Taejstu·",
       "css": "https://fonts.googleapis.com/css2?family=Syne%3Awght%40600%3B700%3B800&display=swap&text=+%26.Taejstu%C2%B7"
+    },
+    "Newsreader|200|normal": {
+      "familia": "Newsreader",
+      "peso": 200,
+      "estilo": "normal",
+      "repos": [
+        "a-saia-da-carolina-carballo-web"
+      ],
+      "texto": " &.ACSadilnor·",
+      "css": "https://fonts.googleapis.com/css2?family=Newsreader%3Aital%2Copsz%2Cwght%400%2C6..72%2C200%3B0%2C6..72%2C300%3B0%2C6..72%2C400%3B1%2C6..72%2C300%3B1%2C6..72%2C400&display=swap&text=+%26.ACSadilnor%C2%B7"
+    },
+    "Vollkorn|500|normal": {
+      "familia": "Vollkorn",
+      "peso": 500,
+      "estilo": "normal",
+      "repos": [
+        "plantilla-apicultura-web"
+      ],
+      "texto": " &.Aacilprtu·",
+      "css": "https://fonts.googleapis.com/css2?family=Vollkorn%3Aital%2Cwght%400%2C400..800%3B1%2C400..700&display=swap&text=+%26.Aacilprtu%C2%B7"
+    },
+    "Newsreader|400|normal": {
+      "familia": "Newsreader",
+      "peso": 400,
+      "estilo": "normal",
+      "repos": [
+        "plantilla-arquitectura-web"
+      ],
+      "texto": " &.Aaceiqrtu·",
+      "css": "https://fonts.googleapis.com/css2?family=Newsreader%3Aital%2Copsz%2Cwght%400%2C6..72%2C300..700%3B1%2C6..72%2C300..600&display=swap&text=+%26.Aaceiqrtu%C2%B7"
+    },
+    "Cormorant Garamond|400|normal": {
+      "familia": "Cormorant Garamond",
+      "peso": 400,
+      "estilo": "normal",
+      "repos": [
+        "plantilla-balneario-web"
+      ],
+      "texto": " &.Baeilnor·",
+      "css": "https://fonts.googleapis.com/css2?family=Cormorant+Garamond%3Aital%2Cwght%400%2C300..700%3B1%2C300..600&display=swap&text=+%26.Baeilnor%C2%B7"
+    },
+    "Anybody|800|normal": {
+      "familia": "Anybody",
+      "peso": 800,
+      "estilo": "normal",
+      "repos": [
+        "plantilla-bicicletas-web"
+      ],
+      "texto": " &.Baceilst·",
+      "css": "https://fonts.googleapis.com/css2?family=Anybody%3Awdth%2Cwght%40100..150%2C600%3B100..150%2C800&display=swap&text=+%26.Baceilst%C2%B7"
+    },
+    "Lora|500|normal": {
+      "familia": "Lora",
+      "peso": 500,
+      "estilo": "normal",
+      "repos": [
+        "plantilla-ceramica-web"
+      ],
+      "texto": " &.Caceimr·á",
+      "css": "https://fonts.googleapis.com/css2?family=Lora%3Aital%2Cwght%400%2C400..700%3B1%2C400..600&display=swap&text=+%26.Caceimr%C2%B7%C3%A1"
+    },
+    "Antonio|600|normal": {
+      "familia": "Antonio",
+      "peso": 600,
+      "estilo": "normal",
+      "repos": [
+        "plantilla-cerveceria-web"
+      ],
+      "texto": " &.Cacerv·í",
+      "css": "https://fonts.googleapis.com/css2?family=Antonio%3Awght%40400%3B600%3B700&display=swap&text=+%26.Cacerv%C2%B7%C3%AD"
+    },
+    "Big Shoulders Display|800|normal": {
+      "familia": "Big Shoulders Display",
+      "peso": 800,
+      "estilo": "normal",
+      "repos": [
+        "plantilla-coworking-web"
+      ],
+      "texto": " &.Cgiknorw·",
+      "css": "https://fonts.googleapis.com/css2?family=Big+Shoulders+Display%3Awght%40400%3B600%3B800&display=swap&text=+%26.Cgiknorw%C2%B7"
+    },
+    "Gabarito|800|normal": {
+      "familia": "Gabarito",
+      "peso": 800,
+      "estilo": "normal",
+      "repos": [
+        "plantilla-enoteca-web"
+      ],
+      "texto": " &.Eacenot·",
+      "css": "https://fonts.googleapis.com/css2?family=Gabarito%3Awght%40400%3B600%3B800&display=swap&text=+%26.Eacenot%C2%B7"
+    },
+    "Unbounded|800|normal": {
+      "familia": "Unbounded",
+      "peso": 800,
+      "estilo": "normal",
+      "repos": [
+        "plantilla-escuela-musica-web"
+      ],
+      "texto": " &.Eacdeilmsu·ú",
+      "css": "https://fonts.googleapis.com/css2?family=Unbounded%3Awght%40400%3B700%3B800&display=swap&text=+%26.Eacdeilmsu%C2%B7%C3%BA"
+    },
+    "Gloock|400|normal": {
+      "familia": "Gloock",
+      "peso": 400,
+      "estilo": "normal",
+      "repos": [
+        "plantilla-floristeria-web"
+      ],
+      "texto": " &.Faeilorst·í",
+      "css": "https://fonts.googleapis.com/css2?family=Gloock&display=swap&text=+%26.Faeilorst%C2%B7%C3%AD"
+    },
+    "Archivo Narrow|700|normal": {
+      "familia": "Archivo Narrow",
+      "peso": 700,
+      "estilo": "normal",
+      "repos": [
+        "plantilla-fotografia-web"
+      ],
+      "texto": " &.Fafgort·í",
+      "css": "https://fonts.googleapis.com/css2?family=Archivo+Narrow%3Awght%40400%3B600%3B700&display=swap&text=+%26.Fafgort%C2%B7%C3%AD"
+    },
+    "Schibsted Grotesk|800|normal": {
+      "familia": "Schibsted Grotesk",
+      "peso": 800,
+      "estilo": "normal",
+      "repos": [
+        "plantilla-lavanderia-web"
+      ],
+      "texto": " &.Ladenrv·í",
+      "css": "https://fonts.googleapis.com/css2?family=Schibsted+Grotesk%3Awght%40400%3B600%3B800&display=swap&text=+%26.Ladenrv%C2%B7%C3%AD"
+    },
+    "Familjen Grotesk|700|normal": {
+      "familia": "Familjen Grotesk",
+      "peso": 700,
+      "estilo": "normal",
+      "repos": [
+        "plantilla-libreria-web"
+      ],
+      "texto": " &.Labeir·í",
+      "css": "https://fonts.googleapis.com/css2?family=Familjen+Grotesk%3Awght%40400%3B600%3B700&display=swap&text=+%26.Labeir%C2%B7%C3%AD"
+    },
+    "Bebas Neue|400|normal": {
+      "familia": "Bebas Neue",
+      "peso": 400,
+      "estilo": "normal",
+      "repos": [
+        "plantilla-mudanzas-web"
+      ],
+      "texto": " &.Madnsuz·",
+      "css": "https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap&text=+%26.Madnsuz%C2%B7"
+    },
+    "Petrona|500|normal": {
+      "familia": "Petrona",
+      "peso": 500,
+      "estilo": "normal",
+      "repos": [
+        "plantilla-queseria-web"
+      ],
+      "texto": " &.Qaersu·í",
+      "css": "https://fonts.googleapis.com/css2?family=Petrona%3Aital%2Cwght%400%2C300..700%3B1%2C300..600&display=swap&text=+%26.Qaersu%C2%B7%C3%AD"
+    },
+    "Khand|700|normal": {
+      "familia": "Khand",
+      "peso": 700,
+      "estilo": "normal",
+      "repos": [
+        "plantilla-seguridad-alarmas-web"
+      ],
+      "texto": " &.Sadegilmrsuy·",
+      "css": "https://fonts.googleapis.com/css2?family=Khand%3Awght%40500%3B600%3B700&display=swap&text=+%26.Sadegilmrsuy%C2%B7"
+    },
+    "Spectral|500|normal": {
+      "familia": "Spectral",
+      "peso": 500,
+      "estilo": "normal",
+      "repos": [
+        "plantilla-viajes-web"
+      ],
+      "texto": " &.Vaeijs·",
+      "css": "https://fonts.googleapis.com/css2?family=Spectral%3Aital%2Cwght%400%2C300..700%3B1%2C300..600&display=swap&text=+%26.Vaeijs%C2%B7"
     }
   },
   "proyectos": [
@@ -1534,6 +1716,606 @@
       "capturas": {
         "desktop": "assets/shots/plantilla-tatuajes-web-desktop.webp",
         "mobile": "assets/shots/plantilla-tatuajes-web-mobile.webp"
+      }
+    },
+    {
+      "repo": "a-saia-da-carolina-carballo-web",
+      "nombre": "A Saia da Carolina",
+      "sector": "comercio",
+      "tipo": "Moda",
+      "concepto": "Maniquí",
+      "estado": "propuesta",
+      "anio": "2026",
+      "url": "https://alvarotaiagu.github.io/a-saia-da-carolina-carballo-web/",
+      "codigo": "https://github.com/alvarotaiagu/a-saia-da-carolina-carballo-web",
+      "titulo": "A Saia da Carolina · Tienda de ropa de mujer en Carballo",
+      "descripcion": "A Saia da Carolina Store · Rúa Igrexa, 28, Carballo (A Coruña). Ropa de mujer, calzado y complementos. 5,0 ★ con 49 reseñas en Google. Abrimos domingos por la mañana.",
+      "idioma": "es",
+      "color": "#9A7BB0",
+      "colorRotulo": "#9A7BB0",
+      "colorContraste": 5.4,
+      "colorOrigen": "var(--acento)",
+      "fuente": {
+        "familia": "Newsreader",
+        "stack": "Newsreader, Georgia, \"Times New Roman\", serif",
+        "generica": "serif",
+        "peso": 200,
+        "estilo": "normal",
+        "id": "Newsreader|200|normal"
+      },
+      "capturas": {
+        "desktop": "assets/shots/a-saia-da-carolina-carballo-web-desktop.webp",
+        "mobile": "assets/shots/a-saia-da-carolina-carballo-web-mobile.webp"
+      }
+    },
+    {
+      "repo": "plantilla-apicultura-web",
+      "nombre": "Apicultura",
+      "sector": "plantillas",
+      "tipo": "Plantilla de sector",
+      "concepto": "Tres quilómetros",
+      "estado": "propuesta",
+      "anio": "2026",
+      "url": "https://alvarotaiagu.github.io/plantilla-apicultura-web/",
+      "codigo": "https://github.com/alvarotaiagu/plantilla-apicultura-web",
+      "titulo": "Mel do Cordal · Apicultura en Mazaricos",
+      "descripcion": "Cuatro colmenares en Mazaricos y cuatro mieles distintas, según lo que florece en tres kilómetros a la redonda. Sitio de demostración: negocio ficticio.",
+      "idioma": "es",
+      "color": "#2F5140",
+      "colorRotulo": "#396851",
+      "colorContraste": 3.02,
+      "colorOrigen": "barrido del hero",
+      "fuente": {
+        "familia": "Vollkorn",
+        "stack": "Vollkorn, Georgia, \"Times New Roman\", serif",
+        "generica": "serif",
+        "peso": 500,
+        "estilo": "normal",
+        "id": "Vollkorn|500|normal"
+      },
+      "capturas": {
+        "desktop": "assets/shots/plantilla-apicultura-web-desktop.webp",
+        "mobile": "assets/shots/plantilla-apicultura-web-mobile.webp"
+      }
+    },
+    {
+      "repo": "plantilla-arquitectura-web",
+      "nombre": "Arquitectura",
+      "sector": "plantillas",
+      "tipo": "Plantilla de sector",
+      "concepto": "Planta",
+      "estado": "propuesta",
+      "anio": "2026",
+      "url": "https://alvarotaiagu.github.io/plantilla-arquitectura-web/",
+      "codigo": "https://github.com/alvarotaiagu/plantilla-arquitectura-web",
+      "titulo": "Perpiaño · Arquitectura y reformas en Lugo",
+      "descripcion": "Estudio de arquitectura y dirección de obra en Lugo: rehabilitación de casas de piedra, reformas integrales y obra nueva, con precios y plazos por escrito. Sitio de demostración: estudio ficticio.",
+      "idioma": "es",
+      "color": "#9C3B2E",
+      "colorRotulo": "#B22C1E",
+      "colorContraste": 3.02,
+      "colorOrigen": "barrido del hero",
+      "fuente": {
+        "familia": "Newsreader",
+        "stack": "Newsreader, Georgia, serif",
+        "generica": "serif",
+        "peso": 400,
+        "estilo": "normal",
+        "id": "Newsreader|400|normal"
+      },
+      "capturas": {
+        "desktop": "assets/shots/plantilla-arquitectura-web-desktop.webp",
+        "mobile": "assets/shots/plantilla-arquitectura-web-mobile.webp"
+      }
+    },
+    {
+      "repo": "plantilla-balneario-web",
+      "nombre": "Balneario",
+      "sector": "plantillas",
+      "tipo": "Plantilla de sector",
+      "concepto": "Grados",
+      "estado": "propuesta",
+      "anio": "2026",
+      "url": "https://alvarotaiagu.github.io/plantilla-balneario-web/",
+      "codigo": "https://github.com/alvarotaiagu/plantilla-balneario-web",
+      "titulo": "As Caldeiras · Casa de baños termales en Allariz",
+      "descripcion": "Casa de baños de agua termal en Allariz: un circuito de siete estaciones y noventa minutos, de doce a cuarenta y cinco grados. Sitio de demostración: negocio ficticio.",
+      "idioma": "es",
+      "color": "#B4703A",
+      "colorRotulo": "#B4703A",
+      "colorContraste": 4.92,
+      "colorOrigen": "var(--acento)",
+      "fuente": {
+        "familia": "Cormorant Garamond",
+        "stack": "\"Cormorant Garamond\", Georgia, serif",
+        "generica": "serif",
+        "peso": 400,
+        "estilo": "normal",
+        "id": "Cormorant Garamond|400|normal"
+      },
+      "capturas": {
+        "desktop": "assets/shots/plantilla-balneario-web-desktop.webp",
+        "mobile": "assets/shots/plantilla-balneario-web-mobile.webp"
+      }
+    },
+    {
+      "repo": "plantilla-bicicletas-web",
+      "nombre": "Bicicletas",
+      "sector": "plantillas",
+      "tipo": "Plantilla de sector",
+      "concepto": "Perfil de etapa",
+      "estado": "propuesta",
+      "anio": "2026",
+      "url": "https://alvarotaiagu.github.io/plantilla-bicicletas-web/",
+      "codigo": "https://github.com/alvarotaiagu/plantilla-bicicletas-web",
+      "titulo": "Sete Curvas · bicicletas y taller (demostración)",
+      "descripcion": "Plantilla de demostración para tienda y taller de bicicletas. Sete Curvas es un negocio ficticio: taller con cita, seis modelos, alquiler y salidas de club.",
+      "idioma": "es",
+      "color": "#FF4A17",
+      "colorRotulo": "#FF4A17",
+      "colorContraste": 5.78,
+      "colorOrigen": "barrido del hero",
+      "fuente": {
+        "familia": "Anybody",
+        "stack": "Anybody, \"Arial Narrow\", sans-serif",
+        "generica": "sans-serif",
+        "peso": 800,
+        "estilo": "normal",
+        "id": "Anybody|800|normal"
+      },
+      "capturas": {
+        "desktop": "assets/shots/plantilla-bicicletas-web-desktop.webp",
+        "mobile": "assets/shots/plantilla-bicicletas-web-mobile.webp"
+      }
+    },
+    {
+      "repo": "plantilla-carpinteria-web",
+      "nombre": "Carpintería",
+      "sector": "plantillas",
+      "tipo": "Plantilla de sector",
+      "concepto": "Ensamble",
+      "estado": "propuesta",
+      "anio": "2026",
+      "url": "https://alvarotaiagu.github.io/plantilla-carpinteria-web/",
+      "codigo": "https://github.com/alvarotaiagu/plantilla-carpinteria-web",
+      "titulo": "Espiga · carpintería a medida (demostración)",
+      "descripcion": "Plantilla de demostración para carpintería a medida. Espiga es un negocio ficticio: seis muebles con sus medidas, plazos claros y presupuesto sin compromiso.",
+      "idioma": "es",
+      "color": "#8A5C3E",
+      "colorRotulo": "#8A5C3E",
+      "colorContraste": 3.41,
+      "colorOrigen": "barrido del hero",
+      "fuente": {
+        "familia": "Archivo",
+        "stack": "Archivo, \"Trebuchet MS\", sans-serif",
+        "generica": "sans-serif",
+        "peso": 800,
+        "estilo": "normal",
+        "id": "Archivo|800|normal"
+      },
+      "capturas": {
+        "desktop": "assets/shots/plantilla-carpinteria-web-desktop.webp",
+        "mobile": "assets/shots/plantilla-carpinteria-web-mobile.webp"
+      }
+    },
+    {
+      "repo": "plantilla-ceramica-web",
+      "nombre": "Cerámica",
+      "sector": "plantillas",
+      "tipo": "Plantilla de sector",
+      "concepto": "Merma",
+      "estado": "propuesta",
+      "anio": "2026",
+      "url": "https://alvarotaiagu.github.io/plantilla-ceramica-web/",
+      "codigo": "https://github.com/alvarotaiagu/plantilla-ceramica-web",
+      "titulo": "Olería Rañal · Taller de cerámica en Ponteceso",
+      "descripcion": "Taller de cerámica de gres en Ponteceso: vajilla para casa y para restaurante, esmaltes propios y cursos. Sitio de demostración: negocio ficticio.",
+      "idioma": "es",
+      "color": "#8A4B2A",
+      "colorRotulo": "#9A4614",
+      "colorContraste": 3.02,
+      "colorOrigen": "barrido del hero",
+      "fuente": {
+        "familia": "Lora",
+        "stack": "Lora, Georgia, \"Times New Roman\", serif",
+        "generica": "serif",
+        "peso": 500,
+        "estilo": "normal",
+        "id": "Lora|500|normal"
+      },
+      "capturas": {
+        "desktop": "assets/shots/plantilla-ceramica-web-desktop.webp",
+        "mobile": "assets/shots/plantilla-ceramica-web-mobile.webp"
+      }
+    },
+    {
+      "repo": "plantilla-cerveceria-web",
+      "nombre": "Cervecería",
+      "sector": "plantillas",
+      "tipo": "Plantilla de sector",
+      "concepto": "Trasfega",
+      "estado": "propuesta",
+      "anio": "2026",
+      "url": "https://alvarotaiagu.github.io/plantilla-cerveceria-web/",
+      "codigo": "https://github.com/alvarotaiagu/plantilla-cerveceria-web",
+      "titulo": "TRASFEGA · Obrador de cerveza en Betanzos (demo)",
+      "descripcion": "Plantilla de demostración de un obrador de cerveza artesanal ficticio: la trasfega paso a paso, los lotes, las visitas y los pedidos. Todos los datos son de muestra.",
+      "idioma": "es",
+      "color": "#FF2E8A",
+      "colorRotulo": "#FF2E8A",
+      "colorContraste": 5.56,
+      "colorOrigen": "barrido del hero",
+      "fuente": {
+        "familia": "Antonio",
+        "stack": "Antonio, \"Arial Narrow\", sans-serif",
+        "generica": "sans-serif",
+        "peso": 600,
+        "estilo": "normal",
+        "id": "Antonio|600|normal"
+      },
+      "capturas": {
+        "desktop": "assets/shots/plantilla-cerveceria-web-desktop.webp",
+        "mobile": "assets/shots/plantilla-cerveceria-web-mobile.webp"
+      }
+    },
+    {
+      "repo": "plantilla-coworking-web",
+      "nombre": "Coworking",
+      "sector": "plantillas",
+      "tipo": "Plantilla de sector",
+      "concepto": "Ocupación",
+      "estado": "propuesta",
+      "anio": "2026",
+      "url": "https://alvarotaiagu.github.io/plantilla-coworking-web/",
+      "codigo": "https://github.com/alvarotaiagu/plantilla-coworking-web",
+      "titulo": "O FAIADO · Coworking en A Coruña (demo)",
+      "descripcion": "Plantilla de demostración de un coworking ficticio: la planta a cada hora, ocupación por franjas, espacios y tarifas de muestra.",
+      "idioma": "es",
+      "color": "#9B6BFF",
+      "colorRotulo": "#9B6BFF",
+      "colorContraste": 5.5,
+      "colorOrigen": "barrido del hero",
+      "fuente": {
+        "familia": "Big Shoulders Display",
+        "stack": "\"Big Shoulders Display\", \"Arial Narrow\", sans-serif",
+        "generica": "sans-serif",
+        "peso": 800,
+        "estilo": "normal",
+        "id": "Big Shoulders Display|800|normal"
+      },
+      "capturas": {
+        "desktop": "assets/shots/plantilla-coworking-web-desktop.webp",
+        "mobile": "assets/shots/plantilla-coworking-web-mobile.webp"
+      }
+    },
+    {
+      "repo": "plantilla-enoteca-web",
+      "nombre": "Enoteca",
+      "sector": "plantillas",
+      "tipo": "Plantilla de sector",
+      "concepto": "Cata a ciegas",
+      "estado": "propuesta",
+      "anio": "2026",
+      "url": "https://alvarotaiagu.github.io/plantilla-enoteca-web/",
+      "codigo": "https://github.com/alvarotaiagu/plantilla-enoteca-web",
+      "titulo": "Trasfega · enoteca (demostración)",
+      "descripcion": "Plantilla de demostración para enoteca. Trasfega es un negocio ficticio: ocho vinos inventados, catas de los jueves y caja mensual.",
+      "idioma": "es",
+      "color": "#6E1330",
+      "colorRotulo": "#AB2E53",
+      "colorContraste": 3.01,
+      "colorOrigen": "barrido del hero",
+      "fuente": {
+        "familia": "Gabarito",
+        "stack": "Gabarito, \"Trebuchet MS\", sans-serif",
+        "generica": "sans-serif",
+        "peso": 800,
+        "estilo": "normal",
+        "id": "Gabarito|800|normal"
+      },
+      "capturas": {
+        "desktop": "assets/shots/plantilla-enoteca-web-desktop.webp",
+        "mobile": "assets/shots/plantilla-enoteca-web-mobile.webp"
+      }
+    },
+    {
+      "repo": "plantilla-escuela-musica-web",
+      "nombre": "Escuela de música",
+      "sector": "plantillas",
+      "tipo": "Plantilla de sector",
+      "concepto": "Afinación",
+      "estado": "propuesta",
+      "anio": "2026",
+      "url": "https://alvarotaiagu.github.io/plantilla-escuela-musica-web/",
+      "codigo": "https://github.com/alvarotaiagu/plantilla-escuela-musica-web",
+      "titulo": "Semitón · escuela de música (demostración)",
+      "descripcion": "Plantilla de demostración para escuela de música. Semitón es un negocio ficticio: cinco instrumentos, clases individuales y en grupo, dos audiciones al año.",
+      "idioma": "es",
+      "color": "#B8232F",
+      "colorRotulo": "#B8232F",
+      "colorContraste": 3.07,
+      "colorOrigen": "barrido del hero",
+      "fuente": {
+        "familia": "Unbounded",
+        "stack": "Unbounded, \"Trebuchet MS\", sans-serif",
+        "generica": "sans-serif",
+        "peso": 800,
+        "estilo": "normal",
+        "id": "Unbounded|800|normal"
+      },
+      "capturas": {
+        "desktop": "assets/shots/plantilla-escuela-musica-web-desktop.webp",
+        "mobile": "assets/shots/plantilla-escuela-musica-web-mobile.webp"
+      }
+    },
+    {
+      "repo": "plantilla-floristeria-web",
+      "nombre": "Floristería",
+      "sector": "plantillas",
+      "tipo": "Plantilla de sector",
+      "concepto": "Ramo",
+      "estado": "propuesta",
+      "anio": "2026",
+      "url": "https://alvarotaiagu.github.io/plantilla-floristeria-web/",
+      "codigo": "https://github.com/alvarotaiagu/plantilla-floristeria-web",
+      "titulo": "Ramalleira · Floristería en Betanzos (A Coruña)",
+      "descripcion": "Floristería de barrio en Betanzos: ramos hechos a mano tallo a tallo, plantas de interior, encargos por WhatsApp y talleres. Sitio de demostración: negocio ficticio.",
+      "idioma": "es",
+      "color": "#D98A28",
+      "colorRotulo": "#D98A28",
+      "colorContraste": 7.05,
+      "colorOrigen": "barrido del hero",
+      "fuente": {
+        "familia": "Gloock",
+        "stack": "Gloock, \"Times New Roman\", serif",
+        "generica": "serif",
+        "peso": 400,
+        "estilo": "normal",
+        "id": "Gloock|400|normal"
+      },
+      "capturas": {
+        "desktop": "assets/shots/plantilla-floristeria-web-desktop.webp",
+        "mobile": "assets/shots/plantilla-floristeria-web-mobile.webp"
+      }
+    },
+    {
+      "repo": "plantilla-fotografia-web",
+      "nombre": "Fotografía",
+      "sector": "plantillas",
+      "tipo": "Plantilla de sector",
+      "concepto": "Hoja de contactos",
+      "estado": "propuesta",
+      "anio": "2026",
+      "url": "https://alvarotaiagu.github.io/plantilla-fotografia-web/",
+      "codigo": "https://github.com/alvarotaiagu/plantilla-fotografia-web",
+      "titulo": "CHINAGRAPH · Estudio de fotografía en Vigo (demo)",
+      "descripcion": "Plantilla de demostración de un estudio de fotografía ficticio, montada como una hoja de contactos con los fotogramas vacíos. Todos los datos son de muestra.",
+      "idioma": "es",
+      "color": "#FF2D2D",
+      "colorRotulo": "#FF2D2D",
+      "colorContraste": 5.24,
+      "colorOrigen": "barrido del hero",
+      "fuente": {
+        "familia": "Archivo Narrow",
+        "stack": "\"Archivo Narrow\", \"Arial Narrow\", sans-serif",
+        "generica": "sans-serif",
+        "peso": 700,
+        "estilo": "normal",
+        "id": "Archivo Narrow|700|normal"
+      },
+      "capturas": {
+        "desktop": "assets/shots/plantilla-fotografia-web-desktop.webp",
+        "mobile": "assets/shots/plantilla-fotografia-web-mobile.webp"
+      }
+    },
+    {
+      "repo": "plantilla-fotovoltaica-web",
+      "nombre": "Fotovoltaica",
+      "sector": "plantillas",
+      "tipo": "Plantilla de sector",
+      "concepto": "Sombra",
+      "estado": "propuesta",
+      "anio": "2026",
+      "url": "https://alvarotaiagu.github.io/plantilla-fotovoltaica-web/",
+      "codigo": "https://github.com/alvarotaiagu/plantilla-fotovoltaica-web",
+      "titulo": "GNOMON · Instaladores fotovoltaicos en Lalín (demo)",
+      "descripcion": "Plantilla de demostración de una empresa de instalación fotovoltaica ficticia: estudio de sombras, equipos, papeles y casos de ejemplo. Todos los datos son de muestra.",
+      "idioma": "es",
+      "color": "#17E08A",
+      "colorRotulo": "#17E08A",
+      "colorContraste": 11.17,
+      "colorOrigen": "barrido del hero",
+      "fuente": {
+        "familia": "Archivo",
+        "stack": "Archivo, system-ui, sans-serif",
+        "generica": "sans-serif",
+        "peso": 800,
+        "estilo": "normal",
+        "id": "Archivo|800|normal"
+      },
+      "capturas": {
+        "desktop": "assets/shots/plantilla-fotovoltaica-web-desktop.webp",
+        "mobile": "assets/shots/plantilla-fotovoltaica-web-mobile.webp"
+      }
+    },
+    {
+      "repo": "plantilla-lavanderia-web",
+      "nombre": "Lavandería",
+      "sector": "plantillas",
+      "tipo": "Plantilla de sector",
+      "concepto": "Etiqueta",
+      "estado": "propuesta",
+      "anio": "2026",
+      "url": "https://alvarotaiagu.github.io/plantilla-lavanderia-web/",
+      "codigo": "https://github.com/alvarotaiagu/plantilla-lavanderia-web",
+      "titulo": "Escuma · lavandería (demostración)",
+      "descripcion": "Plantilla de demostración para lavandería. Escuma es un negocio ficticio: autoservicio de 7 a 23, lavar y doblar en 24 horas y un descifrador de etiquetas.",
+      "idioma": "es",
+      "color": "#1F6B51",
+      "colorRotulo": "#1F6B51",
+      "colorContraste": 3.04,
+      "colorOrigen": "barrido del hero",
+      "fuente": {
+        "familia": "Schibsted Grotesk",
+        "stack": "\"Schibsted Grotesk\", \"Trebuchet MS\", sans-serif",
+        "generica": "sans-serif",
+        "peso": 800,
+        "estilo": "normal",
+        "id": "Schibsted Grotesk|800|normal"
+      },
+      "capturas": {
+        "desktop": "assets/shots/plantilla-lavanderia-web-desktop.webp",
+        "mobile": "assets/shots/plantilla-lavanderia-web-mobile.webp"
+      }
+    },
+    {
+      "repo": "plantilla-libreria-web",
+      "nombre": "Librería",
+      "sector": "plantillas",
+      "tipo": "Plantilla de sector",
+      "concepto": "Lomos",
+      "estado": "propuesta",
+      "anio": "2026",
+      "url": "https://alvarotaiagu.github.io/plantilla-libreria-web/",
+      "codigo": "https://github.com/alvarotaiagu/plantilla-libreria-web",
+      "titulo": "Librería Cuadratín · librería de barrio (demostración)",
+      "descripcion": "Plantilla de demostración para librería. Cuadratín es un negocio ficticio: mesa de novedades, club de lectura, encargos en 48 horas y plano de la casa.",
+      "idioma": "es",
+      "color": "#E0A21B",
+      "colorRotulo": "#E0A21B",
+      "colorContraste": 8.66,
+      "colorOrigen": "barrido del hero",
+      "fuente": {
+        "familia": "Familjen Grotesk",
+        "stack": "\"Familjen Grotesk\", \"Trebuchet MS\", sans-serif",
+        "generica": "sans-serif",
+        "peso": 700,
+        "estilo": "normal",
+        "id": "Familjen Grotesk|700|normal"
+      },
+      "capturas": {
+        "desktop": "assets/shots/plantilla-libreria-web-desktop.webp",
+        "mobile": "assets/shots/plantilla-libreria-web-mobile.webp"
+      }
+    },
+    {
+      "repo": "plantilla-mudanzas-web",
+      "nombre": "Mudanzas",
+      "sector": "plantillas",
+      "tipo": "Plantilla de sector",
+      "concepto": "Inventario",
+      "estado": "propuesta",
+      "anio": "2026",
+      "url": "https://alvarotaiagu.github.io/plantilla-mudanzas-web/",
+      "codigo": "https://github.com/alvarotaiagu/plantilla-mudanzas-web",
+      "titulo": "CARREXO · Mudanzas y guardamuebles en Ordes (demo)",
+      "descripcion": "Plantilla de demostración de una empresa de mudanzas ficticia: inventario del servicio, calculadora de volumen, guardamuebles y tarifas de muestra.",
+      "idioma": "es",
+      "color": "#FFD11A",
+      "colorRotulo": "#FFD11A",
+      "colorContraste": 13.31,
+      "colorOrigen": "barrido del hero",
+      "fuente": {
+        "familia": "Bebas Neue",
+        "stack": "\"Bebas Neue\", \"Arial Narrow\", sans-serif",
+        "generica": "sans-serif",
+        "peso": 400,
+        "estilo": "normal",
+        "id": "Bebas Neue|400|normal"
+      },
+      "capturas": {
+        "desktop": "assets/shots/plantilla-mudanzas-web-desktop.webp",
+        "mobile": "assets/shots/plantilla-mudanzas-web-mobile.webp"
+      }
+    },
+    {
+      "repo": "plantilla-queseria-web",
+      "nombre": "Quesería",
+      "sector": "plantillas",
+      "tipo": "Plantilla de sector",
+      "concepto": "Corteza",
+      "estado": "propuesta",
+      "anio": "2026",
+      "url": "https://alvarotaiagu.github.io/plantilla-queseria-web/",
+      "codigo": "https://github.com/alvarotaiagu/plantilla-queseria-web",
+      "titulo": "Queixería Bardanca · Obrador de queso de leche cruda en Palas de Rei",
+      "descripcion": "Obrador pequeño de queso de leche cruda en la Ulloa: cuatro quesos, una cava de maduración y venta en el obrador y en mercados. Sitio de demostración: negocio ficticio.",
+      "idioma": "es",
+      "color": "#C2A674",
+      "colorRotulo": "#C2A674",
+      "colorContraste": 8.33,
+      "colorOrigen": "barrido del hero",
+      "fuente": {
+        "familia": "Petrona",
+        "stack": "Petrona, Georgia, serif",
+        "generica": "serif",
+        "peso": 500,
+        "estilo": "normal",
+        "id": "Petrona|500|normal"
+      },
+      "capturas": {
+        "desktop": "assets/shots/plantilla-queseria-web-desktop.webp",
+        "mobile": "assets/shots/plantilla-queseria-web-mobile.webp"
+      }
+    },
+    {
+      "repo": "plantilla-seguridad-alarmas-web",
+      "nombre": "Seguridad y alarmas",
+      "sector": "plantillas",
+      "tipo": "Plantilla de sector",
+      "concepto": "Secuencia",
+      "estado": "propuesta",
+      "anio": "2026",
+      "url": "https://alvarotaiagu.github.io/plantilla-seguridad-alarmas-web/",
+      "codigo": "https://github.com/alvarotaiagu/plantilla-seguridad-alarmas-web",
+      "titulo": "ALDRABA · Alarmas y seguridad en Ferrol (demo)",
+      "descripcion": "Plantilla de demostración de una empresa de alarmas ficticia: la secuencia de un salto de alarma paso a paso, falsas alarmas, límites legales y privacidad de las cámaras. Todos los datos son de muestra.",
+      "idioma": "es",
+      "color": "#3D5AFE",
+      "colorRotulo": "#3D5AFE",
+      "colorContraste": 3.79,
+      "colorOrigen": "barrido del hero",
+      "fuente": {
+        "familia": "Khand",
+        "stack": "Khand, Impact, sans-serif",
+        "generica": "sans-serif",
+        "peso": 700,
+        "estilo": "normal",
+        "id": "Khand|700|normal"
+      },
+      "capturas": {
+        "desktop": "assets/shots/plantilla-seguridad-alarmas-web-desktop.webp",
+        "mobile": "assets/shots/plantilla-seguridad-alarmas-web-mobile.webp"
+      }
+    },
+    {
+      "repo": "plantilla-viajes-web",
+      "nombre": "Viajes",
+      "sector": "plantillas",
+      "tipo": "Plantilla de sector",
+      "concepto": "Sellos",
+      "estado": "propuesta",
+      "anio": "2026",
+      "url": "https://alvarotaiagu.github.io/plantilla-viajes-web/",
+      "codigo": "https://github.com/alvarotaiagu/plantilla-viajes-web",
+      "titulo": "Viajes Arroaz · Agencia de viajes en Viveiro",
+      "descripcion": "Agencia de viajes pequeña en Viveiro: seis viajes propios al año y itinerarios a medida, con precio cerrado y teléfono 24 horas. Sitio de demostración: negocio ficticio.",
+      "idioma": "es",
+      "color": "#80631C",
+      "colorRotulo": "#80631C",
+      "colorContraste": 3.44,
+      "colorOrigen": "barrido del hero",
+      "fuente": {
+        "familia": "Spectral",
+        "stack": "Spectral, Georgia, serif",
+        "generica": "serif",
+        "peso": 500,
+        "estilo": "normal",
+        "id": "Spectral|500|normal"
+      },
+      "capturas": {
+        "desktop": "assets/shots/plantilla-viajes-web-desktop.webp",
+        "mobile": "assets/shots/plantilla-viajes-web-mobile.webp"
       }
     }
   ]
