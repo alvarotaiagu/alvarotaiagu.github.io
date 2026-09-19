@@ -4,8 +4,8 @@
  *   npm run verify
  *
  * Levanta un servidor estático propio (sin dependencias) y comprueba:
- *   1. las 64 URLs publicadas responden 200
- *   2. las 64 fachadas están pintadas y con su captura cargada
+ *   1. las 63 URLs publicadas responden 200
+ *   2. las 63 fachadas están pintadas y con su captura cargada
  *   3. al pasar el ratón se monta el iframe y al salir se destruye
  *   4. los filtros no pierden el foco y el recuento cuadra
  *   5. el presupuesto de tipografías no se pasa de 6 familias vivas
@@ -54,8 +54,10 @@ const anotar = (nombre, ok, detalle = '') => {
 
 const navegador = await chromium.launch();
 
-/* ═══ 1. las 64 URLs publicadas ═══════════════════════════════════════════ */
+/* ═══ 1. las URLs publicadas ═══════════════════════════════════════════ */
 {
+  const vivas = datos.proyectos.filter((p) => p.publicada !== false);
+  const despublicadas = datos.proyectos.filter((p) => p.publicada === false);
   const fallos = [];
   const pedir = async (p, intento = 1) => {
     try {
@@ -64,7 +66,7 @@ const navegador = await chromium.launch();
       if (intento < 3) return pedir(p, intento + 1);
       fallos.push(`${p.repo}=${r.status}`);
     } catch (e) {
-      // lanzar 64 peticiones a la vez hace que alguna se caiga por red, no por estar rota
+      // lanzar tantas peticiones a la vez hace que alguna se caiga por red, no por estar rota
       if (intento < 3) {
         await new Promise((r) => setTimeout(r, 400 * intento));
         return pedir(p, intento + 1);
@@ -72,9 +74,9 @@ const navegador = await chromium.launch();
       fallos.push(`${p.repo}=${String(e).slice(0, 40)}`);
     }
   };
-  await Promise.all(datos.proyectos.map((p) => pedir(p)));
-  anotar('1. las 64 URLs responden 200', fallos.length === 0,
-    fallos.length ? fallos.join(', ') : `${datos.proyectos.length}/${datos.proyectos.length}`);
+  await Promise.all(vivas.map((p) => pedir(p)));
+  anotar(`1. las ${vivas.length} URLs publicadas responden 200`, fallos.length === 0,
+    fallos.length ? fallos.join(', ') : `${vivas.length}/${vivas.length} · ${despublicadas.length} despublicadas a propósito, sin probar`);
 }
 
 /* ═══ 2-5, 8. la página, a 1440 ═══════════════════════════════════════════ */
@@ -108,14 +110,14 @@ const navegador = await chromium.launch();
       rotulos: document.querySelectorAll('.marquesina [data-grupo="original"] .rotulo').length,
     };
   });
-  anotar('2. 64 fachadas pintadas', fachadas.total === 64, `hay ${fachadas.total}`);
+  anotar('2. 63 fachadas pintadas', fachadas.total === 63, `hay ${fachadas.total}`);
   anotar('   todas con captura', fachadas.sinCaptura.length === 0, fachadas.sinCaptura.join(', '));
   anotar('   todas con su color', fachadas.sinColor.length === 0, fachadas.sinColor.join(', '));
-  anotar('   64 rótulos en la marquesina', fachadas.rotulos === 64, `hay ${fachadas.rotulos}`);
+  anotar('   63 rótulos en la marquesina', fachadas.rotulos === 63, `hay ${fachadas.rotulos}`);
 
   /* 3. iframe: se monta al pasar el ratón y se destruye al salir */
   {
-    const objetivo = page.locator('.fachada').first();
+    const objetivo = page.locator('.fachada[data-publicada="si"]').first();
     await objetivo.scrollIntoViewIfNeeded();
     await page.waitForTimeout(600);
     await objetivo.hover();
@@ -279,14 +281,14 @@ async function medirLongtasks({ sinMain }) {
     rotulos: document.querySelectorAll('.marquesina [data-grupo="original"] .rotulo').length,
     encendidas: [...document.querySelectorAll('.fachada')].filter((f) => f.classList.contains('esta-encendida')).length,
     nombreVisible: getComputedStyle(document.querySelector('.revelar__letra')).opacity,
-    contador: document.querySelector('[data-contador="64"]')?.textContent,
+    contador: document.querySelector('[data-contador="63"]')?.textContent,
     lenis: document.documentElement.classList.contains('lenis'),
   }));
   anotar('9. sin marquesina en marcha', r.marquesina === 'none', r.marquesina);
-  anotar('   pero los 64 rótulos siguen ahí', r.rotulos === 64, `hay ${r.rotulos}`);
-  anotar('   las 64 fachadas encendidas', r.encendidas === 64, `hay ${r.encendidas}`);
+  anotar('   pero los 63 rótulos siguen ahí', r.rotulos === 63, `hay ${r.rotulos}`);
+  anotar('   las 63 fachadas encendidas', r.encendidas === 63, `hay ${r.encendidas}`);
   anotar('   el nombre se lee', r.nombreVisible === '1', `opacidad ${r.nombreVisible}`);
-  anotar('   el contador muestra su cifra', r.contador === '64', `pone «${r.contador}»`);
+  anotar('   el contador muestra su cifra', r.contador === '63', `pone «${r.contador}»`);
   anotar('   sin smooth-scroll', r.lenis === false);
   await ctx.close();
 }

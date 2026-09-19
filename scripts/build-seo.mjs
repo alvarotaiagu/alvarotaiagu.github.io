@@ -49,6 +49,25 @@ let html = readFileSync(htmlPath, 'utf8');
 const marca = /(<script type="application\/ld\+json" data-jsonld-obras>)[\s\S]*?(<\/script>)/;
 if (!marca.test(html)) throw new Error('no encuentro el hueco data-jsonld-obras en index.html');
 html = html.replace(marca, `$1\n${JSON.stringify(obras, null, 1)}\n$2`);
+
+/* ── recuentos sueltos en el propio HTML ──
+ * Todo lo que menciona "N webs/fachadas/rótulos/conceptos" en prosa estática
+ * se recalcula aquí desde datos.proyectos.length, para que no se quede
+ * desincronizado la próxima vez que cambie el catálogo (pasó dos veces).
+ */
+const N = datos.proyectos.length;
+const recuentos = [
+  [/Portfolio de Álvaro: \d+ webs publicadas/, `Portfolio de Álvaro: ${N} webs publicadas`],
+  [/Un pueblo, \d+ webs\./g, `Un pueblo, ${N} webs.`],
+  [/los \d+ nombres, cada uno en su color y su tipografía/, `los ${N} nombres, cada uno en su color y su tipografía`],
+  [/Los \d+ rótulos de la calle/, `Los ${N} rótulos de la calle`],
+  [/<span data-contador="\d+">\d+<\/span> webs publicadas/, `<span data-contador="${N}">${N}</span> webs publicadas`],
+  [/la lista completa de las \d+ webs con su enlace/, `la lista completa de las ${N} webs con su enlace`],
+  [/^\s*\d+ webs, una por negocio\./m, `          ${N} webs, una por negocio.`],
+  [/hay \d+ conceptos y no uno repetido \d+ veces/, `hay ${N} conceptos y no uno repetido ${N} veces`],
+];
+for (const [re, rep] of recuentos) html = html.replace(re, rep);
+
 writeFileSync(htmlPath, html);
 
 /* ── sitemap ── */

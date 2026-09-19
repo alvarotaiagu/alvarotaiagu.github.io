@@ -220,6 +220,7 @@ const proyectos = seed.map((p) => {
     nombre,
     sector: o.sector || p.sector,
     ambito: o.ambito || p.ambito || 'real',
+    publicada: (o.publicada ?? p.publicada ?? true) !== false,
     tipo: o.tipo || p.tipo,
     concepto: o.concepto || p.concepto,
     estado: o.estado || 'propuesta',

@@ -45,6 +45,7 @@ function fachadaHTML(p) {
   data-sector="${esc(p.sector)}"
   data-estado="${estado}"
   data-ambito="${esc(p.ambito || 'real')}"
+  data-publicada="${p.publicada === false ? 'no' : 'si'}"
   style="--f:${esc(p.color)}; --f-rotulo:${esc(p.colorRotulo)}">
   <div class="fachada__interior">
     <header class="fachada__rotulo">
@@ -71,6 +72,7 @@ function fachadaHTML(p) {
     <footer class="fachada__pie">
       <p class="fachada__dato"><span class="etq">Concepto</span><span>${concepto}</span></p>
       <p class="fachada__meta">
+        ${p.publicada === false ? '<span class="estado" data-estado="despublicada">Despublicada</span>' : ''}
         <span class="estado" data-estado="${estado}">${ESTADOS[estado]}</span>
         ${anio}
         ${apagada ? '<span class="fachada__disponible">disponible para tu negocio</span>' : ''}

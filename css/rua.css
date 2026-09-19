@@ -712,6 +712,11 @@ section { padding-block: clamp(5rem, 11vw, 10rem); position: relative; }
   border: 1px solid rgba(242, 200, 121, .45);
   background: rgba(242, 200, 121, .10);
 }
+.estado[data-estado="despublicada"] {
+  color: var(--farola);
+  border: 1px dashed rgba(242, 200, 121, .35);
+  background: rgba(242, 200, 121, .08);
+}
 .fachada__anio { font-family: var(--mono); font-size: .7rem; color: var(--papel-22); letter-spacing: .08em; }
 
 .fachada__acciones {
