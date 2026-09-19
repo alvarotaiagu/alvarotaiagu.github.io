@@ -22,7 +22,8 @@ const ESTADOS = {
 };
 
 /* ── una fachada ───────────────────────────────────────────────────────── */
-function fachadaHTML(p, { apagada = false } = {}) {
+function fachadaHTML(p) {
+  const apagada = p.ambito === 'plantilla';
   const esPendiente = (v) => !v || /^PENDIENTE$/i.test(v);
   const concepto = esPendiente(p.concepto)
     ? '<span class="pendiente">concepto pendiente</span>'
@@ -43,6 +44,7 @@ function fachadaHTML(p, { apagada = false } = {}) {
   data-nombre="${esc(p.nombre)}"
   data-sector="${esc(p.sector)}"
   data-estado="${estado}"
+  data-ambito="${esc(p.ambito || 'real')}"
   style="--f:${esc(p.color)}; --f-rotulo:${esc(p.colorRotulo)}">
   <div class="fachada__interior">
     <header class="fachada__rotulo">
@@ -88,14 +90,14 @@ function fachadaHTML(p, { apagada = false } = {}) {
 }
 
 /* ── un tramo ──────────────────────────────────────────────────────────── */
-function tramoHTML(sector, proyectos, opciones) {
+function tramoHTML(sector, proyectos) {
   return `
 <section class="tramo" data-tramo="${esc(sector.id)}" aria-labelledby="tramo-${esc(sector.id)}">
   <h3 class="tramo__cartel" id="tramo-${esc(sector.id)}">
     <span class="tramo__nombre">${esc(sector.rotulo)} <span class="tramo__n" data-contador="${proyectos.length}">${proyectos.length}</span></span>
   </h3>
   <div class="tramo__fachadas">
-    ${proyectos.map((p) => fachadaHTML(p, opciones)).join('')}
+    ${proyectos.map((p) => fachadaHTML(p)).join('')}
   </div>
 </section>
 <div class="farola" aria-hidden="true"></div>`;
@@ -107,8 +109,6 @@ function tramoHTML(sector, proyectos, opciones) {
  * siguen contando y, al filtrar, la alternancia se descuadraría.
  */
 function repartirLados(raiz) {
-  // se itera la rejilla, no el tramo: el bloque de plantillas no tiene cartel
-  // de calle y por tanto tampoco <section class="tramo">
   for (const rejilla of raiz.querySelectorAll('.tramo__fachadas')) {
     const visibles = [...rejilla.querySelectorAll('.fachada')].filter((f) => !f.hidden);
     visibles.forEach((f, i) => { f.dataset.lado = i % 2 ? 'der' : 'izq'; });
@@ -181,11 +181,8 @@ const ceder = () => (globalThis.scheduler?.yield
 /* ── pintado ───────────────────────────────────────────────────────────── */
 export async function pintarCalle(datos, { vigilante } = {}) {
   const via = document.querySelector('[data-via]');
-  const viaPlantillas = document.querySelector('[data-via-plantillas]');
   if (!via) return null;
 
-  const deCalle = datos.sectores.filter((s) => s.id !== 'plantillas');
-  const plantillas = datos.sectores.find((s) => s.id === 'plantillas');
   const por = (id) => datos.proyectos.filter((p) => p.sector === id);
 
   via.replaceChildren();
@@ -204,33 +201,26 @@ export async function pintarCalle(datos, { vigilante } = {}) {
   };
 
   const todas = [];
-  for (const s of deCalle) {
-    via.insertAdjacentHTML('beforeend', tramoHTML(s, por(s.id), {}));
+  for (const s of datos.sectores) {
+    via.insertAdjacentHTML('beforeend', tramoHTML(s, por(s.id)));
     todas.push(...enganchar(via));
     await ceder();
   }
 
-  if (viaPlantillas && plantillas) {
-    viaPlantillas.innerHTML = `
-      <div class="tramo__fachadas">
-        ${por('plantillas').map((p) => fachadaHTML(p, { apagada: true })).join('')}
-      </div>`;
-    todas.push(...enganchar(viaPlantillas));
-  }
-
-  return { via, viaPlantillas, todas };
+  return { via, todas };
 }
 
 /* ── filtros ───────────────────────────────────────────────────────────── */
 export function montarFiltros(datos, { via, alFiltrar } = {}) {
   const cajaSector = document.querySelector('[data-grupo-filtro="sector"]');
   const cajaEstado = document.querySelector('[data-grupo-filtro="estado"]');
+  const cajaAmbito = document.querySelector('[data-grupo-filtro="ambito"]');
   const recuento = document.querySelector('[data-recuento]');
   const vacia = document.querySelector('[data-vacia]');
   if (!cajaSector || !via) return;
 
-  const deCalle = datos.sectores.filter((s) => s.id !== 'plantillas');
-  const enCalle = datos.proyectos.filter((p) => p.sector !== 'plantillas');
+  const deCalle = datos.sectores;
+  const enCalle = datos.proyectos;
 
   const chip = (valor, texto, n, marcado) => {
     const b = document.createElement('button');
@@ -253,12 +243,20 @@ export function montarFiltros(datos, { via, alFiltrar } = {}) {
     ...Object.entries(ESTADOS).map(([id, txt]) =>
       chip(id, txt, enCalle.filter((p) => (p.estado || 'propuesta') === id).length, false))
   );
+  if (cajaAmbito) {
+    const AMBITOS = { real: 'Reales', plantilla: 'Plantillas' };
+    cajaAmbito.append(
+      chip('todos', 'Todos', enCalle.length, true),
+      ...Object.entries(AMBITOS).map(([id, txt]) =>
+        chip(id, txt, enCalle.filter((p) => (p.ambito || 'real') === id).length, false))
+    );
+  }
 
-  const estado = { sector: 'todos', estado: 'todos' };
+  const estado = { sector: 'todos', estado: 'todos', ambito: 'todos' };
 
   /**
    * `animar: false` en el montaje inicial: ni FLIP ni avisar a ScrollTrigger.
-   * Las dos cosas fuerzan una medición completa de la calle (39 escaparates)
+   * Las dos cosas fuerzan una medición completa de la calle (64 escaparates)
    * y juntas eran 190 ms de tarea larga justo al cargar — para animar un
    * movimiento que no existe, porque todo está ya en su sitio.
    */
@@ -270,7 +268,8 @@ export function montarFiltros(datos, { via, alFiltrar } = {}) {
     envolver(via, () => {
       for (const f of fachadas) {
         const ok = (estado.sector === 'todos' || f.dataset.sector === estado.sector)
-          && (estado.estado === 'todos' || f.dataset.estado === estado.estado);
+          && (estado.estado === 'todos' || f.dataset.estado === estado.estado)
+          && (estado.ambito === 'todos' || f.dataset.ambito === estado.ambito);
         if (!ok) apagarSiEs(f);          // si estaba en vivo, se apaga antes de ocultarse
         f.hidden = !ok;
         if (ok) visibles++;
@@ -325,6 +324,7 @@ export function montarFiltros(datos, { via, alFiltrar } = {}) {
 
   manejar(cajaSector, 'sector');
   manejar(cajaEstado, 'estado');
+  if (cajaAmbito) manejar(cajaAmbito, 'ambito');
   aplicar({ animar: false });
 }
 

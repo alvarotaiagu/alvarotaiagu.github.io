@@ -160,7 +160,7 @@ const navegador = await chromium.launch();
     }));
     anotar('4. el foco se queda en el chip pulsado', est.focoEsChip === true, `foco en «${est.foco}»`);
     anotar('   solo un chip es tabulable', est.tabIndex === 1, `hay ${est.tabIndex}`);
-    anotar('   el filtro deja 8 de salud', est.visibles === 8, `${est.visibles} · ${est.recuento}`);
+    anotar('   el filtro deja 10 de salud', est.visibles === 10, `${est.visibles} · ${est.recuento}`);
 
     // flechas del radiogroup
     await page.keyboard.press('ArrowRight');

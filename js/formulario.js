@@ -80,7 +80,6 @@ export function montarFormulario(datos) {
   const nombres = {};
   if (select) {
     for (const s of datos.sectores) {
-      if (s.id === 'plantillas') continue;
       nombres[s.id] = s.nombre;
       select.append(new Option(s.nombre, s.id));
     }

@@ -189,7 +189,6 @@ const SECTORES = [
   { id: 'salud', nombre: 'Salud', rotulo: 'SALUD' },
   { id: 'legal', nombre: 'Asesorías y legal', rotulo: 'ASESORÍAS Y LEGAL' },
   { id: 'comercio', nombre: 'Comercio, educación y servicios', rotulo: 'COMERCIO, EDUCACIÓN Y SERVICIOS' },
-  { id: 'plantillas', nombre: 'Plantillas por sector', rotulo: 'PLANTILLAS POR SECTOR' },
 ];
 
 const avisos = [];
@@ -220,6 +219,7 @@ const proyectos = seed.map((p) => {
     repo: p.repo,
     nombre,
     sector: o.sector || p.sector,
+    ambito: o.ambito || p.ambito || 'real',
     tipo: o.tipo || p.tipo,
     concepto: o.concepto || p.concepto,
     estado: o.estado || 'propuesta',

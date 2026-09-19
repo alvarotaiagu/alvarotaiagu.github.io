@@ -19,7 +19,7 @@ const SITIO = datos.base.sitio.replace(/\/$/, '');
 const obras = {
   '@context': 'https://schema.org',
   '@type': 'ItemList',
-  name: 'Rúa — 39 webs para negocios de Carballo y Bergantiños',
+  name: `Rúa — ${datos.proyectos.length} webs para negocios de Carballo y Bergantiños`,
   numberOfItems: datos.proyectos.length,
   itemListElement: datos.proyectos.map((p, i) => ({
     '@type': 'ListItem',
@@ -69,4 +69,4 @@ ${urls.map((u) => `  <url>
 writeFileSync(join(ROOT, 'sitemap.xml'), sitemap);
 
 console.log(`JSON-LD: ${obras.numberOfItems} CreativeWork · sitemap: ${urls.length} URL`);
-console.log(`(las 39 webs viven en sus propios repositorios y tienen su propio sitio; aquí se enlazan, no se reclaman)`);
+console.log(`(las ${obras.numberOfItems} webs viven en sus propios repositorios y tienen su propio sitio; aquí se enlazan, no se reclaman)`);

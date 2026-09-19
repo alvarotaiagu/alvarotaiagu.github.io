@@ -741,18 +741,18 @@ section { padding-block: clamp(5rem, 11vw, 10rem); position: relative; }
 }
 .fachada.se-ilumina .fachada__interior { animation: destello 1.3s var(--salida); }
 
-/* ── tramo apagado: las plantillas ─────────────────────────────────────── */
-.via--apagada .fachada__interior { background: linear-gradient(180deg, #101319, #0C0F14); }
-.via--apagada .fachada:not(:hover):not(:focus-within) .fachada__captura { filter: saturate(0) brightness(.38); }
-.via--apagada .fachada:not(:hover):not(:focus-within) .fachada__interior { box-shadow: none; border-color: var(--papel-06); }
-.via--apagada .fachada:not(:hover):not(:focus-within) .fachada__nombre { color: var(--papel-58); }
-.via--apagada .fachada:not(:hover):not(:focus-within) .fachada__acera { opacity: 0; }
-.via--apagada .fachada__disponible {
+/* ── fachadas apagadas: las plantillas, mezcladas por sector ──────────── */
+.fachada[data-ambito="plantilla"] .fachada__interior { background: linear-gradient(180deg, #101319, #0C0F14); }
+.fachada[data-ambito="plantilla"]:not(:hover):not(:focus-within) .fachada__captura { filter: saturate(0) brightness(.38); }
+.fachada[data-ambito="plantilla"]:not(:hover):not(:focus-within) .fachada__interior { box-shadow: none; border-color: var(--papel-06); }
+.fachada[data-ambito="plantilla"]:not(:hover):not(:focus-within) .fachada__nombre { color: var(--papel-58); }
+.fachada[data-ambito="plantilla"]:not(:hover):not(:focus-within) .fachada__acera { opacity: 0; }
+.fachada[data-ambito="plantilla"] .fachada__disponible {
   font-family: var(--mono); font-size: .66rem; letter-spacing: .1em; text-transform: uppercase;
   color: var(--farola); opacity: 0; transition: opacity .4s;
 }
-.via--apagada .fachada:hover .fachada__disponible,
-.via--apagada .fachada:focus-within .fachada__disponible { opacity: 1; }
+.fachada[data-ambito="plantilla"]:hover .fachada__disponible,
+.fachada[data-ambito="plantilla"]:focus-within .fachada__disponible { opacity: 1; }
 
 /* ═══════════════════════════ MÉTODO ═══════════════════════════ */
 .metodo { background: linear-gradient(180deg, transparent, rgba(23, 26, 33, .45) 30%, rgba(23, 26, 33, .45) 70%, transparent); }
