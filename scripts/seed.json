@@ -57,5 +57,10 @@
 {"repo":"plantilla-mudanzas-web","nombre":"Mudanzas","concepto":"Inventario","sector":"plantillas","tipo":"Plantilla de sector"},
 {"repo":"plantilla-queseria-web","nombre":"Quesería","concepto":"Corteza","sector":"plantillas","tipo":"Plantilla de sector"},
 {"repo":"plantilla-seguridad-alarmas-web","nombre":"Seguridad y alarmas","concepto":"Secuencia","sector":"plantillas","tipo":"Plantilla de sector"},
-{"repo":"plantilla-viajes-web","nombre":"Viajes","concepto":"Sellos","sector":"plantillas","tipo":"Plantilla de sector"}
+{"repo":"plantilla-viajes-web","nombre":"Viajes","concepto":"Sellos","sector":"plantillas","tipo":"Plantilla de sector"},
+{"repo":"taberna-do-rio-carballo-web","nombre":"Taberna do Río","sector":"hosteleria","tipo":"Taberna","concepto":"PENDIENTE"},
+{"repo":"plantilla-asesoria-sello-web","nombre":"Asesoría · Sello","sector":"plantillas","tipo":"Plantilla de sector","concepto":"Sello"},
+{"repo":"plantilla-asesoria-casillas-web","nombre":"Asesoría · Casillas","sector":"plantillas","tipo":"Plantilla de sector","concepto":"Casillas"},
+{"repo":"plantilla-asesoria-cinta-sumadora-web","nombre":"Asesoría · Cinta sumadora","sector":"plantillas","tipo":"Plantilla de sector","concepto":"Cinta sumadora"},
+{"repo":"plantilla-asesoria-expediente-web","nombre":"Asesoría · Expediente","sector":"plantillas","tipo":"Plantilla de sector","concepto":"Expediente"}
 ]

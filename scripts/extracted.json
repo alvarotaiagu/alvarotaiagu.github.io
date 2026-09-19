@@ -3056,39 +3056,110 @@
   "taberna-do-rio-carballo-web": {
     "repo": "taberna-do-rio-carballo-web",
     "url": "https://alvarotaiagu.github.io/taberna-do-rio-carballo-web/",
-    "checkedAt": "2026-09-18T23:26:13.119Z",
-    "status": 404,
+    "checkedAt": "2026-09-19T09:15:02.539Z",
+    "status": 200,
     "headers": {
       "x-frame-options": null,
-      "content-security-policy": "default-src 'none'; style-src 'unsafe-inline'; img-src data:; connect-src 'self'"
+      "content-security-policy": null
     },
-    "title": "Site not found · GitHub Pages",
-    "description": "",
-    "lang": "",
-    "themeColor": "",
-    "ogImage": "",
-    "bodyBg": "rgb(241, 241, 241)",
+    "title": "A Taberna do Rio — Taberna tradicional junto al río, Carballo",
+    "description": "A Taberna do Rio: taberna tradicional con terraza junto al río Anllóns en Carballo. Bocadillos de chapata, cocido gallego, tortilla y raciones. Actuaciones en directo y juegos de mesa. R. Xirona, 3.",
+    "lang": "es",
+    "themeColor": "#1A4B40",
+    "ogImage": "https://alvarotaiagu.github.io/taberna-do-rio-carballo-web/assets/img/web/og-image.jpg",
+    "bodyBg": "rgb(244, 239, 227)",
     "htmlBg": "rgba(0, 0, 0, 0)",
     "heading": {
       "tag": "h1",
-      "text": "404",
-      "family": "Helvetica Neue",
-      "stack": "\"Helvetica Neue\", Helvetica, Arial, sans-serif",
-      "weight": "100",
+      "text": "Mesa junto al río, de toda la vida.",
+      "family": "Bitter",
+      "stack": "Bitter, Georgia, serif",
+      "weight": "700",
       "style": "normal",
-      "size": 60,
-      "letterSpacing": "-1px",
+      "size": 70,
+      "letterSpacing": "-1.056px",
       "transform": "none",
-      "color": "rgb(0, 0, 0)"
+      "color": "rgb(26, 36, 31)"
     },
-    "vars": [],
-    "scan": [
+    "vars": [
       {
-        "value": "#4183C4",
-        "score": 0.0018
+        "prop": "--gold-deep",
+        "value": "#96701F",
+        "chroma": 0.555
+      },
+      {
+        "prop": "--gold",
+        "value": "#C4943B",
+        "chroma": 0.516
+      },
+      {
+        "prop": "--wood",
+        "value": "#B5652E",
+        "chroma": 0.545
+      },
+      {
+        "prop": "--wood-deep",
+        "value": "#8A4A1E",
+        "chroma": 0.529
+      },
+      {
+        "prop": "--river",
+        "value": "#276F60",
+        "chroma": 0.382
+      },
+      {
+        "prop": "--river-deep",
+        "value": "#1A4B40",
+        "chroma": 0.349
+      },
+      {
+        "prop": "--stone-2",
+        "value": "#E9E0CB",
+        "chroma": 0.307
+      },
+      {
+        "prop": "--river-tint",
+        "value": "#AFD3C6",
+        "chroma": 0.242
       }
     ],
-    "googleLinks": [],
+    "scan": [
+      {
+        "value": "#1A4B40",
+        "score": 0.0995
+      },
+      {
+        "value": "#276F60",
+        "score": 0.0661
+      },
+      {
+        "value": "#C4943B",
+        "score": 0.015
+      },
+      {
+        "value": "#0F332B",
+        "score": 0.0113
+      },
+      {
+        "value": "#AFD3C6",
+        "score": 0.0106
+      },
+      {
+        "value": "#8A4A1E",
+        "score": 0.0041
+      },
+      {
+        "value": "#1FA05E",
+        "score": 0.0013
+      },
+      {
+        "value": "#B5652E",
+        "score": 0.0007
+      }
+    ],
+    "googleLinks": [
+      "https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,500;0,600;0,700;0,800;1,600&family=Inter:wght@400;500;600;700&display=swap"
+    ],
     "faces": [],
     "h1Count": 1,
     "pageErrors": []
@@ -4537,6 +4608,350 @@
     ],
     "googleLinks": [
       "https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,300..700;1,300..600&family=Spectral:ital,wght@0,300..700;1,300..600&display=swap"
+    ],
+    "faces": [],
+    "h1Count": 1,
+    "pageErrors": []
+  },
+  "plantilla-asesoria-sello-web": {
+    "repo": "plantilla-asesoria-sello-web",
+    "url": "https://alvarotaiagu.github.io/plantilla-asesoria-sello-web/",
+    "checkedAt": "2026-09-19T09:15:14.852Z",
+    "status": 200,
+    "headers": {
+      "x-frame-options": null,
+      "content-security-policy": null
+    },
+    "title": "Bértola Asesores — Gestoría fiscal, laboral y contable en Betanzos",
+    "description": "Bértola Asesores: gestoría fiscal, laboral, contable y de constitución de empresas en Betanzos (A Coruña). Trámites al día, con cita por WhatsApp. Sitio de demostración.",
+    "lang": "es",
+    "themeColor": "#F2EDE1",
+    "ogImage": "https://alvarotaiagu.github.io/plantilla-asesoria-sello-web/assets/img/logo/og.png",
+    "bodyBg": "rgb(242, 237, 225)",
+    "htmlBg": "rgba(0, 0, 0, 0)",
+    "heading": {
+      "tag": "h1",
+      "text": "Lo que se presenta a tiempo, se sella.",
+      "family": "Fraunces",
+      "stack": "Fraunces, Georgia, serif",
+      "weight": "600",
+      "style": "normal",
+      "size": 64,
+      "letterSpacing": "-0.64px",
+      "transform": "none",
+      "color": "rgb(31, 42, 36)"
+    },
+    "vars": [
+      {
+        "prop": "--rojo",
+        "value": "#A8503E",
+        "chroma": 0.424
+      },
+      {
+        "prop": "--rojo-oscuro",
+        "value": "#7C3A2B",
+        "chroma": 0.399
+      },
+      {
+        "prop": "--rojo-texto",
+        "value": "#8F4435",
+        "chroma": 0.398
+      },
+      {
+        "prop": "--papel",
+        "value": "#F2EDE1",
+        "chroma": 0.28
+      },
+      {
+        "prop": "--panel",
+        "value": "#EAE3D3",
+        "chroma": 0.263
+      },
+      {
+        "prop": "--linea",
+        "value": "#D9CFBC",
+        "chroma": 0.222
+      }
+    ],
+    "scan": [
+      {
+        "value": "#F2EDE1",
+        "score": 0.3231
+      },
+      {
+        "value": "#A8503E",
+        "score": 0.0406
+      },
+      {
+        "value": "#D9CFBC",
+        "score": 0.0226
+      },
+      {
+        "value": "#8F4435",
+        "score": 0.0011
+      }
+    ],
+    "googleLinks": [],
+    "faces": [],
+    "h1Count": 1,
+    "pageErrors": []
+  },
+  "plantilla-asesoria-casillas-web": {
+    "repo": "plantilla-asesoria-casillas-web",
+    "url": "https://alvarotaiagu.github.io/plantilla-asesoria-casillas-web/",
+    "checkedAt": "2026-09-19T09:15:19.437Z",
+    "status": 200,
+    "headers": {
+      "x-frame-options": null,
+      "content-security-policy": null
+    },
+    "title": "Vilas & Bugallo Asesores — Asesoría fiscal, laboral y contable en Ordes",
+    "description": "Asesoría fiscal, laboral, contable y de constitución de sociedades en Ordes (A Coruña). Un despacho, un interlocutor, las casillas correctas en cada plazo.",
+    "lang": "es",
+    "themeColor": "#E7E5DF",
+    "ogImage": "https://alvarotaiagu.github.io/plantilla-asesoria-casillas-web/assets/img/og-image.png",
+    "bodyBg": "rgb(231, 229, 223)",
+    "htmlBg": "rgba(0, 0, 0, 0)",
+    "heading": {
+      "tag": "h1",
+      "text": "La casilla correcta, en el plazo correcto",
+      "family": "Manrope",
+      "stack": "Manrope, system-ui, sans-serif",
+      "weight": "800",
+      "style": "normal",
+      "size": 74,
+      "letterSpacing": "-2.208px",
+      "transform": "none",
+      "color": "rgb(43, 46, 51)"
+    },
+    "vars": [
+      {
+        "prop": "--texto-acento",
+        "value": "#2F5350",
+        "chroma": 0.212
+      },
+      {
+        "prop": "--petroleo",
+        "value": "#3E6E6B",
+        "chroma": 0.232
+      },
+      {
+        "prop": "--petroleo-oscuro",
+        "value": "#2F5350",
+        "chroma": 0.212
+      }
+    ],
+    "scan": [
+      {
+        "value": "#3E6E6B",
+        "score": 0.0064
+      },
+      {
+        "value": "#2F5350",
+        "score": 0.0006
+      }
+    ],
+    "googleLinks": [],
+    "faces": [],
+    "h1Count": 1,
+    "pageErrors": []
+  },
+  "plantilla-asesoria-cinta-sumadora-web": {
+    "repo": "plantilla-asesoria-cinta-sumadora-web",
+    "url": "https://alvarotaiagu.github.io/plantilla-asesoria-cinta-sumadora-web/",
+    "checkedAt": "2026-09-19T09:15:24.044Z",
+    "status": 200,
+    "headers": {
+      "x-frame-options": null,
+      "content-security-policy": null
+    },
+    "title": "Refoxo Xestión — Asesoría fiscal, laboral y contable en Noia",
+    "description": "Asesoría fiscal, laboral, contable y de constitución de empresas en Noia (A Coruña). Sitio de demostración: negocio ficticio.",
+    "lang": "es",
+    "themeColor": "#1B3A4B",
+    "ogImage": "assets/og.png",
+    "bodyBg": "rgb(240, 230, 210)",
+    "htmlBg": "rgba(0, 0, 0, 0)",
+    "heading": {
+      "tag": "h1",
+      "text": "Línea a línea, hasta que cuadra.",
+      "family": "Work Sans",
+      "stack": "\"Work Sans\", system-ui, sans-serif",
+      "weight": "700",
+      "style": "normal",
+      "size": 77,
+      "letterSpacing": "-1.152px",
+      "transform": "none",
+      "color": "rgb(27, 58, 75)"
+    },
+    "vars": [
+      {
+        "prop": "--bronce",
+        "value": "#C9962C",
+        "chroma": 0.605
+      },
+      {
+        "prop": "--bronce-boton",
+        "value": "#CC9C39",
+        "chroma": 0.572
+      },
+      {
+        "prop": "--bronce-texto",
+        "value": "#795A1A",
+        "chroma": 0.511
+      },
+      {
+        "prop": "--crema",
+        "value": "#F0E6D2",
+        "chroma": 0.367
+      },
+      {
+        "prop": "--prusia-hondo",
+        "value": "#14303F",
+        "chroma": 0.358
+      },
+      {
+        "prop": "--crema-panel",
+        "value": "#E8DBC2",
+        "chroma": 0.349
+      },
+      {
+        "prop": "--prusia",
+        "value": "#1B3A4B",
+        "chroma": 0.339
+      }
+    ],
+    "scan": [
+      {
+        "value": "#1B3A4B",
+        "score": 0.0302
+      },
+      {
+        "value": "#F0E6D2",
+        "score": 0.03
+      },
+      {
+        "value": "#E8DBC2",
+        "score": 0.0254
+      },
+      {
+        "value": "#CC9C39",
+        "score": 0.0147
+      },
+      {
+        "value": "#C9962C",
+        "score": 0.0081
+      },
+      {
+        "value": "#795A1A",
+        "score": 0.0034
+      },
+      {
+        "value": "#14303F",
+        "score": 0.0029
+      }
+    ],
+    "googleLinks": [
+      "https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Work+Sans:wght@400;500;600;700;800&display=swap"
+    ],
+    "faces": [],
+    "h1Count": 1,
+    "pageErrors": []
+  },
+  "plantilla-asesoria-expediente-web": {
+    "repo": "plantilla-asesoria-expediente-web",
+    "url": "https://alvarotaiagu.github.io/plantilla-asesoria-expediente-web/",
+    "checkedAt": "2026-09-19T09:15:28.630Z",
+    "status": 200,
+    "headers": {
+      "x-frame-options": null,
+      "content-security-policy": null
+    },
+    "title": "Lombo Consultores · Asesoría en Cambre (demo)",
+    "description": "Plantilla de demostración de una asesoría fiscal, laboral, contable y de sociedades ficticia en Cambre (A Coruña). Concepto «Expediente»: cuatro áreas, cuatro pestañas de color. Todos los datos son de muestra.",
+    "lang": "es",
+    "themeColor": "#E8DFC8",
+    "ogImage": "assets/og.png",
+    "bodyBg": "rgb(232, 223, 200)",
+    "htmlBg": "rgba(0, 0, 0, 0)",
+    "heading": {
+      "tag": "h1",
+      "text": "No amontonamos papeles: los archivamos por color",
+      "family": "Source Serif 4",
+      "stack": "\"Source Serif 4\", Georgia, \"Times New Roman\", serif",
+      "weight": "600",
+      "style": "normal",
+      "size": 64,
+      "letterSpacing": "-0.64px",
+      "transform": "none",
+      "color": "rgb(43, 36, 28)"
+    },
+    "vars": [
+      {
+        "prop": "--contable",
+        "value": "#9C5A42",
+        "chroma": 0.368
+      },
+      {
+        "prop": "--contable-texto",
+        "value": "#8B523C",
+        "chroma": 0.346
+      },
+      {
+        "prop": "--crema",
+        "value": "#F4EEE0",
+        "chroma": 0.336
+      },
+      {
+        "prop": "--manila",
+        "value": "#E8DFC8",
+        "chroma": 0.313
+      },
+      {
+        "prop": "--manila-sombra",
+        "value": "#DCD1B7",
+        "chroma": 0.279
+      },
+      {
+        "prop": "--linea",
+        "value": "#C9BC9E",
+        "chroma": 0.25
+      },
+      {
+        "prop": "--sociedades",
+        "value": "#5C3A4E",
+        "chroma": 0.18
+      },
+      {
+        "prop": "--sociedades-texto",
+        "value": "#5C3A4E",
+        "chroma": 0.18
+      }
+    ],
+    "scan": [
+      {
+        "value": "#E8DFC8",
+        "score": 0.027
+      },
+      {
+        "value": "#C9BC9E",
+        "score": 0.0114
+      },
+      {
+        "value": "#2E5C46",
+        "score": 0.0018
+      },
+      {
+        "value": "#9C5A42",
+        "score": 0.001
+      },
+      {
+        "value": "#5C3A4E",
+        "score": 0.0005
+      }
+    ],
+    "googleLinks": [
+      "https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Special+Elite&display=swap"
     ],
     "faces": [],
     "h1Count": 1,

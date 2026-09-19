@@ -1,5 +1,5 @@
 {
-  "generado": "2026-09-18",
+  "generado": "2026-09-19",
   "nota": "Estado \"propuesta\" = rediseño hecho por iniciativa propia, no encargo. Solo se marca \"entregada\" donde Álvaro lo confirma.",
   "base": {
     "sitio": "https://alvarotaiagu.github.io",
@@ -10,7 +10,7 @@
       "id": "hosteleria",
       "nombre": "Hostelería",
       "rotulo": "HOSTELERÍA",
-      "total": 11
+      "total": 12
     },
     {
       "id": "salud",
@@ -34,7 +34,7 @@
       "id": "plantillas",
       "nombre": "Plantillas por sector",
       "rotulo": "PLANTILLAS POR SECTOR",
-      "total": 26
+      "total": 30
     }
   ],
   "fuentes": {
@@ -545,6 +545,36 @@
       ],
       "texto": " &.Vaeijs·",
       "css": "https://fonts.googleapis.com/css2?family=Spectral%3Aital%2Cwght%400%2C300..700%3B1%2C300..600&display=swap&text=+%26.Vaeijs%C2%B7"
+    },
+    "Bitter|700|normal": {
+      "familia": "Bitter",
+      "peso": 700,
+      "estilo": "normal",
+      "repos": [
+        "taberna-do-rio-carballo-web"
+      ],
+      "texto": " &.RTabdenor·í",
+      "css": "https://fonts.googleapis.com/css2?family=Bitter%3Aital%2Cwght%400%2C500%3B0%2C600%3B0%2C700%3B0%2C800%3B1%2C600&display=swap&text=+%26.RTabdenor%C2%B7%C3%AD"
+    },
+    "Work Sans|700|normal": {
+      "familia": "Work Sans",
+      "peso": 700,
+      "estilo": "normal",
+      "repos": [
+        "plantilla-asesoria-cinta-sumadora-web"
+      ],
+      "texto": " &.ACadeimnorstu·í",
+      "css": "https://fonts.googleapis.com/css2?family=Work+Sans%3Awght%40400%3B500%3B600%3B700%3B800&display=swap&text=+%26.ACadeimnorstu%C2%B7%C3%AD"
+    },
+    "Source Serif 4|600|normal": {
+      "familia": "Source Serif 4",
+      "peso": 600,
+      "estilo": "normal",
+      "repos": [
+        "plantilla-asesoria-expediente-web"
+      ],
+      "texto": " &.AEadeinoprstx·í",
+      "css": "https://fonts.googleapis.com/css2?family=Source+Serif+4%3Aital%2Cwght%400%2C400%3B0%2C500%3B0%2C600%3B0%2C700%3B1%2C400&display=swap&text=+%26.AEadeinoprstx%C2%B7%C3%AD"
     }
   },
   "proyectos": [
@@ -2316,6 +2346,156 @@
       "capturas": {
         "desktop": "assets/shots/plantilla-viajes-web-desktop.webp",
         "mobile": "assets/shots/plantilla-viajes-web-mobile.webp"
+      }
+    },
+    {
+      "repo": "taberna-do-rio-carballo-web",
+      "nombre": "Taberna do Río",
+      "sector": "hosteleria",
+      "tipo": "Taberna",
+      "concepto": "PENDIENTE",
+      "estado": "propuesta",
+      "anio": "2026",
+      "url": "https://alvarotaiagu.github.io/taberna-do-rio-carballo-web/",
+      "codigo": "https://github.com/alvarotaiagu/taberna-do-rio-carballo-web",
+      "titulo": "A Taberna do Rio — Taberna tradicional junto al río, Carballo",
+      "descripcion": "A Taberna do Rio: taberna tradicional con terraza junto al río Anllóns en Carballo. Bocadillos de chapata, cocido gallego, tortilla y raciones. Actuaciones en directo y juegos de mesa. R. Xirona, 3.",
+      "idioma": "es",
+      "color": "#1A4B40",
+      "colorRotulo": "#256A5B",
+      "colorContraste": 3.04,
+      "colorOrigen": "theme-color",
+      "fuente": {
+        "familia": "Bitter",
+        "stack": "Bitter, Georgia, serif",
+        "generica": "serif",
+        "peso": 700,
+        "estilo": "normal",
+        "id": "Bitter|700|normal"
+      },
+      "capturas": {
+        "desktop": "assets/shots/taberna-do-rio-carballo-web-desktop.webp",
+        "mobile": "assets/shots/taberna-do-rio-carballo-web-mobile.webp"
+      }
+    },
+    {
+      "repo": "plantilla-asesoria-sello-web",
+      "nombre": "Asesoría · Sello",
+      "sector": "plantillas",
+      "tipo": "Plantilla de sector",
+      "concepto": "Sello",
+      "estado": "propuesta",
+      "anio": "2026",
+      "url": "https://alvarotaiagu.github.io/plantilla-asesoria-sello-web/",
+      "codigo": "https://github.com/alvarotaiagu/plantilla-asesoria-sello-web",
+      "titulo": "Bértola Asesores — Gestoría fiscal, laboral y contable en Betanzos",
+      "descripcion": "Bértola Asesores: gestoría fiscal, laboral, contable y de constitución de empresas en Betanzos (A Coruña). Trámites al día, con cita por WhatsApp. Sitio de demostración.",
+      "idioma": "es",
+      "color": "#A8503E",
+      "colorRotulo": "#A8503E",
+      "colorContraste": 3.59,
+      "colorOrigen": "barrido del hero",
+      "fuente": {
+        "familia": "Fraunces",
+        "stack": "Fraunces, Georgia, serif",
+        "generica": "serif",
+        "peso": 600,
+        "estilo": "normal",
+        "id": null
+      },
+      "capturas": {
+        "desktop": "assets/shots/plantilla-asesoria-sello-web-desktop.webp",
+        "mobile": "assets/shots/plantilla-asesoria-sello-web-mobile.webp"
+      }
+    },
+    {
+      "repo": "plantilla-asesoria-casillas-web",
+      "nombre": "Asesoría · Casillas",
+      "sector": "plantillas",
+      "tipo": "Plantilla de sector",
+      "concepto": "Casillas",
+      "estado": "propuesta",
+      "anio": "2026",
+      "url": "https://alvarotaiagu.github.io/plantilla-asesoria-casillas-web/",
+      "codigo": "https://github.com/alvarotaiagu/plantilla-asesoria-casillas-web",
+      "titulo": "Vilas & Bugallo Asesores — Asesoría fiscal, laboral y contable en Ordes",
+      "descripcion": "Asesoría fiscal, laboral, contable y de constitución de sociedades en Ordes (A Coruña). Un despacho, un interlocutor, las casillas correctas en cada plazo.",
+      "idioma": "es",
+      "color": "#3E6E6B",
+      "colorRotulo": "#3E6E6B",
+      "colorContraste": 3.38,
+      "colorOrigen": "barrido del hero",
+      "fuente": {
+        "familia": "Manrope",
+        "stack": "Manrope, system-ui, sans-serif",
+        "generica": "sans-serif",
+        "peso": 800,
+        "estilo": "normal",
+        "id": null
+      },
+      "capturas": {
+        "desktop": "assets/shots/plantilla-asesoria-casillas-web-desktop.webp",
+        "mobile": "assets/shots/plantilla-asesoria-casillas-web-mobile.webp"
+      }
+    },
+    {
+      "repo": "plantilla-asesoria-cinta-sumadora-web",
+      "nombre": "Asesoría · Cinta sumadora",
+      "sector": "plantillas",
+      "tipo": "Plantilla de sector",
+      "concepto": "Cinta sumadora",
+      "estado": "propuesta",
+      "anio": "2026",
+      "url": "https://alvarotaiagu.github.io/plantilla-asesoria-cinta-sumadora-web/",
+      "codigo": "https://github.com/alvarotaiagu/plantilla-asesoria-cinta-sumadora-web",
+      "titulo": "Refoxo Xestión — Asesoría fiscal, laboral y contable en Noia",
+      "descripcion": "Asesoría fiscal, laboral, contable y de constitución de empresas en Noia (A Coruña). Sitio de demostración: negocio ficticio.",
+      "idioma": "es",
+      "color": "#1B3A4B",
+      "colorRotulo": "#38637B",
+      "colorContraste": 3.01,
+      "colorOrigen": "theme-color",
+      "fuente": {
+        "familia": "Work Sans",
+        "stack": "\"Work Sans\", system-ui, sans-serif",
+        "generica": "sans-serif",
+        "peso": 700,
+        "estilo": "normal",
+        "id": "Work Sans|700|normal"
+      },
+      "capturas": {
+        "desktop": "assets/shots/plantilla-asesoria-cinta-sumadora-web-desktop.webp",
+        "mobile": "assets/shots/plantilla-asesoria-cinta-sumadora-web-mobile.webp"
+      }
+    },
+    {
+      "repo": "plantilla-asesoria-expediente-web",
+      "nombre": "Asesoría · Expediente",
+      "sector": "plantillas",
+      "tipo": "Plantilla de sector",
+      "concepto": "Expediente",
+      "estado": "propuesta",
+      "anio": "2026",
+      "url": "https://alvarotaiagu.github.io/plantilla-asesoria-expediente-web/",
+      "codigo": "https://github.com/alvarotaiagu/plantilla-asesoria-expediente-web",
+      "titulo": "Lombo Consultores · Asesoría en Cambre (demo)",
+      "descripcion": "Plantilla de demostración de una asesoría fiscal, laboral, contable y de sociedades ficticia en Cambre (A Coruña). Concepto «Expediente»: cuatro áreas, cuatro pestañas de color. Todos los datos son de muestra.",
+      "idioma": "es",
+      "color": "#2E5C46",
+      "colorRotulo": "#2A6B4E",
+      "colorContraste": 3.05,
+      "colorOrigen": "barrido del hero",
+      "fuente": {
+        "familia": "Source Serif 4",
+        "stack": "\"Source Serif 4\", Georgia, \"Times New Roman\", serif",
+        "generica": "serif",
+        "peso": 600,
+        "estilo": "normal",
+        "id": "Source Serif 4|600|normal"
+      },
+      "capturas": {
+        "desktop": "assets/shots/plantilla-asesoria-expediente-web-desktop.webp",
+        "mobile": "assets/shots/plantilla-asesoria-expediente-web-mobile.webp"
       }
     }
   ]

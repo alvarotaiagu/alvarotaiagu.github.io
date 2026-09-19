@@ -1,6 +1,6 @@
 # Rúa — portfolio de Álvaro
 
-Un pueblo, 59 webs. El portfolio es una calle de noche con los escaparates
+Un pueblo, 64 webs. El portfolio es una calle de noche con los escaparates
 encendidos: cada proyecto es una fachada con su web viva dentro.
 
 **https://alvarotaiagu.github.io/**
@@ -65,11 +65,11 @@ añade la frase que corresponde, porque ya hay un tercero recibiendo datos).
 
 ```
 npm install
-npm run extract     # visita las 59 webs y saca sus datos → scripts/extracted.json
+npm run extract     # visita las 64 webs y saca sus datos → scripts/extracted.json
 npm run projects    # seed + extracted + overrides → data/projects.json + JSON-LD + sitemap
-npm run shots       # regenera las 118 capturas (1440×900 y 390×844) en webp < 150 KB
+npm run shots       # regenera las 128 capturas (1440×900 y 390×844) en webp < 150 KB
 npm run og          # compone assets/og.jpg a partir de la propia calle
-npm run verify      # Playwright: 59 URLs, capturas, iframes, filtros, foco, longtasks, 400 px
+npm run verify      # Playwright: 64 URLs, capturas, iframes, filtros, foco, longtasks, 400 px
 npm run build       # projects + og + verify
 ```
 
@@ -84,7 +84,7 @@ npm run build       # projects + og + verify
 noche `#0B0D12`, asfalto `#171A21`, papel `#F3EFE6` y un ámbar `#F2C879` a muy
 baja opacidad para la luz de farola. El color de cada fachada se extrae de su
 web (variable de acento → `theme-color` → barrido del hero) y de ahí sale el
-halo del escaparate. Ese color se usa tal cual en 50 de los 59; los otros nueve
+halo del escaparate. Ese color se usa tal cual en 52 de los 64; los otros doce
 son tan oscuros que sobre noche no se leerían, así que el rótulo usa una versión
 subida por la rampa de luminosidad **OKLCH** conservando el tono, con el croma
 pegado al borde de gama (hasta 1,3× el original) y parando en cuanto llega a
@@ -113,7 +113,7 @@ de escritorio no enseña la web, enseña una maqueta.
 
 **Lo que costaba al cargar.** Medido con `PerformanceObserver` y A/B contra un
 `main.js` vacío, la tarea larga de arranque era de ~200 ms. Casi toda era
-*layout*, no JavaScript: 59 escaparates con rejilla, consultas de contenedor e
+*layout*, no JavaScript: 64 escaparates con rejilla, consultas de contenedor e
 imagen. Tres cosas la dejaron en ~120 ms:
 
 - `content-visibility: auto` en `.fachada` (con `contain-intrinsic-size` puesto
@@ -134,7 +134,7 @@ fotograma. No hay ningún canvas, ni desenfoques ni sombras calculadas por
 fotograma: los brillos son `box-shadow` estáticos con transición de 0,6 s.
 
 **Movimiento reducido.** Se apaga el movimiento, no el contenido. Con
-`prefers-reduced-motion` la marquesina se queda quieta pero los 59 rótulos
+`prefers-reduced-motion` la marquesina se queda quieta pero los 64 rótulos
 siguen ahí y legibles, las fachadas salen todas encendidas, el nombre se lee
 entero y los contadores muestran su cifra final en vez de quedarse en cero.
 
