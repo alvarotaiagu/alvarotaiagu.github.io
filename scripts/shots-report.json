@@ -1,72 +1,16 @@
 [
   {
-    "repo": "taberna-do-rio-carballo-web",
+    "repo": "gestoria-jorge-miralles-badajoz-web",
     "kind": "desktop",
     "ok": true,
-    "kb": 36.2,
+    "kb": 41.5,
     "quality": 78
   },
   {
-    "repo": "taberna-do-rio-carballo-web",
+    "repo": "gestoria-jorge-miralles-badajoz-web",
     "kind": "mobile",
     "ok": true,
-    "kb": 57.5,
-    "quality": 78
-  },
-  {
-    "repo": "plantilla-asesoria-sello-web",
-    "kind": "desktop",
-    "ok": true,
-    "kb": 44.9,
-    "quality": 78
-  },
-  {
-    "repo": "plantilla-asesoria-sello-web",
-    "kind": "mobile",
-    "ok": true,
-    "kb": 61.2,
-    "quality": 78
-  },
-  {
-    "repo": "plantilla-asesoria-casillas-web",
-    "kind": "desktop",
-    "ok": true,
-    "kb": 39.4,
-    "quality": 78
-  },
-  {
-    "repo": "plantilla-asesoria-casillas-web",
-    "kind": "mobile",
-    "ok": true,
-    "kb": 54.7,
-    "quality": 78
-  },
-  {
-    "repo": "plantilla-asesoria-cinta-sumadora-web",
-    "kind": "desktop",
-    "ok": true,
-    "kb": 42.3,
-    "quality": 78
-  },
-  {
-    "repo": "plantilla-asesoria-cinta-sumadora-web",
-    "kind": "mobile",
-    "ok": true,
-    "kb": 61.8,
-    "quality": 78
-  },
-  {
-    "repo": "plantilla-asesoria-expediente-web",
-    "kind": "desktop",
-    "ok": true,
-    "kb": 50.8,
-    "quality": 78
-  },
-  {
-    "repo": "plantilla-asesoria-expediente-web",
-    "kind": "mobile",
-    "ok": true,
-    "kb": 75.4,
+    "kb": 52.1,
     "quality": 78
   }
 ]

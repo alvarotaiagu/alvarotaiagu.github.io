@@ -4956,5 +4956,67 @@
     "faces": [],
     "h1Count": 1,
     "pageErrors": []
+  },
+  "gestoria-jorge-miralles-badajoz-web": {
+    "repo": "gestoria-jorge-miralles-badajoz-web",
+    "url": "https://alvarotaiagu.github.io/gestoria-jorge-miralles-badajoz-web/",
+    "checkedAt": "2026-09-28T17:31:46.876Z",
+    "status": 200,
+    "headers": {
+      "x-frame-options": null,
+      "content-security-policy": null
+    },
+    "title": "Gestoría Jorge Miralles · Gestor administrativo colegiado en Badajoz",
+    "description": "Gestor administrativo colegiado en Badajoz. Renta, contabilidad, nóminas y el papel del coche. C/ Rafael Morales, 1, local B. Teléfono 653 477 183.",
+    "lang": "es",
+    "themeColor": "#4F6B5E",
+    "ogImage": "assets/og-miralles.png",
+    "bodyBg": "rgb(79, 107, 94)",
+    "htmlBg": "rgb(70, 96, 79)",
+    "heading": {
+      "tag": "h1",
+      "text": "¿Así está tu mesa? Lo tuyo, fuera de tu mesa.",
+      "family": "Instrument Serif",
+      "stack": "\"Instrument Serif\", Georgia, \"Times New Roman\", serif",
+      "weight": "400",
+      "style": "normal",
+      "size": 89,
+      "letterSpacing": "-1.07136px",
+      "transform": "none",
+      "color": "rgb(251, 248, 241)"
+    },
+    "vars": [
+      {
+        "prop": "--rojo-marca",
+        "value": "#B33A33",
+        "chroma": 0.512
+      },
+      {
+        "prop": "--mostaza",
+        "value": "#E2A43A",
+        "chroma": 0.739
+      },
+      {
+        "prop": "--papel-sombra",
+        "value": "#EFEAE0",
+        "chroma": 0.228
+      }
+    ],
+    "scan": [
+      {
+        "value": "#E2A43A",
+        "score": 0.0183
+      },
+      {
+        "value": "#B33A33",
+        "score": 0.0005
+      }
+    ],
+    "googleLinks": [
+      "https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Figtree:wght@400;500;600;700&display=swap"
+    ],
+    "faces": [],
+    "h1Count": 1,
+    "pageErrors": []
   }
 }

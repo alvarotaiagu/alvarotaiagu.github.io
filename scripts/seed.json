@@ -61,5 +61,6 @@
 {"repo":"plantilla-asesoria-sello-web","nombre":"Asesoría · Sello","sector":"legal","tipo":"Plantilla de sector","concepto":"Sello","ambito":"plantilla"},
 {"repo":"plantilla-asesoria-casillas-web","nombre":"Asesoría · Casillas","sector":"legal","tipo":"Plantilla de sector","concepto":"Casillas","ambito":"plantilla"},
 {"repo":"plantilla-asesoria-cinta-sumadora-web","nombre":"Asesoría · Cinta sumadora","sector":"legal","tipo":"Plantilla de sector","concepto":"Cinta sumadora","ambito":"plantilla"},
-{"repo":"plantilla-asesoria-expediente-web","nombre":"Asesoría · Expediente","sector":"legal","tipo":"Plantilla de sector","concepto":"Expediente","ambito":"plantilla"}
+{"repo":"plantilla-asesoria-expediente-web","nombre":"Asesoría · Expediente","sector":"legal","tipo":"Plantilla de sector","concepto":"Expediente","ambito":"plantilla"},
+{"repo":"gestoria-jorge-miralles-badajoz-web","nombre":"Gestoría Jorge Miralles","sector":"legal","tipo":"Gestoría · Badajoz","concepto":"Mesa despejada"}
 ]

@@ -22,7 +22,7 @@
       "id": "legal",
       "nombre": "Asesorías y legal",
       "rotulo": "ASESORÍAS Y LEGAL",
-      "total": 10
+      "total": 11
     },
     {
       "id": "comercio",
@@ -132,10 +132,11 @@
       "estilo": "normal",
       "repos": [
         "xenlleiro-arteixo-web",
-        "aura-fisioterapia-carballo-web"
+        "aura-fisioterapia-carballo-web",
+        "gestoria-jorge-miralles-badajoz-web"
       ],
-      "texto": " &.ARUXeilnor·",
-      "css": "https://fonts.googleapis.com/css2?family=Instrument+Serif%3Aital%400%3B1&display=swap&text=+%26.ARUXeilnor%C2%B7"
+      "texto": " &.AGJMRUXaegilnorst·í",
+      "css": "https://fonts.googleapis.com/css2?family=Instrument+Serif%3Aital%400%3B1&display=swap&text=+%26.AGJMRUXaegilnorst%C2%B7%C3%AD"
     },
     "Fraunces|300|normal": {
       "familia": "Fraunces",
@@ -2576,6 +2577,38 @@
       "capturas": {
         "desktop": "assets/shots/plantilla-asesoria-expediente-web-desktop.webp",
         "mobile": "assets/shots/plantilla-asesoria-expediente-web-mobile.webp"
+      }
+    },
+    {
+      "repo": "gestoria-jorge-miralles-badajoz-web",
+      "nombre": "Gestoría Jorge Miralles",
+      "sector": "legal",
+      "ambito": "real",
+      "publicada": true,
+      "tipo": "Gestoría · Badajoz",
+      "concepto": "Mesa despejada",
+      "estado": "propuesta",
+      "anio": "2026",
+      "url": "https://alvarotaiagu.github.io/gestoria-jorge-miralles-badajoz-web/",
+      "codigo": "https://github.com/alvarotaiagu/gestoria-jorge-miralles-badajoz-web",
+      "titulo": "Gestoría Jorge Miralles · Gestor administrativo colegiado en Badajoz",
+      "descripcion": "Gestor administrativo colegiado en Badajoz. Renta, contabilidad, nóminas y el papel del coche. C/ Rafael Morales, 1, local B. Teléfono 653 477 183.",
+      "idioma": "es",
+      "color": "#B33A33",
+      "colorRotulo": "#B33A33",
+      "colorContraste": 3.3,
+      "colorOrigen": "var(--rojo-marca)",
+      "fuente": {
+        "familia": "Instrument Serif",
+        "stack": "\"Instrument Serif\", Georgia, \"Times New Roman\", serif",
+        "generica": "serif",
+        "peso": 400,
+        "estilo": "normal",
+        "id": "Instrument Serif|400|normal"
+      },
+      "capturas": {
+        "desktop": "assets/shots/gestoria-jorge-miralles-badajoz-web-desktop.webp",
+        "mobile": "assets/shots/gestoria-jorge-miralles-badajoz-web-mobile.webp"
       }
     }
   ]
