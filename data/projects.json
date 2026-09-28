@@ -1,5 +1,5 @@
 {
-  "generado": "2026-09-19",
+  "generado": "2026-09-28",
   "nota": "Estado \"propuesta\" = rediseño hecho por iniciativa propia, no encargo. Solo se marca \"entregada\" donde Álvaro lo confirma.",
   "base": {
     "sitio": "https://alvarotaiagu.github.io",
@@ -631,7 +631,7 @@
       "nombre": "O Logradouro",
       "sector": "hosteleria",
       "ambito": "real",
-      "publicada": false,
+      "publicada": true,
       "tipo": "Taberna",
       "concepto": "Iconos gooey",
       "estado": "propuesta",

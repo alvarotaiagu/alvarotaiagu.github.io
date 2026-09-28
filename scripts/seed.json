@@ -1,7 +1,7 @@
 [
 {"repo":"melao-carballo-web","nombre":"Melao","sector":"hosteleria","tipo":"Cafetería","concepto":"Shader blob","publicada":false},
 {"repo":"melao-carballo-web-v2","nombre":"Melao v2","sector":"hosteleria","tipo":"Cafetería","concepto":"Día y noche","publicada":false},
-{"repo":"o-logradouro-carballo-web","nombre":"O Logradouro","sector":"hosteleria","tipo":"Taberna","concepto":"Iconos gooey","publicada":false},
+{"repo":"o-logradouro-carballo-web","nombre":"O Logradouro","sector":"hosteleria","tipo":"Taberna","concepto":"Iconos gooey"},
 {"repo":"o-carballo-taperia-web","nombre":"O Carballo","sector":"hosteleria","tipo":"Tapería","concepto":"Camino Inglés"},
 {"repo":"a-lareira-carballo-web","nombre":"A Lareira","sector":"hosteleria","tipo":"Parrillada","concepto":"Brasas"},
 {"repo":"caracola-carballo-web","nombre":"Caracola","sector":"hosteleria","tipo":"Café-bar","concepto":"Espiral"},
