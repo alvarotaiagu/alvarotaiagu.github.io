@@ -281,14 +281,14 @@ async function medirLongtasks({ sinMain }) {
     rotulos: document.querySelectorAll('.marquesina [data-grupo="original"] .rotulo').length,
     encendidas: [...document.querySelectorAll('.fachada')].filter((f) => f.classList.contains('esta-encendida')).length,
     nombreVisible: getComputedStyle(document.querySelector('.revelar__letra')).opacity,
-    contador: document.querySelector('[data-contador="63"]')?.textContent,
+    contador: document.querySelector('[data-contador="64"]')?.textContent,
     lenis: document.documentElement.classList.contains('lenis'),
   }));
   anotar('9. sin marquesina en marcha', r.marquesina === 'none', r.marquesina);
-  anotar('   pero los 63 rótulos siguen ahí', r.rotulos === 63, `hay ${r.rotulos}`);
-  anotar('   las 64 fachadas encendidas', r.encendidas === 63, `hay ${r.encendidas}`);
+  anotar('   pero los 64 rótulos siguen ahí', r.rotulos === 64, `hay ${r.rotulos}`);
+  anotar('   las 64 fachadas encendidas', r.encendidas === 64, `hay ${r.encendidas}`);
   anotar('   el nombre se lee', r.nombreVisible === '1', `opacidad ${r.nombreVisible}`);
-  anotar('   el contador muestra su cifra', r.contador === '63', `pone «${r.contador}»`);
+  anotar('   el contador muestra su cifra', r.contador === '64', `pone «${r.contador}»`);
   anotar('   sin smooth-scroll', r.lenis === false);
   await ctx.close();
 }
