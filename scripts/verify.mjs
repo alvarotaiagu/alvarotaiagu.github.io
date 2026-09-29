@@ -4,8 +4,8 @@
  *   npm run verify
  *
  * Levanta un servidor estático propio (sin dependencias) y comprueba:
- *   1. las 64 URLs publicadas responden 200
- *   2. las 64 fachadas están pintadas y con su captura cargada
+ *   1. las 65 URLs publicadas responden 200
+ *   2. las 65 fachadas están pintadas y con su captura cargada
  *   3. al pasar el ratón se monta el iframe y al salir se destruye
  *   4. los filtros no pierden el foco y el recuento cuadra
  *   5. el presupuesto de tipografías no se pasa de 6 familias vivas
@@ -110,10 +110,10 @@ const navegador = await chromium.launch();
       rotulos: document.querySelectorAll('.marquesina [data-grupo="original"] .rotulo').length,
     };
   });
-  anotar('2. 64 fachadas pintadas', fachadas.total === 64, `hay ${fachadas.total}`);
+  anotar('2. 65 fachadas pintadas', fachadas.total === 65, `hay ${fachadas.total}`);
   anotar('   todas con captura', fachadas.sinCaptura.length === 0, fachadas.sinCaptura.join(', '));
   anotar('   todas con su color', fachadas.sinColor.length === 0, fachadas.sinColor.join(', '));
-  anotar('   64 rótulos en la marquesina', fachadas.rotulos === 64, `hay ${fachadas.rotulos}`);
+  anotar('   65 rótulos en la marquesina', fachadas.rotulos === 65, `hay ${fachadas.rotulos}`);
 
   /* 3. iframe: se monta al pasar el ratón y se destruye al salir */
   {
@@ -281,14 +281,14 @@ async function medirLongtasks({ sinMain }) {
     rotulos: document.querySelectorAll('.marquesina [data-grupo="original"] .rotulo').length,
     encendidas: [...document.querySelectorAll('.fachada')].filter((f) => f.classList.contains('esta-encendida')).length,
     nombreVisible: getComputedStyle(document.querySelector('.revelar__letra')).opacity,
-    contador: document.querySelector('[data-contador="64"]')?.textContent,
+    contador: document.querySelector('[data-contador="65"]')?.textContent,
     lenis: document.documentElement.classList.contains('lenis'),
   }));
   anotar('9. sin marquesina en marcha', r.marquesina === 'none', r.marquesina);
-  anotar('   pero los 64 rótulos siguen ahí', r.rotulos === 64, `hay ${r.rotulos}`);
-  anotar('   las 64 fachadas encendidas', r.encendidas === 64, `hay ${r.encendidas}`);
+  anotar('   pero los 65 rótulos siguen ahí', r.rotulos === 65, `hay ${r.rotulos}`);
+  anotar('   las 65 fachadas encendidas', r.encendidas === 65, `hay ${r.encendidas}`);
   anotar('   el nombre se lee', r.nombreVisible === '1', `opacidad ${r.nombreVisible}`);
-  anotar('   el contador muestra su cifra', r.contador === '64', `pone «${r.contador}»`);
+  anotar('   el contador muestra su cifra', r.contador === '65', `pone «${r.contador}»`);
   anotar('   sin smooth-scroll', r.lenis === false);
   await ctx.close();
 }

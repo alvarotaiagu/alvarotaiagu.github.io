@@ -195,11 +195,23 @@ export function montarCortina() {
 }
 
 /* ── parallax de dos planos ────────────────────────────────────────────── */
-export function montarParallax() {
+/* Cada ScrollTrigger mide la página al crearse: montar los ~80 de golpe era una
+   sola tarea que crecía con cada web (al entrar la 65.ª, FPR, pasó de ~190 a
+   ~200–290 ms). Se montan por bloques cediendo el hilo, y el refresh final va
+   en su propia tarea. */
+const cederHilo = () => (globalThis.scheduler?.yield
+  ? scheduler.yield()
+  : new Promise((r) => setTimeout(r, 0)));
+
+export async function montarParallax() {
   if (reducido() || !gsap || !ScrollTrigger) return;
 
-  const plano = (selector, recorrido) => {
-    for (const el of document.querySelectorAll(selector)) {
+  const BLOQUE = 12;
+  const plano = async (selector, recorrido) => {
+    const els = [...document.querySelectorAll(selector)];
+    for (let i = 0; i < els.length; i++) {
+      if (i && i % BLOQUE === 0) await cederHilo();
+      const el = els[i];
       gsap.fromTo(el,
         { y: recorrido },
         {
@@ -216,9 +228,10 @@ export function montarParallax() {
     }
   };
 
-  plano('.fachada__interior', 34);   // plano cercano: las fachadas
-  plano('.tramo__cartel', 14);       // plano lejano: los carteles de calle
-  plano('.farola', 10);              // y las farolas
+  await plano('.fachada__interior', 34);   // plano cercano: las fachadas
+  await plano('.tramo__cartel', 14);       // plano lejano: los carteles de calle
+  await plano('.farola', 10);              // y las farolas
+  await cederHilo();
   ScrollTrigger.refresh();
 }
 

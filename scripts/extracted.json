@@ -5018,5 +5018,48 @@
     "faces": [],
     "h1Count": 1,
     "pageErrors": []
+  },
+  "fpr-asesores-badajoz-web": {
+    "repo": "fpr-asesores-badajoz-web",
+    "url": "https://alvarotaiagu.github.io/fpr-asesores-badajoz-web/",
+    "checkedAt": "2026-09-29T19:47:31.274Z",
+    "status": 200,
+    "headers": {
+      "x-frame-options": null,
+      "content-security-policy": null
+    },
+    "title": "FPR Asesores Consultores · Asesoría fiscal, laboral y contable en Badajoz",
+    "description": "Asesoría fiscal, laboral y contable en Badajoz para empresas, autónomos y particulares. Herencias, trámites y subvenciones. Av. Tomás Romero de Castilla, 4, D. Teléfono 924 91 04 78.",
+    "lang": "es",
+    "themeColor": "#F3F1EA",
+    "ogImage": "assets/og-fpr.png",
+    "bodyBg": "rgb(243, 241, 234)",
+    "htmlBg": "rgb(243, 241, 234)",
+    "heading": {
+      "tag": "h1",
+      "text": "Asesoría fiscal, laboral y contable en Badajoz.",
+      "family": "Bodoni Moda",
+      "stack": "\"Bodoni Moda\", Didot, \"Bodoni 72\", \"Times New Roman\", serif",
+      "weight": "400",
+      "style": "normal",
+      "size": 75,
+      "letterSpacing": "-1.1232px",
+      "transform": "none",
+      "color": "rgb(23, 32, 28)"
+    },
+    "vars": [
+      {
+        "prop": "--rotulo",
+        "value": "#1F3D36",
+        "chroma": 0.23
+      }
+    ],
+    "scan": [],
+    "googleLinks": [
+      "https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;1,6..96,400;1,6..96,500&family=Hanken+Grotesk:wght@400;500;600;700&display=swap"
+    ],
+    "faces": [],
+    "h1Count": 1,
+    "pageErrors": []
   }
 }

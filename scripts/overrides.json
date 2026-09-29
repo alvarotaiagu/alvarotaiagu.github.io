@@ -55,5 +55,9 @@
   "plantilla-optica-web":       { "tipo": "Plantilla de sector · negocio ficticio", "concepto": "Optotipos" },
   "plantilla-panaderia-web":    { "tipo": "Plantilla de sector · negocio ficticio", "concepto": "Miga" },
   "plantilla-taller-web":       { "tipo": "Plantilla de sector · negocio ficticio", "concepto": "Despiece" },
-  "plantilla-tatuajes-web":     { "tipo": "Plantilla de sector · negocio ficticio", "concepto": "Calco" }
+  "plantilla-tatuajes-web":     { "tipo": "Plantilla de sector · negocio ficticio", "concepto": "Calco" },
+  "fpr-asesores-badajoz-web": {
+    "color": "#425448",
+    "_color": "theme-color es el hueso del fondo; la marca es el verde de las tres placas del logo"
+  }
 }
